@@ -5,7 +5,10 @@ const Home = () => {
     <>
       <Header />
       <div className="page-wrapper">
-        <div data-w-id="79b87f19-3f60-9142-4d39-aa5e81099a63" className="home-hero">
+        <div
+          data-w-id="79b87f19-3f60-9142-4d39-aa5e81099a63"
+          className="home-hero"
+        >
           <div className="background-cover">
             <div
               style={{
@@ -16,7 +19,7 @@ const Home = () => {
                 msTransform:
                   "translate3d(0, 0, 0) scale3d(1.2, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)",
                 transform:
-                  "translate3d(0, 0, 0) scale3d(1.2, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                  "translate3d(0, 0, 0) scale3d(1.2, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)",
               }}
               className="hero-background-image"
             >
@@ -61,7 +64,7 @@ const Home = () => {
                           "translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 10deg)",
                         transform:
                           "translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 10deg)",
-                        opacity: 0
+                        opacity: 0,
                       }}
                       className="xxl-heading one"
                     >
@@ -79,7 +82,7 @@ const Home = () => {
                           "translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 10deg)",
                         transform:
                           "translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 10deg)",
-                        opacity: 0
+                        opacity: 0,
                       }}
                       className="xxl-heading two"
                     >
@@ -97,7 +100,7 @@ const Home = () => {
                           "translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 10deg)",
                         transform:
                           "translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 10deg)",
-                        opacity: 0
+                        opacity: 0,
                       }}
                       className="hero-button-wrapper"
                     >
@@ -117,7 +120,10 @@ const Home = () => {
                   </div>
                 </div>
                 <div className="div-block-42">
-                  <a href="/services#Solar" className="anchor-link w-inline-block">
+                  <a
+                    href="/services#Solar"
+                    className="anchor-link w-inline-block"
+                  >
                     <img
                       src="images/solar-panel-vector-icon.jpg"
                       loading="lazy"
@@ -152,7 +158,10 @@ const Home = () => {
                 </div>
               </div>
               <div className="w-layout-blockcontainer container-8 w-container">
-                <a href="/services#Solar" className="anchor-link w-inline-block">
+                <a
+                  href="/services#Solar"
+                  className="anchor-link w-inline-block"
+                >
                   <img
                     src="images/solar-panel-vector-icon.jpg"
                     loading="lazy"
@@ -170,7 +179,10 @@ const Home = () => {
                     className="image-4"
                   />
                 </a>
-                <a href="/services#Telecommunications" className="w-inline-block">
+                <a
+                  href="/services#Telecommunications"
+                  className="w-inline-block"
+                >
                   <img
                     src="images/tele.png"
                     loading="lazy"
@@ -297,11 +309,11 @@ const Home = () => {
           <div className="w-layout-blockcontainer container-23 w-container">
             <h1 className="heading-16">ABOUT US</h1>
             <div className="text-block-9">
-              <strong>Saanvi Structural Solutions</strong> is a leading structural
-              engineering consultancy specializing in solar farms, telecom
-              structures and building designsWith 40+ years of collective expertise,
-              we deliver innovative, high-quality, and timely engineering solutions
-              for projects of all sizes.
+              <strong>Saanvi Structural Solutions</strong> is a leading
+              structural engineering consultancy specializing in solar farms,
+              telecom structures and building designsWith 40+ years of
+              collective expertise, we deliver innovative, high-quality, and
+              timely engineering solutions for projects of all sizes.
             </div>
           </div>
           <div className="w-layout-blockcontainer container-11 w-container">
@@ -319,12 +331,12 @@ const Home = () => {
               <div className="w-layout-blockcontainer container-7 w-container">
                 <h1 className="heading-8">
                   Cutting-edge structural engineering solutions in solar farms,
-                  telecom structures, and building designs, ensuring precision and
-                  efficiency.
+                  telecom structures, and building designs, ensuring precision
+                  and efficiency.
                 </h1>
                 <h1 className="heading-10">
-                  We are committed to excellence, client satisfaction, and fostering
-                  long-term relationships through{" "}
+                  We are committed to excellence, client satisfaction, and
+                  fostering long-term relationships through{" "}
                   <strong>innovation, integrity, and expertise</strong>.
                 </h1>
                 <div className="div-block-17">
@@ -506,9 +518,9 @@ const Home = () => {
                             Saanvi Structural Soln provides solar design and
                             engineering for residential and commercial projects,
                             including fixed tilt/tracking systems, carports, and
-                            foundation expertise (pile design, support pads). Our
-                            services also encompass peer reviews, independent
-                            assessments, and wind tunnel guidance​​.
+                            foundation expertise (pile design, support pads).
+                            Our services also encompass peer reviews,
+                            independent assessments, and wind tunnel guidance​.
                             <br />
                           </div>
                         </div>
@@ -552,7 +564,9 @@ const Home = () => {
                           id="w-node-_5bea61f3-fc16-c4c0-6d1e-669bbd279dfb-1300b8df"
                           className="clip"
                         >
-                          <div className="subtitle white">New York, New York</div>
+                          <div className="subtitle white">
+                            New York, New York
+                          </div>
                         </div>
                       </div>
                       <div
@@ -561,11 +575,11 @@ const Home = () => {
                       >
                         <div className="clip">
                           <div className="body-display white">
-                            Saanvi Structural Soln designs and engineers commercial
-                            and residential structures for various building types,
-                            including timber, steel, concrete, and masonry. We also
-                            offer specialty services like shade structure design and
-                            public art integration.
+                            Saanvi Structural Soln designs and engineers
+                            commercial and residential structures for various
+                            building types, including timber, steel, concrete,
+                            and masonry. We also offer specialty services like
+                            shade structure design and public art integration.
                           </div>
                         </div>
                       </div>
@@ -618,7 +632,8 @@ const Home = () => {
                       >
                         <div className="clip">
                           <div className="body-display white">
-                            1897 N MAIN ST., SEARCY, AR 72143Proposed Overall Site
+                            1897 N MAIN ST., SEARCY, AR 72143Proposed Overall
+                            Site
                             <br />
                           </div>
                         </div>
@@ -669,9 +684,9 @@ const Home = () => {
                             Saanvi Structural Soln provides solar design and
                             engineering for residential and commercial projects,
                             including fixed tilt/tracking systems, carports, and
-                            foundation expertise (pile design, support pads). Our
-                            services also encompass peer reviews, independent
-                            assessments, and wind tunnel guidance.
+                            foundation expertise (pile design, support pads).
+                            Our services also encompass peer reviews,
+                            independent assessments, and wind tunnel guidance.
                           </div>
                         </div>
                       </div>
@@ -722,11 +737,11 @@ const Home = () => {
                       >
                         <div className="clip">
                           <div className="body-display white">
-                            Saanvi Structural designs and engineers commercial and
-                            residential structures for various building types,
-                            including timber, steel, concrete, and masonry. We also
-                            offer specialty services like shade structure design and
-                            public art integration.
+                            Saanvi Structural designs and engineers commercial
+                            and residential structures for various building
+                            types, including timber, steel, concrete, and
+                            masonry. We also offer specialty services like shade
+                            structure design and public art integration.
                           </div>
                         </div>
                       </div>
@@ -734,7 +749,9 @@ const Home = () => {
                   </div>
                 </div>
                 <div className="testimonial-arrow w-slider-arrow-left">
-                  <div className="rotate-text no-rotate-on-mobile">Previous</div>
+                  <div className="rotate-text no-rotate-on-mobile">
+                    Previous
+                  </div>
                 </div>
                 <div className="testimonial-arrow right-arrow w-slider-arrow-right">
                   <div className="rotate-text no-rotate-on-mobile">Next</div>
@@ -750,7 +767,8 @@ const Home = () => {
               <div className="w-layout-grid grid-4">
                 <div className="text-block-8">
                   <strong className="bold-text-2">
-                    We are happy to assist you with your project – how can we help?
+                    We are happy to assist you with your project – how can we
+                    help?
                   </strong>
                 </div>
                 <div className="form-block-3 w-form">
@@ -841,19 +859,19 @@ const Home = () => {
                     <div>Thank you! Your submission has been received!</div>
                   </div>
                   <div className="w-form-fail">
-                    <div>Oops! Something went wrong while submitting the form.</div>
+                    <div>
+                      Oops! Something went wrong while submitting the form.
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
-        
       </div>
-      <Footer/>
+      <Footer />
     </>
-
   );
-}
+};
 
 export default Home;
