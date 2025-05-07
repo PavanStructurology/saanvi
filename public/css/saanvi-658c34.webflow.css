@@ -3405,6 +3405,7 @@ blockquote {
   grid-auto-columns: 1fr;
   width: 100%;
   display: grid;
+  margin-top: 43px;
 }
 
 .field-wrapper {
@@ -7774,7 +7775,8 @@ blockquote {
   }
 
   .project-description-wrapper {
-    display: none;
+    margin-top: 55px;
+    display: grid;
   }
 
   .project-description {
