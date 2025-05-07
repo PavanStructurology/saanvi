@@ -164,17 +164,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-      <a
-        href="https://x.com/Tycreated"
-        target="_blank"
-        className="delete-me w-inline-block"
-      >
-        <div className="hide-wrapper">
-          <div className="delete-me_text-wrapper">
-            <div className="delete-me_text-title">Follow @tycreated</div>
-          </div>
-        </div>
-      </a>
+     
     </div>
   )
 }
