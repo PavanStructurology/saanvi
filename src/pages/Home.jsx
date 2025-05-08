@@ -1,6 +1,12 @@
+import useWebflowOnLoad from "../components/useWebflowReinit";
+// import useWebflowReinit from "../components/useWebflowReinit";
+// import useWebflowWaitForElement from "../components/useWebflowWaitForElement";
 import Footer from "./Footer";
 import Header from "./Header";
 const Home = () => {
+
+  // useWebflowWaitForElement('.xxl-heading.one', 3000); 
+  useWebflowOnLoad(); 
   return (
     <>
       <Header />
@@ -761,7 +767,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <section className="section-4">
+        {/* <section className="section-4">
           <div className="wrapper">
             <div className="testimonial-wrapper">
               <div className="w-layout-grid grid-4">
@@ -867,7 +873,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
       </div>
       <Footer />
     </>
