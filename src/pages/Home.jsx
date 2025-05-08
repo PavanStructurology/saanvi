@@ -11,241 +11,180 @@ const Home = () => {
     <>
       <Header />
       <div className="page-wrapper">
-        <div
-          data-w-id="79b87f19-3f60-9142-4d39-aa5e81099a63"
-          className="home-hero"
+        <section
+          className="hero-content-wrapper"
         >
-          <div className="background-cover">
-            <div
-              style={{
-                WebkitTransform:
-                  "translate3d(0, 0, 0) scale3d(1.2, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)",
-                MozTransform:
-                  "translate3d(0, 0, 0) scale3d(1.2, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)",
-                msTransform:
-                  "translate3d(0, 0, 0) scale3d(1.2, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)",
-                transform:
-                  "translate3d(0, 0, 0) scale3d(1.2, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)",
-              }}
-              className="hero-background-image"
-            >
-              <div className="image-overlay" />
+          <div className="w-layout-blockcontainer container-34 w-container">
+            <div className="div-block-39">
+              <div className="clip">
+                <div className="text-block-3">
+                  Consulting Structural Engineers
+                </div>
+              </div>
+              <div className="clip">
+                <h1
+                  // style={{
+                  //   WebkitTransform:
+                  //     "translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 10deg)",
+                  //   MozTransform:
+                  //     "translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 10deg)",
+                  //   msTransform:
+                  //     "translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 10deg)",
+                  //   transform:
+                  //     "translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 10deg)",
+                  //   opacity: 0,
+                  // }}
+                  className="xxl-heading one"
+                >
+                  SAANVI
+                </h1>
+              </div>
+              <div className="clip">
+                <h1
+                  // style={{
+                  //   WebkitTransform:
+                  //     "translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 10deg)",
+                  //   MozTransform:
+                  //     "translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 10deg)",
+                  //   msTransform:
+                  //     "translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 10deg)",
+                  //   transform:
+                  //     "translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 10deg)",
+                  //   opacity: 0,
+                  // }}
+                  className="xxl-heading two"
+                >
+                  STRUCTURAL SOLN
+                </h1>
+              </div>
+              <div className="clip">
+                <div
+                  // style={{
+                  //   WebkitTransform:
+                  //     "translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 10deg)",
+                  //   MozTransform:
+                  //     "translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 10deg)",
+                  //   msTransform:
+                  //     "translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 10deg)",
+                  //   transform:
+                  //     "translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 10deg)",
+                  //   opacity: 0,
+                  // }}
+                  className="hero-button-wrapper"
+                >
+                  <a
+                    href="contact.html"
+                    className="button white-outline w-inline-block"
+                  >
+                    <div className="button-text">Contact us</div>
+                  </a>
+                  <a
+                    href="https://calendly.com/"
+                    className="button white-outline w-inline-block"
+                  >
+                    <div className="button-text">Schedule a call</div>
+                  </a>
+                </div>
+              </div>
             </div>
-          </div>
-          <div className="grid-wrapper">
-            <div
-              id="w-node-_8e07c8f2-059d-6f6d-2fac-5813639df6f0-1300b8df"
-              data-w-id="8e07c8f2-059d-6f6d-2fac-5813639df6f0"
-              className="hover-link-wrapper"
-            >
-              <a href="#services" className="hover-link w-inline-block">
+            <div className="div-block-42">
+              <a
+                href="/services#Solar"
+                className="anchor-link w-inline-block"
+              >
                 <img
-                  src="images/arrow-down24x242x.png"
+                  src="images/solar-panel-vector-icon.jpg"
                   loading="lazy"
-                  width={24}
-                  alt="hi"
-                  className="scroll-icon"
+                  sizes="(max-width: 767px) 100vw, (max-width: 991px) 95vw, 940px"
+                  srcSet="images/solar-panel-vector-icon-p-500.jpg 500w, images/solar-panel-vector-icon-p-800.jpg 800w, images/solar-panel-vector-icon.jpg 980w"
+                  alt="solar-panel-vector-icon"
+                  className="image-6"
+                />
+              </a>
+              <a
+                href="/services#buildings"
+                className="anchor-link w-inline-block"
+              >
+                <img
+                  src="images/buildings.png"
+                  loading="lazy"
+                  alt="buildings"
+                  className="image-4"
+                />
+              </a>
+              <a
+                href="/services#Telecommunications"
+                className="anchor-link w-inline-block"
+              >
+                <img
+                  src="images/tele.png"
+                  loading="lazy"
+                  alt="Telecommunication"
+                  className="image-5"
                 />
               </a>
             </div>
-            <div
-              id="w-node-d71299dc-e2cf-e714-cc8e-cbf4e6f5ae15-1300b8df"
-              className="hero-content-wrapper"
-            >
-              <div className="w-layout-blockcontainer container-34 w-container">
-                <div className="div-block-39">
-                  <div className="clip">
-                    <div className="text-block-3">
-                      Consulting Structural Engineers
-                    </div>
-                  </div>
-                  <div className="clip">
-                    <h1
-                      style={{
-                        WebkitTransform:
-                          "translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 10deg)",
-                        MozTransform:
-                          "translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 10deg)",
-                        msTransform:
-                          "translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 10deg)",
-                        transform:
-                          "translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 10deg)",
-                        opacity: 0,
-                      }}
-                      className="xxl-heading one"
-                    >
-                      SAANVI
-                    </h1>
-                  </div>
-                  <div className="clip">
-                    <h1
-                      style={{
-                        WebkitTransform:
-                          "translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 10deg)",
-                        MozTransform:
-                          "translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 10deg)",
-                        msTransform:
-                          "translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 10deg)",
-                        transform:
-                          "translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 10deg)",
-                        opacity: 0,
-                      }}
-                      className="xxl-heading two"
-                    >
-                      STRUCTURAL SOLN
-                    </h1>
-                  </div>
-                  <div className="clip">
-                    <div
-                      style={{
-                        WebkitTransform:
-                          "translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 10deg)",
-                        MozTransform:
-                          "translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 10deg)",
-                        msTransform:
-                          "translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 10deg)",
-                        transform:
-                          "translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 10deg)",
-                        opacity: 0,
-                      }}
-                      className="hero-button-wrapper"
-                    >
-                      <a
-                        href="contact.html"
-                        className="button white-outline w-inline-block"
-                      >
-                        <div className="button-text">Contact us</div>
-                      </a>
-                      <a
-                        href="https://calendly.com/"
-                        className="button white-outline w-inline-block"
-                      >
-                        <div className="button-text">Schedule a call</div>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div className="div-block-42">
-                  <a
-                    href="/services#Solar"
-                    className="anchor-link w-inline-block"
-                  >
-                    <img
-                      src="images/solar-panel-vector-icon.jpg"
-                      loading="lazy"
-                      sizes="(max-width: 767px) 100vw, (max-width: 991px) 95vw, 940px"
-                      srcSet="images/solar-panel-vector-icon-p-500.jpg 500w, images/solar-panel-vector-icon-p-800.jpg 800w, images/solar-panel-vector-icon.jpg 980w"
-                      alt="solar-panel-vector-icon"
-                      className="image-6"
-                    />
-                  </a>
-                  <a
-                    href="/services#buildings"
-                    className="anchor-link w-inline-block"
-                  >
-                    <img
-                      src="images/buildings.png"
-                      loading="lazy"
-                      alt="buildings"
-                      className="image-4"
-                    />
-                  </a>
-                  <a
-                    href="/services#Telecommunications"
-                    className="anchor-link w-inline-block"
-                  >
-                    <img
-                      src="images/tele.png"
-                      loading="lazy"
-                      alt="Telecommunication"
-                      className="image-5"
-                    />
-                  </a>
-                </div>
-              </div>
-              <div className="w-layout-blockcontainer container-8 w-container">
-                <a
-                  href="/services#Solar"
-                  className="anchor-link w-inline-block"
-                >
-                  <img
-                    src="images/solar-panel-vector-icon.jpg"
-                    loading="lazy"
-                    sizes="(max-width: 767px) 100vw, (max-width: 991px) 95vw, 940px"
-                    srcSet="images/solar-panel-vector-icon-p-500.jpg 500w, images/solar-panel-vector-icon-p-800.jpg 800w, images/solar-panel-vector-icon.jpg 980w"
-                    alt="solar-panel-vector-icon"
-                    className="image-6"
-                  />
-                </a>
-                <a href="/services#buildings" className="w-inline-block">
-                  <img
-                    src="images/buildings.png"
-                    loading="lazy"
-                    alt="buildings"
-                    className="image-4"
-                  />
-                </a>
-                <a
-                  href="/services#Telecommunications"
-                  className="w-inline-block"
-                >
-                  <img
-                    src="images/tele.png"
-                    loading="lazy"
-                    alt="Telecommunication"
-                    className="image-5"
-                  />
-                </a>
-              </div>
-            </div>
-            <div
-              id="w-node-c3dc174b-78b2-9eb5-4dbe-d315274a7469-1300b8df"
-              className="transparent-fill"
-            />
           </div>
-        </div>
-        <div className="section clip">
-          <div id="services" className="wrapper">
-            <div>
-              <h1 className="heading-19">SERVICES</h1>
+          <div className="w-layout-blockcontainer container-8 w-container">
+            <a
+              href="/services#Solar"
+              className="anchor-link w-inline-block"
+            >
+              <img
+                src="images/solar-panel-vector-icon.jpg"
+                loading="lazy"
+                sizes="(max-width: 767px) 100vw, (max-width: 991px) 95vw, 940px"
+                srcSet="images/solar-panel-vector-icon-p-500.jpg 500w, images/solar-panel-vector-icon-p-800.jpg 800w, images/solar-panel-vector-icon.jpg 980w"
+                alt="solar-panel-vector-icon"
+                className="image-6"
+              />
+            </a>
+            <a href="/services#buildings" className="w-inline-block">
+              <img
+                src="images/buildings.png"
+                loading="lazy"
+                alt="buildings"
+                className="image-4"
+              />
+            </a>
+            <a
+              href="/services#Telecommunications"
+              className="w-inline-block"
+            >
+              <img
+                src="images/tele.png"
+                loading="lazy"
+                alt="Telecommunication"
+                className="image-5"
+              />
+            </a>
+          </div>
+        </section>
+        <section className="section clip">
+          <h1 className="heading-19">SERVICES</h1>
+          <div id="services" className="Service_wrapper" >
               <div className="services-grid">
                 <div className="card-hover-item">
-                  <div
-                    id="w-node-dbf73b50-8a2f-0852-8bfb-b5ea78671b5c-1300b8df"
-                    className="services-card"
-                  >
-                    <a
-                      href="/projects#Solarprojects"
-                      className="link-block-8 w-inline-block"
-                    >
+                  <div className="services-card">
+                    <a href="/projects#Solarprojects" className="link-block-8 w-inline-block">
                       <img
                         src="images/1.jpg"
-                        loading="lazy"
-                        sizes="(max-width: 1279px) 100vw, 1280px"
-                        srcSet="images/1-p-500.jpg 500w, images/1-p-800.jpg 800w, images/1-p-1080.jpg 1080w, images/1.jpg 1280w"
                         alt="Solar"
                         className="image-68"
                       />
                     </a>
-                    <h1
-                      id="w-node-_838127e3-c526-5818-e8ef-18ba6ad54231-1300b8df"
-                      className="heading-30"
-                    >
-                      SOLAR
-                    </h1>
+                    <h1 className="heading-30">SOLAR</h1>
                     <div className="feature-card-info">
                       <div className="card-button-wrapper">
                         <div className="clip">
-                          <a
-                            href="/projects#Solarprojects"
-                            className="button grey-outline small w-inline-block"
-                          >
+                          <a href="/projects#Solarprojects" className="button grey-outline small w-inline-block">
                             <div className="button-text">View</div>
                           </a>
                         </div>
                       </div>
                     </div>
                   </div>
+
                 </div>
                 <div className="card-hover-item">
                   <div className="services-card">
@@ -262,7 +201,7 @@ const Home = () => {
                         className="image-69"
                       />
                     </a>
-                    <h1 className="heading-28">Buildings</h1>
+                    <h1 className="heading-30">Buildings</h1>
                     <div className="feature-card-info">
                       <div className="card-button-wrapper">
                         <div className="clip">
@@ -292,7 +231,7 @@ const Home = () => {
                         className="image-70"
                       />
                     </a>
-                    <h1 className="heading-29">Telecommunication</h1>
+                    <h1 className="heading-30">Telecommunication</h1>
                     <div className="feature-card-info">
                       <div className="card-button-wrapper">
                         <div className="clip">
@@ -308,12 +247,12 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-            </div>
           </div>
-        </div>
-        <div className="section video-section">
+        </section>
+        <section className="section video-section">
+          <h1 className="heading-19">ABOUT US</h1>
+
           <div className="w-layout-blockcontainer container-23 w-container">
-            <h1 className="heading-16">ABOUT US</h1>
             <div className="text-block-9">
               <strong>Saanvi Structural Solutions</strong> is a leading
               structural engineering consultancy specializing in solar farms,
@@ -381,8 +320,8 @@ const Home = () => {
               </div>
             </div>
           </div>
-        </div>
-        <div className="section no-verticle-padding dark">
+        </section>
+        <section className="section no-verticle-padding dark">
           <div className="wrapper">
             <div className="testimonial-wrapper">
               <h1 className="heading-109">Competencies</h1>
@@ -453,8 +392,8 @@ const Home = () => {
               </div>
             </div>
           </div>
-        </div>
-        <div className="section no-verticle-padding dark">
+        </section>
+        {/* <section className="section no-verticle-padding dark">
           <div className="wrapper">
             <div className="testimonial-wrapper">
               <h1 className="heading-21">PROJECTS</h1>
@@ -766,8 +705,8 @@ const Home = () => {
               </div>
             </div>
           </div>
-        </div>
-        {/* <section className="section-4">
+        </section>*/}
+        <section className="section-4">
           <div className="wrapper">
             <div className="testimonial-wrapper">
               <div className="w-layout-grid grid-4">

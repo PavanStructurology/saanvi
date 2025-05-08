@@ -1,255 +1,12 @@
 import Header from "./Header"
 import Footer from "./Footer";
+import { motion } from "framer-motion";
 
 const Services = () => {
     return (
         <>
             <Header />
-
-            <div className="more-projects-wrapper in-page">
-                <div className="project-gallery-wrapper">
-                    <div className="grid-wrapper projects-search">
-                        <div
-                            id="w-node-_397244f1-6d58-8f51-019c-f7e5a2b1e41a-f9270e17"
-                            className="project-discovery-wrapper"
-                        >
-                            <div
-                                id="w-node-_849e754c-a02b-b240-b303-2bf5e8a0db81-f9270e17"
-                                className="project-discovery-cover two"
-                            />
-                            <div
-                                id="w-node-a30333d2-032c-03e5-f1b1-a5d31eb7f5e4-f9270e17"
-                                className="gallery-items-wrapper"
-                            >
-                                <div className="project-discovery-list">
-                                    <div className="gallery-heading">
-                                        <h3 className="heading-2">Explore our work</h3>
-                                    </div>
-                                    <div
-                                        id="scrollbar"
-                                        className="project-search-collection w-dyn-list"
-                                    >
-                                        <div role="list" className="project-search-items w-dyn-items">
-                                            <div
-                                                role="listitem"
-                                                className="project-search-collection-item w-dyn-item"
-                                            >
-                                                <a
-                                                    href="#"
-                                                    className="menu-list-item discovery-item w-inline-block"
-                                                >
-                                                    <div
-                                                        id="w-node-c47dbc6c-9b93-d53a-3ac5-94688c374a85-f9270e17"
-                                                        className="stacked-description short"
-                                                    >
-                                                        <div className="list-item-text subtitle grey w-dyn-bind-empty" />
-                                                        <div className="list-item-text w-dyn-bind-empty" />
-                                                    </div>
-                                                    <img
-                                                        src="images/arrow-right48x482x.svg"
-                                                        loading="lazy"
-                                                        id="w-node-_6ad8919c-2309-2a37-80a2-1e0756464dfe-f9270e17"
-                                                        alt="arrow"
-                                                        className="list-item-arrow"
-                                                    />
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div className="w-dyn-empty">
-                                            <div>No items found.</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div
-                            id="w-node-_24909537-2aef-fa73-cf08-5d19c7632e15-f9270e17"
-                            className="project-discovery-cover one"
-                        />
-                        <div className="project-gallery-overlay" />
-                    </div>
-                    <div className="more-projects-wrapper">
-                        <div className="grid-wrapper fixed">
-                            <div
-                                id="w-node-a30333d2-032c-03e5-f1b1-a5d31eb7f5f0-f9270e17"
-                                data-w-id="a30333d2-032c-03e5-f1b1-a5d31eb7f5f0"
-                                className="fly-out-button on-click"
-                            >
-                                <div
-                                    id="w-node-a30333d2-032c-03e5-f1b1-a5d31eb7f5f1-f9270e17"
-                                    className="projects-lottie-wrapper"
-                                >
-                                    <div
-                                        data-is-ix2-target={1}
-                                        className="projects-lottie"
-                                        data-w-id="a30333d2-032c-03e5-f1b1-a5d31eb7f5f2"
-                                        data-animation-type="lottie"
-                                        data-src="documents/Project-open-dropdown.json"
-                                        data-loop={0}
-                                        data-direction={1}
-                                        data-autoplay={0}
-                                        data-renderer="svg"
-                                        data-default-duration="2.4791666666666665"
-                                        data-duration={0}
-                                        data-ix2-initial-state={0}
-                                    />
-                                </div>
-                                <div
-                                    id="w-node-a30333d2-032c-03e5-f1b1-a5d31eb7f5f3-f9270e17"
-                                    className="subtitle"
-                                >
-                                    Discover projects
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="grid-wrapper project-discovery-grid">
-                    <div
-                        id="w-node-c1267971-e98a-4887-2b61-4f4973f4569f-f9270e17"
-                        className="discovery-button-wrapper"
-                    >
-                        <div
-                            id="w-node-_93ff6921-d28d-6640-4312-da6eaaed889e-f9270e17"
-                            className="fly-out-button-wrapper"
-                        >
-                            <div
-                                data-w-id="fc177a8e-c247-e188-8355-4c56f9270e19"
-                                className="fly-out-button off-click"
-                            >
-                                <div
-                                    id="w-node-fc177a8e-c247-e188-8355-4c56f9270e1a-f9270e17"
-                                    className="projects-lottie-wrapper"
-                                >
-                                    <div
-                                        data-is-ix2-target={1}
-                                        className="projects-lottie"
-                                        data-w-id="fc177a8e-c247-e188-8355-4c56f9270e1b"
-                                        data-animation-type="lottie"
-                                        data-src="documents/Project-open-dropdown.json"
-                                        data-loop={0}
-                                        data-direction={1}
-                                        data-autoplay={0}
-                                        data-renderer="svg"
-                                        data-default-duration="2.4791666666666665"
-                                        data-duration={0}
-                                        data-ix2-initial-state={0}
-                                    />
-                                </div>
-                                <div
-                                    id="w-node-fc177a8e-c247-e188-8355-4c56f9270e1c-f9270e17"
-                                    className="subtitle"
-                                >
-                                    Discover projects
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div className="text-block-26">
-                Wind tunnel guidance optimizes our solar projects for your location. We
-                engineer for strength, you enjoy clean energy with confidence.
-            </div>
             <div className="page-wrapper">
-                <div data-w-id="dc95005d-93c8-7939-5b8a-1f677a0543cd" className="page-hero">
-                    <div className="wrapper">
-                        <div className="inner-page-hero-wrapper">
-                            <div className="subtitle white">Services</div>
-                            <div
-                                id="w-node-_01b97761-a9cc-43ed-8464-397b3f35f8f2-1300b8e8"
-                                className="hero-content-wrapper"
-                            >
-                                <div>
-                                    <div className="clip">
-                                        <h1
-                                            style={{
-                                                WebkitTransform:
-                                                    "translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 10deg)",
-                                                MozTransform:
-                                                    "translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 10deg)",
-                                                msTransform:
-                                                    "translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 10deg)",
-                                                transform:
-                                                    "translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 10deg)",
-                                                opacity: 0
-                                            }}
-                                            className="xxl-heading one"
-                                        >
-                                            Find the service
-                                        </h1>
-                                    </div>
-                                    <div className="clip">
-                                        <h1
-                                            style={{
-                                                WebkitTransform:
-                                                    "translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 10deg)",
-                                                MozTransform:
-                                                    "translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 10deg)",
-                                                msTransform:
-                                                    "translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 10deg)",
-                                                transform:
-                                                    "translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 10deg)",
-                                                opacity: 0
-                                            }}
-                                            className="xxl-heading two"
-                                        >
-                                            to fit your space.
-                                        </h1>
-                                    </div>
-                                </div>
-                                <div
-                                    id="w-node-_06d98f73-386f-106d-9b9d-8057c0e4f1b4-1300b8e8"
-                                    className="clip"
-                                >
-                                    <div
-                                        style={{
-                                            WebkitTransform:
-                                                "translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 10deg)",
-                                            MozTransform:
-                                                "translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 10deg)",
-                                            msTransform:
-                                                "translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 10deg)",
-                                            transform:
-                                                "translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 10deg)",
-                                            opacity: 0
-                                        }}
-                                        className="hero-button-wrapper"
-                                    >
-                                        <a href="#" className="button white-outline w-inline-block">
-                                            <div className="button-text">Schedule a call</div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="w-node-_0b683e9b-74f4-bffd-89ea-d63131dd4bb7-1300b8e8">
-                                <div className="logos-headline">
-                                    <div className="subtitle small white">What we do</div>
-                                    <div className="horizontal-line white" />
-                                </div>
-                            </div>
-                        </div>
-                        <div
-                            data-w-id="8ffc8eba-8feb-c9e8-a5b6-d066340ded62"
-                            className="hover-link-wrapper"
-                        >
-                            <a href="#Solar" className="hover-link w-inline-block">
-                                <img
-                                    src="images/arrow-down24x242x.png"
-                                    loading="lazy"
-                                    width={24}
-                                    alt="hi"
-                                    className="scroll-icon"
-                                />
-                            </a>
-                        </div>
-                    </div>
-                    <div className="background-cover">
-                        <div className="hero-background-image services-background">
-                            <div className="image-overlay dark-overylay" />
-                        </div>
-                    </div>
-                </div>
                 <div className="sticky-section">
                     <div className="wrapper">
                         <div className="div-block-5">
@@ -279,14 +36,16 @@ const Services = () => {
                 <div
                     id="Solar"
                     data-w-id="0dba1441-ebbc-9621-1936-de8c26fe5a62"
-                    className="section"
-                >
-                    <div data-w-id="0dba1441-ebbc-9621-1936-de8c26fe5a6a" className="wrapper">
+                    className="section">
+                    <div className="wrapper">
                         <div className="banner-wrapper">
                             <div className="banner-content">
                                 <div className="banner-intro">
-                                    <div
-                                        id="w-node-a2213ff2-a0d0-4a26-f09b-8fc73ffb88b1-1300b8e8"
+                                    <motion.div
+                                        initial={{ opacity: 0, y: 50 }}
+                                        whileInView={{ opacity: 1, y: 0 }}
+                                        transition={{ duration: 1 }}
+                                        viewport={{ once: true }}
                                         className="div-block-40"
                                     >
                                         <div className="clip">
@@ -295,39 +54,45 @@ const Services = () => {
                                             </h2>
                                             <div className="body-display">
                                                 Saanvi offers comprehensive solar solutions with tailored
-                                                designs and expert engineering, ensuring efficient energy
-                                                capture and reliable installations for diverse projects.
+                                                designs and expert engineering...
                                             </div>
                                         </div>
-                                    </div>
+                                    </motion.div>
+
                                     <div className="div-block-16">
-                                        <div className="div-block-36">
+                                        <motion.div
+                                            initial={{ opacity: 0, y: 50 }}
+                                            whileInView={{ opacity: 1, y: 0 }}
+                                            transition={{ duration: 1.2 }}
+                                            viewport={{ once: true }}
+                                            className="div-block-36"
+                                        >
                                             <div className="clip">
-                                                <a
-                                                    href="contact.html"
-                                                    className="button white-outline w-inline-block"
-                                                >
+                                                <a href="contact.html" className="button white-outline w-inline-block">
                                                     <div className="button-text">Contact us</div>
                                                 </a>
                                             </div>
-                                        </div>
-                                        <div
-                                            id="w-node-c178c50f-48d0-165b-2d49-930a3913531b-1300b8e8"
+                                        </motion.div>
+
+                                        <motion.div
+                                            initial={{ opacity: 0, y: 50 }}
+                                            whileInView={{ opacity: 1, y: 0 }}
+                                            transition={{ duration: 1.4 }}
+                                            viewport={{ once: true }}
                                             className="clip"
                                         >
-                                            <a
-                                                href="https://calendly.com/"
-                                                className="button white-outline w-inline-block"
-                                            >
+                                            <a href="https://calendly.com/" className="button white-outline w-inline-block">
                                                 <div className="button-text">Schedule a call</div>
                                             </a>
-                                        </div>
+                                        </motion.div>
                                     </div>
                                 </div>
+
                                 <div className="background-banner service-1-banner">
                                     <div className="image-overlay" />
                                 </div>
                             </div>
+
                             <div className="image-cover-wrapper">
                                 <div style={{ width: "100%" }} className="image-cover" />
                             </div>
@@ -652,55 +417,67 @@ const Services = () => {
                 <div
                     id="buildings"
                     data-w-id="7cd5cb55-b5cf-7f44-a1d7-8d3e464a1c2e"
-                    className="section"
-                >
-                    <div data-w-id="7cd5cb55-b5cf-7f44-a1d7-8d3e464a1c36" className="wrapper">
-                        <div className="banner-wrapper">
-                            <div className="banner-content">
-                                <div className="banner-intro">
-                                    <div>
-                                        <div className="subtitle-wrapper clip">
-                                            <h2 className="heading">
-                                                Building Tomorrow’s Landmarks Today with Structural
-                                                Integrity and Precision
-                                            </h2>
-                                        </div>
-                                        <div className="body-display">
-                                            At Saanvi, we excel in engineering construction projects,
-                                            delivering precision-built structural design and foundation
-                                            engineering that exceed your expectations.
-                                        </div>
-                                    </div>
-                                    <div className="div-block-16">
-                                        <div className="div-block-36">
-                                            <div className="clip">
-                                                <a
-                                                    href="contact.html"
-                                                    className="button white-outline w-inline-block"
-                                                >
-                                                    <div className="button-text">Contact us</div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div
-                                            id="w-node-a7190133-4b2a-3f64-fc9d-16a9eeab4a06-1300b8e8"
-                                            className="clip"
+                    className="section">
+                    <div className="Servicesection">
+                        <div className="wrapper">
+                            <div className="banner-wrapper">
+                                <div className="banner-content">
+                                    <div className="banner-intro">
+                                        <motion.div
+                                            initial={{ opacity: 0, y: 50 }}
+                                            whileInView={{ opacity: 1, y: 0 }}
+                                            transition={{ duration: 1 }}
+                                            viewport={{ once: true }}
                                         >
-                                            <a
-                                                href="https://calendly.com/"
-                                                className="button white-outline w-inline-block"
+                                            <div className="subtitle-wrapper clip">
+                                                <h2 className="heading">
+                                                    Building Tomorrow’s Landmarks Today with Structural Integrity and Precision
+                                                </h2>
+                                            </div>
+                                            <div className="body-display">
+                                                At Saanvi, we excel in engineering construction projects,
+                                                delivering precision-built structural design and foundation engineering
+                                                that exceed your expectations.
+                                            </div>
+                                        </motion.div>
+
+                                        <div className="div-block-16">
+                                            <motion.div
+                                                initial={{ opacity: 0, y: 50 }}
+                                                whileInView={{ opacity: 1, y: 0 }}
+                                                transition={{ duration: 1.2 }}
+                                                viewport={{ once: true }}
+                                                className="div-block-36"
                                             >
-                                                <div className="button-text">Schedule a call</div>
-                                            </a>
+                                                <div className="clip">
+                                                    <a href="contact.html" className="button white-outline w-inline-block">
+                                                        <div className="button-text">Contact us</div>
+                                                    </a>
+                                                </div>
+                                            </motion.div>
+
+                                            <motion.div
+                                                initial={{ opacity: 0, y: 50 }}
+                                                whileInView={{ opacity: 1, y: 0 }}
+                                                transition={{ duration: 1.4 }}
+                                                viewport={{ once: true }}
+                                                className="clip"
+                                            >
+                                                <a href="https://calendly.com/" className="button white-outline w-inline-block">
+                                                    <div className="button-text">Schedule a call</div>
+                                                </a>
+                                            </motion.div>
                                         </div>
                                     </div>
+
+                                    <div className="background-banner service-2-banner">
+                                        <div className="image-overlay" />
+                                    </div>
                                 </div>
-                                <div className="background-banner service-2-banner">
-                                    <div className="image-overlay" />
+
+                                <div className="image-cover-wrapper right-side">
+                                    <div style={{ width: "100%" }} className="image-cover" />
                                 </div>
-                            </div>
-                            <div className="image-cover-wrapper right-side">
-                                <div style={{ width: "100%" }} className="image-cover" />
                             </div>
                         </div>
                     </div>
@@ -1021,59 +798,70 @@ const Services = () => {
                 <div
                     id="Telecommunications"
                     data-w-id="5e265911-3e42-184e-49b8-29b67b8611c5"
-                    className="section"
-                >
-                    <div data-w-id="5e265911-3e42-184e-49b8-29b67b8611cd" className="wrapper">
-                        <div className="banner-wrapper">
-                            <div className="banner-content">
-                                <div className="banner-intro">
-                                    <div className="div-block-41">
-                                        <div className="clip">
-                                            <h2 className="heading">
-                                                Empower Connectivity with Saanvi Structural Soln Advanced
-                                                Telecom Solutions
-                                            </h2>
-                                            <div className="body-display">
-                                                We deliver advanced telecom solutions, optimizing
-                                                connectivity and performance through expert network design,
-                                                tower analysis, site planning, and antenna engineering.
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="div-block-16">
-                                        <div className="div-block-36">
-                                            <div className="clip">
-                                                <a
-                                                    href="contact.html"
-                                                    className="button white-outline w-inline-block"
-                                                >
-                                                    <div className="button-text">Contact us</div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div
-                                            id="w-node-_37353616-fbcc-56d4-42cb-28f01edaee90-1300b8e8"
-                                            className="clip"
+                    className="section" >
+                    <div className="Servicesection">
+                        <div className="wrapper">
+                            <div className="banner-wrapper">
+                                <div className="banner-content">
+                                    <div className="banner-intro">
+                                        <motion.div
+                                            initial={{ opacity: 0, y: 50 }}
+                                            whileInView={{ opacity: 1, y: 0 }}
+                                            transition={{ duration: 1 }}
+                                            viewport={{ once: true }}
+                                            className="div-block-41"
                                         >
-                                            <a
-                                                href="https://calendly.com/"
-                                                className="button white-outline w-inline-block"
+                                            <div className="clip">
+                                                <h2 className="heading">
+                                                    Empower Connectivity with Saanvi Structural Soln Advanced Telecom Solutions
+                                                </h2>
+                                                <div className="body-display">
+                                                    We deliver advanced telecom solutions, optimizing connectivity and performance
+                                                    through expert network design, tower analysis, site planning, and antenna engineering.
+                                                </div>
+                                            </div>
+                                        </motion.div>
+
+                                        <div className="div-block-16">
+                                            <motion.div
+                                                initial={{ opacity: 0, y: 50 }}
+                                                whileInView={{ opacity: 1, y: 0 }}
+                                                transition={{ duration: 1.2 }}
+                                                viewport={{ once: true }}
+                                                className="div-block-36"
                                             >
-                                                <div className="button-text">Schedule a call</div>
-                                            </a>
+                                                <div className="clip">
+                                                    <a href="contact.html" className="button white-outline w-inline-block">
+                                                        <div className="button-text">Contact us</div>
+                                                    </a>
+                                                </div>
+                                            </motion.div>
+
+                                            <motion.div
+                                                initial={{ opacity: 0, y: 50 }}
+                                                whileInView={{ opacity: 1, y: 0 }}
+                                                transition={{ duration: 1.4 }}
+                                                viewport={{ once: true }}
+                                                className="clip"
+                                            >
+                                                <a href="https://calendly.com/" className="button white-outline w-inline-block">
+                                                    <div className="button-text">Schedule a call</div>
+                                                </a>
+                                            </motion.div>
                                         </div>
                                     </div>
+
+                                    <div className="background-banner service-3-banner">
+                                        <div className="image-overlay" />
+                                    </div>
                                 </div>
-                                <div className="background-banner service-3-banner">
-                                    <div className="image-overlay" />
+
+                                <div className="image-cover-wrapper">
+                                    <div style={{ width: "100%" }} className="image-cover" />
                                 </div>
-                            </div>
-                            <div className="image-cover-wrapper">
-                                <div style={{ width: "100%" }} className="image-cover" />
                             </div>
                         </div>
                     </div>
-                    <div className="wrapper" />
                     <div className="wrapper">
                         <div className="services-wrapper">
                             <div className="services-info">
@@ -1414,9 +1202,9 @@ const Services = () => {
                         </div>
                     </div>
                 </div>
-              
+
             </div>
-            <Footer/>
+            <Footer />
         </>
 
     )

@@ -7,9 +7,9 @@ const Header = () => {
                 <div className="preloader-middle">
                     <div className="left-preloader" />
                     <div className="middle-preloader">
-                        <div className="stripe-preloader left" />
-                        <div className="stripe-preloader middle" />
-                        <div className="stripe-preloader right" />
+                        <div className="stripe-preloader left" />mk
+                        <div className="stripe-preloader middle" />k
+                        <div className="stripe-preloader right" />jk
                     </div>
                     <div className="right-preloader" />
                 </div>
@@ -39,24 +39,11 @@ const Header = () => {
                             />
                         </a>
                         <div
-                            data-w-id="17c43587-c790-b4d8-1466-5f40336b9d4c"
                             className="full-menu-button"
                         >
-                            <div
-                                data-is-ix2-target={1}
-                                className="menu-lottie"
-                                data-w-id="17c43587-c790-b4d8-1466-5f40336b9d4d"
-                                data-animation-type="lottie"
-                                data-src="documents/menu-nav.json"
-                                data-loop={0}
-                                data-direction={1}
-                                data-autoplay={0}
-                                data-renderer="svg"
-                                data-default-duration="2.875"
-                                data-duration={0}
-                                data-ix2-initial-state={0}
-                            />
-                        </div>
+                            <div className='menu'></div>
+                            <div className='menu'></div>
+                            <div className='menu'></div>                        </div>
                     </div>
                     <div className="menu-wrapper">
                         <nav role="navigation" className="nav-menu w-nav-menu">
@@ -97,34 +84,50 @@ const Header = () => {
                                     >
                                         Our team
                                     </div>
-                                    <a href="team.html" className="button-14 w-button">
+                                    <a href="/team" className="button-14 w-button">
                                         View all
                                     </a>
                                 </div>
                                 <div className="div-block-30">
-                                    <div className="collection-list-wrapper-4 w-dyn-list">
-                                        <div role="list" className="mega-menu-list-wrapper w-dyn-items">
-                                            <div
-                                                role="listitem"
-                                                className="menu-collection-list-item w-dyn-item"
-                                            >
-                                                <a
-                                                    href="#"
-                                                    className="post-list-item category-list-item w-inline-block"
-                                                >
-                                                    <div className="stacked-description horizontal">
-                                                        <div className="list-item-text w-dyn-bind-empty" />
-                                                        <div
-                                                            id="w-node-_7a338548-6995-26a0-d4df-2c2b4c59a395-4c59a38f"
-                                                            className="subtitle w-dyn-bind-empty"
-                                                        />
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div className="w-dyn-empty">
-                                            <div>No items found.</div>
-                                        </div>
+                                    <div>
+                                        <img src="images/maf.avif"
+                                            loading="lazy"
+                                            width={45}
+                                            alt="saanvi"
+                                            className="image"></img>
+                                    </div>
+                                    <div>
+                                        <a href="#" className="post-list-item category-list-item w-inline-block">
+                                            Madhan Kumar K, MS, P.E.
+                                        </a>
+                                    </div>
+                                </div>
+                                <div className="div-block-30">
+                                    <div>
+                                        <img src="images/sri.avif"
+                                            loading="lazy"
+                                            width={45}
+                                            alt="saanvi"
+                                            className="image"></img>
+                                    </div>
+                                    <div>
+                                        <a href="#" className="post-list-item category-list-item w-inline-block">
+                                            Sridhar Kethu P.E.
+                                        </a>
+                                    </div>
+                                </div>
+                                <div className="div-block-30">
+                                    <div>
+                                        <img src="images/sri.avif"
+                                            loading="lazy"
+                                            width={45}
+                                            alt="saanvi"
+                                            className="image"></img>
+                                    </div>
+                                    <div>
+                                        <a href="#" className="post-list-item category-list-item w-inline-block">
+                                            Sridhar Kethu P.E.
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -143,19 +146,26 @@ const Header = () => {
                                         View all
                                     </a>
                                 </div>
-                                <div>
-                                    <div className="collection-list-wrapper-3 w-dyn-list">
-                                        <div role="list" className="mega-menu-list-wrapper w-dyn-items">
-                                            <div
-                                                role="listitem"
-                                                className="menu-collection-list-item w-dyn-item"
-                                            >
-                                                <div className="text-block-38 w-dyn-bind-empty" />
-                                            </div>
-                                        </div>
-                                        <div className="w-dyn-empty">
-                                            <div>No items found.</div>
-                                        </div>
+                                <div className="div-block-30">
+                                    
+                                    <div>
+                                        <a href="#" className="post-list-item category-list-item w-inline-block">
+                                            SOLAR
+                                        </a>
+                                    </div>
+                                </div>
+                                <div className="div-block-30">
+                                   
+                                    <div>
+                                        <a href="#" className="post-list-item category-list-item w-inline-block">
+                                            BUILDINGS                                        </a>
+                                    </div>
+                                </div>
+                                <div className="div-block-30">
+                                    
+                                    <div>
+                                        <a href="#" className="post-list-item category-list-item w-inline-block">
+                                            TELLECOMMUNICATIONS                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -407,7 +417,7 @@ const Header = () => {
                                 className="tablet-mobile-nav-links"
                             >
                                 <div className="navigation-links">
-                                    <a  href="/services" className="nav-link w-inline-block" >
+                                    <a href="/services" className="nav-link w-inline-block" >
                                         <div className="button-text">Services</div>
                                         <div className="nav-link-hover-button" />
                                     </a>
