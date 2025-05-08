@@ -2,9 +2,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div>
       <div
-          data-w-id="c6a86f47-145d-b8c8-1c44-2b43c426b91d"
           className="footer-section"        >
           <div className="wrapper">
             <img
@@ -77,7 +75,7 @@ const Footer = () => {
                 <div className="subtitle white">Navigation</div>
                 <div className="service-menu-list white">
                   <a
-                    href="team.html"
+                    href="/team"
                     className="menu-list-item white w-inline-block"
                   >
                     <div
@@ -95,7 +93,7 @@ const Footer = () => {
                     />
                   </a>
                   <a
-                    href="projects.html"
+                    href="/projects"
                     className="menu-list-item white w-inline-block"
                   >
                     <div
@@ -131,7 +129,7 @@ const Footer = () => {
                     />
                   </a>
                   <a
-                    href="contact.html"
+                    href="/contact"
                     className="menu-list-item white w-inline-block"
                   >
                     <div
@@ -165,7 +163,6 @@ const Footer = () => {
           </div>
         </div>
      
-    </div>
   )
 }
 
