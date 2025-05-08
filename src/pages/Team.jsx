@@ -205,7 +205,7 @@ const Team = () => {
           >
             <a href="#scroll" className="hover-link w-inline-block">
               <img
-                src="images/arrow-down24x242x.png"
+                src="images/arrow-down24x242x.svg"
                 loading="lazy"
                 width={24}
                 alt="hi"

@@ -1305,16 +1305,16 @@ blockquote {
 }
 
 .hero-content-wrapper {
-  grid-column-gap: 80px;
-  grid-row-gap: 80px;
+  /* grid-column-gap: 80px;
+  grid-row-gap: 80px; */
   flex-flow: row;
   grid-template-rows: auto;
   grid-template-columns: 1fr;
   grid-auto-columns: 1fr;
   justify-content: flex-start;
   align-items: center;
-  margin-top: 42px;
-  margin-left: -55px;
+  /* margin-top: 42px;
+  margin-left: -55px; */
   font-family: Ubuntu, Helvetica, sans-serif;
   display: flex;
 }
@@ -1887,19 +1887,9 @@ blockquote {
 }
 
 .services-grid {
-  grid-column-gap: 39px;
-  grid-row-gap: 39px;
-  border-top: 1px solid var(--pin-stripe);
-  border-right: 1px solid var(--pin-stripe);
-  border-left: 1px solid var(--pin-stripe);
-  flex-flow: row;
-  grid-template-rows: 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-auto-rows: 1fr;
-  grid-auto-columns: 1fr;
-  justify-content: flex-start;
+ 
+  justify-content: space-around;
   align-items: center;
-  margin-top: 15px;
   margin-left: 6px;
   display: flex;
 }
@@ -2814,7 +2804,7 @@ blockquote {
   grid-auto-flow: row;
   place-content: space-between;
   place-items: stretch center;
-  width: 100%;
+  width: 85%;
   display: grid;
   position: relative;
 }
@@ -4169,8 +4159,6 @@ blockquote {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  padding-top: 75px;
-  padding-bottom: 28px;
   display: flex;
   position: relative;
   overflow: hidden;
@@ -5384,6 +5372,8 @@ blockquote {
   font-size: 52px;
   font-weight: 700;
   line-height: 1.2em;
+  color: #174b82;
+
 }
 
 .heading-20 {
@@ -5724,6 +5714,7 @@ blockquote {
   font-family: Ubuntu, Helvetica, sans-serif;
   font-size: 27px;
   display: flex;
+  color: #174b82;
 }
 
 .heading-31 {
@@ -13318,7 +13309,7 @@ blockquote {
 }
 
 #w-node-_8e07c8f2-059d-6f6d-2fac-5813639df6f0-1300b8df {
-  grid-area: 2 / 3 / 4 / 3;
+  grid-area: 2 / 2 / 4 / 3;
   place-self: end;
 }
 
@@ -14624,7 +14615,7 @@ blockquote {
 
 @media screen and (max-width: 479px) {
   #w-node-_8e07c8f2-059d-6f6d-2fac-5813639df6f0-1300b8df {
-    grid-area: 2 / 3 / 4 / 3;
+    grid-area: 2 / 2 / 4 / 3;
     place-self: end;
   }
 
@@ -14814,6 +14805,22 @@ blockquote {
 .Servicesection{
   margin-top: 6%;
 }
+.Service_wrapper{
+  margin-top: 2%;
+
+}
 html {
   scroll-behavior: smooth;
+}
+.services-card .feature-card-info {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+.services-card:hover .feature-card-info {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
 }
