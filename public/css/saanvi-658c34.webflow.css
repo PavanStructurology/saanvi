@@ -14814,3 +14814,6 @@ blockquote {
 .Servicesection{
   margin-top: 6%;
 }
+html {
+  scroll-behavior: smooth;
+}
