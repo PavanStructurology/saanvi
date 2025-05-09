@@ -1,6 +1,52 @@
 import Footer from "./Footer";
 import Header from "./Header";
+import React, { useState } from "react";
+
 const Home = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  const nextSlide = () => {
+    setCurrentSlide((prev) => (prev + 1) % testimonials.length);
+  };
+
+  const prevSlide = () => {
+    setCurrentSlide((prev) =>
+      prev === 0 ? testimonials.length - 1 : prev - 1
+    );
+  };
+  const testimonials = [
+    {
+      image: "images/5.jpg",
+      title: "Guajiro_1 MX 129MW",
+      subtitle: "Hyderabad India",
+      description:
+        "Saanvi Structural Soln provides solar design and engineering for residential and commercial projects, including fixed tilt/tracking systems, carports, and foundation expertise...",
+    },
+    {
+      image: "images/4b.jpg",
+      title: "Grand Avenue Lofts, Pheonix",
+      subtitle: "New York, New York",
+      description:
+        "Saanvi Structural Soln designs and engineers commercial and residential structures for various building types, including timber, steel, concrete, and masonry...",
+    },
+    {
+      image: "images/2t.jpg",
+      title: " Skyward NSB",
+      subtitle: "Miami, Florida 1897 N MAIN ST., SEARCY, AR 72143Proposed Overall Site",
+      description:
+        "Saanvi Structural Soln designs and engineers commercial and residential structures for various building types, including timber, steel, concrete, and masonry...",
+    }, {
+      image: "images/2.jpg",
+      title: " NX Horizon XTR_40",
+      subtitle: "Austin, Texas",
+      description:
+        "Saanvi Structural Soln designs and engineers commercial and residential structures for various building types, including timber, steel, concrete, and masonry...",
+    },
+
+    // Add the rest of your testimonial objects...
+  ];
+
+
   return (
     <>
       <Header />
@@ -157,90 +203,90 @@ const Home = () => {
         <section className="section clip">
           <h1 className="heading-19">SERVICES</h1>
           <div id="services" className="Service_wrapper" >
-              <div className="services-grid">
-                <div className="card-hover-item">
-                  <div className="services-card">
-                    <a href="/projects#Solarprojects" className="link-block-8 w-inline-block">
-                      <img
-                        src="images/1.jpg"
-                        alt="Solar"
-                        className="image-68"
-                      />
-                    </a>
-                    <h1 className="heading-30">SOLAR</h1>
-                    <div className="feature-card-info">
-                      <div className="card-button-wrapper">
-                        <div className="clip">
-                          <a href="/projects#Solarprojects" className="button grey-outline small w-inline-block">
-                            <div className="button-text">View</div>
-                          </a>
-                        </div>
+            <div className="services-grid">
+              <div className="card-hover-item">
+                <div className="services-card">
+                  <a href="/projects#Solarprojects" className="link-block-8 w-inline-block">
+                    <img
+                      src="images/1.jpg"
+                      alt="Solar"
+                      className="image-68"
+                    />
+                  </a>
+                  <h1 className="heading-30">SOLAR</h1>
+                  <div className="feature-card-info">
+                    <div className="card-button-wrapper">
+                      <div className="clip">
+                        <a href="/projects#Solarprojects" className="button grey-outline small w-inline-block">
+                          <div className="button-text">View</div>
+                        </a>
                       </div>
                     </div>
                   </div>
+                </div>
 
-                </div>
-                <div className="card-hover-item">
-                  <div className="services-card">
-                    <a
-                      href="/projects#Solarprojects"
-                      className="link-block-8 w-inline-block"
-                    >
-                      <img
-                        src="images/4b.jpg"
-                        loading="lazy"
-                        sizes="(max-width: 1279px) 100vw, 1280px"
-                        srcSet="images/4b-p-500.jpg 500w, images/4b-p-800.jpg 800w, images/4b-p-1080.jpg 1080w, images/4b.jpg 1280w"
-                        alt="BUildings"
-                        className="image-69"
-                      />
-                    </a>
-                    <h1 className="heading-30">Buildings</h1>
-                    <div className="feature-card-info">
-                      <div className="card-button-wrapper">
-                        <div className="clip">
-                          <a
-                            href="/projects#BuildingsProjects"
-                            className="button grey-outline small w-inline-block"
-                          >
-                            <div className="button-text">View</div>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="card-hover-item">
-                  <div className="services-card">
-                    <a
-                      href="/projects#Solarprojects"
-                      className="link-block-8 w-inline-block"
-                    >
-                      <img
-                        src="images/4t.jpg"
-                        loading="lazy"
-                        sizes="(max-width: 903px) 100vw, 903px"
-                        srcSet="images/4t-p-500.jpg 500w, images/4t.jpg 903w"
-                        alt="Telecommunication"
-                        className="image-70"
-                      />
-                    </a>
-                    <h1 className="heading-30">Telecommunication</h1>
-                    <div className="feature-card-info">
-                      <div className="card-button-wrapper">
-                        <div className="clip">
-                          <a
-                            href="/projects#TeleProjects"
-                            className="button grey-outline small w-inline-block"
-                          >
-                            <div className="button-text">View</div>
-                          </a>
-                        </div>
+              </div>
+              <div className="card-hover-item">
+                <div className="services-card">
+                  <a
+                    href="/projects#Solarprojects"
+                    className="link-block-8 w-inline-block"
+                  >
+                    <img
+                      src="images/4b.jpg"
+                      loading="lazy"
+                      sizes="(max-width: 1279px) 100vw, 1280px"
+                      srcSet="images/4b-p-500.jpg 500w, images/4b-p-800.jpg 800w, images/4b-p-1080.jpg 1080w, images/4b.jpg 1280w"
+                      alt="BUildings"
+                      className="image-69"
+                    />
+                  </a>
+                  <h1 className="heading-30">Buildings</h1>
+                  <div className="feature-card-info">
+                    <div className="card-button-wrapper">
+                      <div className="clip">
+                        <a
+                          href="/projects#BuildingsProjects"
+                          className="button grey-outline small w-inline-block"
+                        >
+                          <div className="button-text">View</div>
+                        </a>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
+              <div className="card-hover-item">
+                <div className="services-card">
+                  <a
+                    href="/projects#Solarprojects"
+                    className="link-block-8 w-inline-block"
+                  >
+                    <img
+                      src="images/4t.jpg"
+                      loading="lazy"
+                      sizes="(max-width: 903px) 100vw, 903px"
+                      srcSet="images/4t-p-500.jpg 500w, images/4t.jpg 903w"
+                      alt="Telecommunication"
+                      className="image-70"
+                    />
+                  </a>
+                  <h1 className="heading-30">Telecommunication</h1>
+                  <div className="feature-card-info">
+                    <div className="card-button-wrapper">
+                      <div className="clip">
+                        <a
+                          href="/projects#TeleProjects"
+                          className="button grey-outline small w-inline-block"
+                        >
+                          <div className="button-text">View</div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
         <section className="section video-section">
@@ -379,327 +425,50 @@ const Home = () => {
                   <div className="text-block-49">Pile Foundation</div>
                 </div>
                 <div className="w-layout-blockcontainer container-38 w-container">
-                  <a href="contact.html" className="button-12 w-button">
-                    Contact us
+                  <a href="contact.html" className="button grey-outline small w-inline-block">
+                    <div className="button-text">Contact us</div>
                   </a>
                 </div>
               </div>
             </div>
           </div>
         </section>
-        {/* <section className="section no-verticle-padding dark">
+        <section className="section no-verticle-padding dark">
           <div className="wrapper">
             <div className="testimonial-wrapper">
               <h1 className="heading-21">PROJECTS</h1>
-              <div
-                data-delay={4000}
-                data-animation="fade"
-                className="testimonial-slider w-slider"
-                data-autoplay="false"
-                data-easing="ease"
-                data-hide-arrows="false"
-                data-disable-swipe="true"
-                data-autoplay-limit={0}
-                data-nav-spacing={3}
-                data-duration={0}
-                data-infinite="true"
-              >
-                <div className="mask-2 w-slider-mask">
-                  <div className="testimonial-slide w-slide">
-                    <div className="testimonial-content">
-                      <div
-                        id="w-node-_5bea61f3-fc16-c4c0-6d1e-669bbd279dda-1300b8df"
-                        className="testimonial-column testimonial-image"
-                      >
-                        <div className="background-image testimonial-003">
-                          <div className="image-overlay">
-                            <img
-                              src="images/5.jpg"
-                              loading="lazy"
-                              width={360}
-                              sizes="(max-width: 479px) 100vw, 360px"
-                              alt="Guajiro"
-                              srcSet="images/5-p-500.jpg 500w, images/5.jpg 720w"
-                              className="image-63"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        id="w-node-_5bea61f3-fc16-c4c0-6d1e-669bbd279ddd-1300b8df"
-                        className="testimonial-column testimonial-name"
-                      >
-                        <div>
-                          <div className="clip">
-                            <h1 className="large-heading one">
-                              <strong className="bold-text-22">
-                                Guajiro_1 MX 129MW
-                              </strong>
-                            </h1>
-                          </div>
-                          <div className="clip">
-                            <h1 className="large-heading two" />
-                          </div>
-                        </div>
-                        <div
-                          id="w-node-_5bea61f3-fc16-c4c0-6d1e-669bbd279de4-1300b8df"
-                          className="clip"
-                        >
-                          <div className="subtitle white">Hyderabad India</div>
-                        </div>
-                      </div>
-                      <div
-                        id="w-node-_5bea61f3-fc16-c4c0-6d1e-669bbd279de7-1300b8df"
-                        className="testimonial-column testimonial-description"
-                      >
-                        <div className="clip">
-                          <div className="body-display white">
-                            Saanvi Structural Soln provides solar design and
-                            engineering for residential and commercial projects,
-                            including fixed tilt/tracking systems, carports, and
-                            foundation expertise (pile design, support pads).
-                            Our services also encompass peer reviews,
-                            independent assessments, and wind tunnel guidance​.
-                            <br />
-                          </div>
-                        </div>
-                        <a href="projects.html" className="button-3 w-button">
-                          View More Projects
-                        </a>
+              <div className="testimonial-slider-container">
+                <div className="testimonial-slider">
+                  {testimonials.map((t, index) => (
+                    <div
+                      className={`testimonial-slide ${index === currentSlide ? "active" : "inactive"
+                        }`}
+                      key={index}
+                    >
+                      <div className="testimonial-content">
+                        <img src={t.image} alt={t.title} className="testimonial-image" style={{ height: "inherit" ,borderRadius:"5px"}} />
+                        <h2 className="Project_Title" >{t.title}
+                          <h4 style={{ color: "#174b82" }}>{t.subtitle}</h4></h2>
+                        <p style={{ color: "#174b82", marginTop: "15%" }}>{t.description}</p>
                       </div>
                     </div>
-                  </div>
-                  <div className="testimonial-slide w-slide">
-                    <div className="testimonial-content">
-                      <div
-                        id="w-node-_5bea61f3-fc16-c4c0-6d1e-669bbd279df0-1300b8df"
-                        className="testimonial-column testimonial-image"
-                      >
-                        <div className="background-image testimonial-004">
-                          <div className="image-overlay">
-                            <img
-                              src="images/4b.jpg"
-                              loading="lazy"
-                              sizes="(max-width: 1279px) 100vw, 1280px"
-                              srcSet="images/4b-p-500.jpg 500w, images/4b-p-800.jpg 800w, images/4b-p-1080.jpg 1080w, images/4b.jpg 1280w"
-                              alt="BUildings"
-                              className="image-64"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        id="w-node-_5bea61f3-fc16-c4c0-6d1e-669bbd279df3-1300b8df"
-                        className="testimonial-column testimonial-name"
-                      >
-                        <div>
-                          <div className="clip">
-                            <h1 className="large-heading one">
-                              <strong>Grand Avenue Lofts, Pheonix</strong>
-                            </h1>
-                          </div>
-                        </div>
-                        <div
-                          id="w-node-_5bea61f3-fc16-c4c0-6d1e-669bbd279dfb-1300b8df"
-                          className="clip"
-                        >
-                          <div className="subtitle white">
-                            New York, New York
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        id="w-node-_5bea61f3-fc16-c4c0-6d1e-669bbd279dfe-1300b8df"
-                        className="testimonial-column testimonial-description"
-                      >
-                        <div className="clip">
-                          <div className="body-display white">
-                            Saanvi Structural Soln designs and engineers
-                            commercial and residential structures for various
-                            building types, including timber, steel, concrete,
-                            and masonry. We also offer specialty services like
-                            shade structure design and public art integration.
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="testimonial-slide w-slide">
-                    <div className="testimonial-content">
-                      <div
-                        id="w-node-_5bea61f3-fc16-c4c0-6d1e-669bbd279e07-1300b8df"
-                        className="testimonial-column testimonial-image"
-                      >
-                        <div className="background-image testimonial-001">
-                          <div className="image-overlay">
-                            <img
-                              src="images/2t.jpg"
-                              loading="lazy"
-                              sizes="(max-width: 643px) 100vw, 643px"
-                              srcSet="images/2t-p-500.jpg 500w, images/2t.jpg 643w"
-                              alt="Telecomm"
-                              className="image-65"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        id="w-node-_5bea61f3-fc16-c4c0-6d1e-669bbd279e0a-1300b8df"
-                        className="testimonial-column testimonial-name"
-                      >
-                        <div>
-                          <div className="clip">
-                            <h1 className="large-heading one">
-                              <strong>
-                                Skyward
-                                <br />
-                                NSB
-                              </strong>
-                            </h1>
-                          </div>
-                        </div>
-                        <div
-                          id="w-node-_5bea61f3-fc16-c4c0-6d1e-669bbd279e12-1300b8df"
-                          className="clip"
-                        >
-                          <div className="subtitle white">Miami, Florida</div>
-                        </div>
-                      </div>
-                      <div
-                        id="w-node-_5bea61f3-fc16-c4c0-6d1e-669bbd279e15-1300b8df"
-                        className="testimonial-column testimonial-description"
-                      >
-                        <div className="clip">
-                          <div className="body-display white">
-                            1897 N MAIN ST., SEARCY, AR 72143Proposed Overall
-                            Site
-                            <br />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="testimonial-slide w-slide">
-                    <div className="testimonial-content">
-                      <div
-                        id="w-node-_5bea61f3-fc16-c4c0-6d1e-669bbd279e1e-1300b8df"
-                        className="testimonial-column testimonial-image"
-                      >
-                        <div className="background-image testimonial-005">
-                          <div className="image-overlay">
-                            <img
-                              src="images/2.jpg"
-                              loading="lazy"
-                              alt="Solar"
-                              className="image-66"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        id="w-node-_5bea61f3-fc16-c4c0-6d1e-669bbd279e21-1300b8df"
-                        className="testimonial-column testimonial-name"
-                      >
-                        <div>
-                          <div className="clip">
-                            <h1 className="large-heading one">
-                              <strong>NX Horizon XTR_40</strong>
-                            </h1>
-                          </div>
-                        </div>
-                        <div
-                          id="w-node-_5bea61f3-fc16-c4c0-6d1e-669bbd279e29-1300b8df"
-                          className="clip"
-                        >
-                          <div className="subtitle white">Austin, Texas</div>
-                        </div>
-                      </div>
-                      <div
-                        id="w-node-_5bea61f3-fc16-c4c0-6d1e-669bbd279e2c-1300b8df"
-                        className="testimonial-column testimonial-description"
-                      >
-                        <div className="clip">
-                          <div className="body-display white">
-                            Saanvi Structural Soln provides solar design and
-                            engineering for residential and commercial projects,
-                            including fixed tilt/tracking systems, carports, and
-                            foundation expertise (pile design, support pads).
-                            Our services also encompass peer reviews,
-                            independent assessments, and wind tunnel guidance.
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="testimonial-slide w-slide">
-                    <div className="testimonial-content">
-                      <div
-                        id="w-node-_5bea61f3-fc16-c4c0-6d1e-669bbd279e35-1300b8df"
-                        className="testimonial-column testimonial-image"
-                      >
-                        <div className="background-image testimonial-002">
-                          <div className="image-overlay">
-                            <img
-                              src="images/4.jpg"
-                              loading="lazy"
-                              sizes="(max-width: 1279px) 100vw, 1280px"
-                              srcSet="images/4-p-500.jpg 500w, images/4-p-800.jpg 800w, images/4-p-1080.jpg 1080w, images/4.jpg 1280w"
-                              alt="solar4"
-                              className="image-67"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        id="w-node-_5bea61f3-fc16-c4c0-6d1e-669bbd279e38-1300b8df"
-                        className="testimonial-column testimonial-name"
-                      >
-                        <div>
-                          <div className="clip">
-                            <h1 className="large-heading one">
-                              <strong>Warwick Solar Farm UQ AUS</strong>
-                            </h1>
-                          </div>
-                        </div>
-                        <div
-                          id="w-node-_5bea61f3-fc16-c4c0-6d1e-669bbd279e40-1300b8df"
-                          className="clip"
-                        >
-                          <div className="subtitle white">
-                            Los Angeles, California
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        id="w-node-_5bea61f3-fc16-c4c0-6d1e-669bbd279e43-1300b8df"
-                        className="testimonial-column testimonial-description"
-                      >
-                        <div className="clip">
-                          <div className="body-display white">
-                            Saanvi Structural designs and engineers commercial
-                            and residential structures for various building
-                            types, including timber, steel, concrete, and
-                            masonry. We also offer specialty services like shade
-                            structure design and public art integration.
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  ))}
                 </div>
-                <div className="testimonial-arrow w-slider-arrow-left">
-                  <div className="rotate-text no-rotate-on-mobile">
-                    Previous
-                  </div>
+                <div className="Project_slide">
+                  <button className="testimonial-arrow" onClick={prevSlide}>
+                    {`P\nR\nE\nV\nI\nO\nU\nS`.split("\n").map((char, i) => (
+                      <div key={i}>{char}</div>
+                    ))}                  </button>
+                  <button className="testimonial-arrow1" onClick={nextSlide}>
+                  {`N\ne\nx\nt`.split("\n").map((char, i) => (
+                      <div key={i}>{char}</div>
+                    ))}     
+                  </button>
                 </div>
-                <div className="testimonial-arrow right-arrow w-slider-arrow-right">
-                  <div className="rotate-text no-rotate-on-mobile">Next</div>
-                </div>
-                <div className="slider-dots w-slider-nav w-round" />
-              </div>
+              </div>              
             </div>
           </div>
-        </section>*/}
+        </section>
         <section className="section-4">
           <div className="wrapper">
             <div className="testimonial-wrapper">
