@@ -1,3 +1,6 @@
+import useWebflowOnLoad from "../components/useWebflowReinit";
+// import useWebflowReinit from "../components/useWebflowReinit";
+// import useWebflowWaitForElement from "../components/useWebflowWaitForElement";
 import Footer from "./Footer";
 import Header from "./Header";
 import React, { useState } from "react";
@@ -43,7 +46,6 @@ const Home = () => {
         "Saanvi Structural Soln designs and engineers commercial and residential structures for various building types, including timber, steel, concrete, and masonry...",
     },
 
-    // Add the rest of your testimonial objects...
   ];
 
 
@@ -575,7 +577,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> 
       </div>
       <Footer />
     </>
