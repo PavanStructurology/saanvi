@@ -4726,6 +4726,7 @@ blockquote {
   font-size: 40px;
   line-height: 56px;
   display: block;
+  color: #174b82;
 }
 
 .button-2 {
@@ -5356,6 +5357,8 @@ blockquote {
 
 .submit-button-3 {
   background-color: #174b82;
+  margin-top: 39px;
+
 }
 
 .heading-18 {
@@ -6045,6 +6048,9 @@ blockquote {
   height: 100%;
   margin-bottom: 0;
   display: flex;
+  color: #174b82;
+  margin-top: 15%;
+  font-family: Ubuntu, Helvetica, sans-serif;
 }
 
 .team-slider {
@@ -12085,9 +12091,8 @@ blockquote {
   }
 
   .section.no-verticle-padding.dark {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-top: 28px;
+
+    padding-top: 125px;
   }
 
   .section.video-section {
@@ -12826,7 +12831,7 @@ blockquote {
   }
 
   .section-4 {
-    padding-top: 10px;
+    padding-top: 30px;
   }
 
   .grid-4 {
@@ -15216,4 +15221,14 @@ html {
   text-align: center;
   padding: 25px;
   margin-top: 50%;
+}
+.Project_description{
+  color: #174b82;
+  text-align: center;
+  padding: 25px;
+  margin-top: 40%;
+
+}
+.successtoast{
+  margin-top: 66px;
 }

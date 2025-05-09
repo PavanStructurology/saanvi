@@ -1,7 +1,64 @@
 import Footer from "./Footer"
 import Header from "./Header"
+import React, { useState } from "react";
 
 const Contact = () => {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [phone, setPhone] = useState('');
+  const [service, setService] = useState('SPile +');
+  const [description, setDescription] = useState('');
+  const [loading, setLoading] = useState(false);
+  const [fail, setFail] = useState(false)
+  const [success, setSuccuss] = useState(false)
+  const [emailerr, setEmailerr] = useState(false)
+  const [nameerr, setNameerr] = useState(false)
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    if (email == "") {
+      setEmailerr(true)
+      return
+    } else if (name == "") {
+      setNameerr(true)
+      return
+    }
+    else {
+      setLoading(true);
+      const data = {
+        Name: name,
+        Email: email,
+        Phone: phone,
+        Service: service,
+        Description: description,
+        site: true
+      };
+      try {
+        const res = await fetch('http://localhost:6062/auth/send-email', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(data),
+        });
+        if (res.ok) {
+          setName('');
+          setEmail('');
+          setPhone('');
+          setService('SPile +');
+          setDescription('');
+          setSuccuss(true);
+        } else {
+          setFail(true);
+        }
+      } catch (err) {
+        setFail(true);
+      } finally {
+        setLoading(false);
+      }
+    }
+
+  };
   return (
     <>
       <Header />
@@ -19,8 +76,8 @@ const Contact = () => {
                   <form
                     id="email-form"
                     name="email-form"
+                    onSubmit={handleSubmit}
                     data-name="Email Form"
-                    method="get"
                     className="form"
                     data-wf-page-id="67c002b32cafa0ea1300b8e7"
                     data-wf-element-id="c1386cff-6b52-7e7b-943b-f01eec937980"                  >
@@ -34,13 +91,19 @@ const Contact = () => {
                       <input
                         className="text-field w-input"
                         maxLength={256}
+                        onChange={(e) => setName(e.target.value)}
+                        value={name}
                         name="name"
                         data-name="Name"
-                        placeholder="Your first name"
+                        placeholder="Your Name"
                         type="text"
                         id="name"
                       />
-                      <input
+                      {nameerr &&
+                        <div style={{ color: "red" }}>
+                          Oops! Enter Name.
+                        </div>}
+                      {/* <input
                         className="text-field w-input"
                         maxLength={256}
                         name="name-2"
@@ -48,7 +111,7 @@ const Contact = () => {
                         placeholder="Your last name"
                         type="text"
                         id="name-2"
-                      />
+                      /> */}
                     </div>
                     <div className="field-wrapper">
                       <label
@@ -63,10 +126,17 @@ const Contact = () => {
                         maxLength={256}
                         name="name-3"
                         data-name="Name 3"
+                        value={email}
+
+                        onChange={(e) => setEmail(e.target.value)}
                         placeholder="Your email"
                         type="email"
                         id="name-3"
                       />
+                      {emailerr &&
+                        <div style={{ color: "red" }}>
+                          Oops! Enter Correct Email id.
+                        </div>}
                     </div>
                     <div className="field-wrapper">
                       <label
@@ -80,31 +150,51 @@ const Contact = () => {
                         placeholder="Example Text"
                         maxLength={5000}
                         id="field"
+                        value={description}
+
+                        onChange={(e) => setDescription(e.target.value)}
                         name="field"
                         data-name="field"
                         className="text-field large w-node-_9ecb47d5-8f4d-56b8-1721-4ed5246ec8ac-1300b8e7 w-input"
                         defaultValue={""}
                       />
                     </div>
+                    <label className="field-label-3 global">Choose Service</label>
+                    <select
+                      name="Service"
+                      className="text-field"
+                      value={service}
+                      onChange={(e) => setService(e.target.value)}
+                      required
+                    >
+                      <option value="SPile +">SPile +</option>
+                      <option value="Solar Project">Solar Project</option>
+                      <option value="Buildings">Buildings</option>
+                      <option value="Telecommunication">Telecommunication</option>
+                      <option value="Forensics">Forensics</option>
+                    </select>
                     <input
                       type="submit"
                       data-wait="Please wait..."
                       id="w-node-c1386cff-6b52-7e7b-943b-f01eec937987-1300b8e7"
                       className="submit-button w-button"
                       defaultValue="Submit"
+                      value={loading ? "Submitting..." : "Submit"}
+                      disabled={loading}
                     />
                   </form>
-                  <div className="utility-message w-form-done">
-                    <div className="success-wrapper">
-                      <h2>Thank you!</h2>
-                      <div className="body-display">
-                        Your message has been received.
-                      </div>
+
+                  {
+                    success && <div style={{ color: "green" }}>
+                      <div>Thank you! Your submission has been received!</div>
                     </div>
-                  </div>
-                  <div className="error-message w-form-fail">
-                    <div>Oops! Something went wrong while submitting the form.</div>
-                  </div>
+                  }
+                  {fail &&
+                    <div style={{ color: "red" }}>
+                      Oops! Something went wrong while submitting the form.
+                    </div>
+
+                  }
                 </div>
               </div>
               <div
