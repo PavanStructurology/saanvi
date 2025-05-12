@@ -270,7 +270,7 @@ const Home = () => {
                       className="image-68"
                     />
                   </a>
-                  <h1 className="heading-30">SOLAR</h1>
+                  <h1 className="heading-30">Solar</h1>
                   <div className="feature-card-info">
                     <div className="card-button-wrapper">
                       <div className="clip">
@@ -434,7 +434,7 @@ const Home = () => {
                   />
                   <div className="text-block-45">Structural Engineering</div>
                 </div>
-                <div className="w-layout-blockcontainer container-37 w-container">
+                <div className="w-layout-blockcontainer container-36 w-container">
                   <img
                     src="images/Untitled-design-5.png"
                     loading="lazy"
@@ -443,33 +443,35 @@ const Home = () => {
                     alt="Civil 3d"
                     className="image-58"
                   />
-                  <div className="text-block-47">Civil 3D</div>
+                  <div className="text-block-45">Civil 3D</div>
                 </div>
-                <div className="w-layout-blockcontainer container-39 w-container">
+                <div className="w-layout-blockcontainer container-36 w-container">
                   <img
                     src="images/land.png"
                     loading="lazy"
                     sizes="100vw"
                     srcSet="images/eb322c323c4798125b847fd465486e2c_land-p-500.png 500w, images/eb322c323c4798125b847fd465486e2c_land-p-800.png 800w, images/eb322c323c4798125b847fd465486e2c_land-p-1080.png 1080w, images/eb322c323c4798125b847fd465486e2c_land-p-1600.png 1600w, images/eb322c323c4798125b847fd465486e2c_land-p-2000.png 2000w, images/land.png 2048w"
                     alt="Land Deve"
-                    className="image-59"
+                    className="image-58"
                   />
-                  <div className="text-block-46">Land Development</div>
+                  <div className="text-block-45">Land Development</div>
                 </div>
-                <div className="w-layout-blockcontainer container-40 w-container">
+
+
+                <div className="w-layout-blockcontainer container-36 w-container">
                   <img
                     src="images/steel-draw.png"
                     loading="lazy"
                     sizes="100vw"
                     srcSet="images/449a06e93b80783a6b945b8ee5d3b114_steel-draw-p-500.png 500w, images/449a06e93b80783a6b945b8ee5d3b114_steel-draw-p-800.png 800w, images/449a06e93b80783a6b945b8ee5d3b114_steel-draw-p-1080.png 1080w, images/449a06e93b80783a6b945b8ee5d3b114_steel-draw-p-1600.png 1600w, images/449a06e93b80783a6b945b8ee5d3b114_steel-draw-p-2000.png 2000w, images/steel-draw.png 2048w"
                     alt="Steel Draw"
-                    className="image-60"
+                    className="image-57"
                   />
-                  <div className="text-block-48">Steel Soft Drawing</div>
+                  <div className="text-block-45">Steel Soft Drawing</div>
                 </div>
                 <div
                   id="w-node-_0feadf17-19ba-fed9-03ed-8ac6d137a790-1300b8df"
-                  className="w-layout-blockcontainer w-container"
+                  className="w-layout-blockcontainer container-36 w-container"
                 >
                   <img
                     src="images/Untitled-design-2.png"
@@ -477,12 +479,12 @@ const Home = () => {
                     sizes="100vw"
                     srcSet="images/Untitled-design-2-p-500.png 500w, images/Untitled-design-2-p-800.png 800w, images/Untitled-design-2.png 1000w"
                     alt="Pile Des"
-                    className="image-61"
+                    className="image-59"
                   />
-                  <div className="text-block-49">Pile Foundation</div>
+                  <div className="text-block-45">Pile Foundation</div>
                 </div>
-                <div className="w-layout-blockcontainer container-38 w-container">
-                  <a href="contact.html" className="button grey-outline small w-inline-block">
+                <div className="w-layout-blockcontainer container-36 w-container">
+                  <a href="contact.html" className="button grey-outline w-inline-block cont">
                     <div className="button-text">Contact us</div>
                   </a>
                 </div>

@@ -56,17 +56,11 @@
   --new: var(--dark-outline);
 }
 
-.w-layout-blockcontainer {
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-}
+.w-layout-blockcontainer {}
 
 .w-layout-grid {
-  grid-row-gap: 16px;
-  grid-column-gap: 16px;
-  grid-template-rows: auto auto;
-  grid-template-columns: 1fr 1fr;
+
+  grid-template-columns: 1fr 1fr 1fr;
   grid-auto-columns: 1fr;
   display: grid;
 }
@@ -985,7 +979,7 @@ blockquote {
   align-items: center;
   margin-top: auto;
   margin-bottom: 0;
-  padding: 5px 5vw 10px;
+  padding: 5px 8vw 10px;
   display: block;
   position: relative;
 }
@@ -1011,18 +1005,14 @@ blockquote {
   -webkit-text-fill-color: inherit;
   background-clip: border-box;
   flex-flow: row;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-top: 75px;
-  padding-bottom: 28px;
-  padding-left: 5vw;
+  padding: 68px 8vw 10px;
   display: block;
 }
 
 .section.video-section {
   z-index: 10;
   color: #fff;
-  margin-top: 0;
+    margin-top: -27px;
   padding-top: 0;
   padding-bottom: 28px;
   display: block;
@@ -1050,7 +1040,7 @@ blockquote {
   justify-content: flex-start;
   align-items: flex-start;
   margin-top: 0;
-  padding-top: 75px;
+  padding-top: 6px;
   padding-bottom: 28px;
   font-family: Ubuntu, Helvetica, sans-serif;
   display: block;
@@ -1328,17 +1318,13 @@ blockquote {
 }
 
 .hero-content-wrapper {
-  /* grid-column-gap: 80px;
-  grid-row-gap: 80px; */
+
   flex-flow: row;
-  grid-template-rows: auto;
-  grid-template-columns: 1fr;
-  grid-auto-columns: 1fr;
-  justify-content: flex-start;
+  width: 84%;
+  justify-content: space-between;
   align-items: center;
-  /* margin-top: 42px;
-  margin-left: -55px; */
-  font-family: Ubuntu, Helvetica, sans-serif;
+  margin-left: 8%;
+  font-family: "Ubuntu", Helvetica, sans-serif;
   display: flex;
 }
 
@@ -1596,11 +1582,7 @@ blockquote {
 }
 
 .button.grey-outline.small {
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-  width: 150px;
-  font-family: Ubuntu, Helvetica, sans-serif;
-  font-size: 11px;
+  width: 90%;
 }
 
 .button.grey-outline.small:hover {
@@ -4541,7 +4523,6 @@ blockquote {
 
 .image-4 {
   width: 44px;
-  padding-left: 3px;
 }
 
 .image-4:hover {
@@ -4812,21 +4793,7 @@ blockquote {
 }
 
 .grid-3 {
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-  text-align: center;
-  grid-template-rows: auto auto;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-auto-columns: 1fr;
-  height: 533px;
-  margin-top: 44px;
-  margin-bottom: 0;
-  margin-left: -28px;
-  padding-bottom: 0;
-  padding-left: 0;
-  font-family: Ubuntu, Helvetica, sans-serif;
-  font-weight: 400;
-  display: grid;
+  margin: 12px;
 }
 
 .image-9 {
@@ -5399,13 +5366,12 @@ blockquote {
   letter-spacing: 0;
   text-indent: 0;
   text-transform: uppercase;
-  margin-top: -42px;
   font-family: Ubuntu, Helvetica, sans-serif;
   font-size: 52px;
   font-weight: 700;
   line-height: 1.2em;
   color: #174b82;
-
+  padding-left: 3px;
 }
 
 .heading-20 {
@@ -7085,51 +7051,34 @@ blockquote {
 }
 
 .image-57 {
-  border-radius: 8px;
-  width: 104%;
-  max-width: none;
-  height: 76%;
+  border-radius: 6px;
+
 }
 
 .image-58 {
-  border-radius: 8px;
-  width: 112%;
-  max-width: none;
-  height: 76%;
-  margin-left: -14px;
-  padding-left: 0;
+  border-radius: 6px;
+
 }
 
 .image-59 {
-  border-radius: 8px;
-  width: 92%;
-  max-width: none;
-  height: 75%;
+  border-radius: 6px;
 }
 
 .image-60 {
-  border-radius: 8px;
-  width: 104%;
-  max-width: none;
-  height: 62%;
+  border-radius: 6px;
 }
 
 .image-61 {
-  border-radius: 8px;
-  width: 133%;
-  max-width: none;
-  height: 61%;
-  margin-left: -35px;
+  border-radius: 6px;
 }
 
 .container-36 {
-  max-width: none;
-  height: 100%;
+  padding: 6px;
 }
 
 .text-block-45 {
   margin-top: -31px;
-  margin-bottom: 0;
+  text-align: center;
   font-size: 28px;
 }
 
@@ -7459,13 +7408,7 @@ blockquote {
     margin-left: -20px;
   }
 
-  .grid-3 {
-    grid-column-gap: 28px;
-    grid-row-gap: 28px;
-    margin-bottom: 0;
-    margin-left: auto;
-    padding-left: 0;
-  }
+
 
   .heading-18 {
     letter-spacing: 0;
@@ -7478,9 +7421,8 @@ blockquote {
   }
 
   .heading-21 {
-    letter-spacing: .1em;
     text-indent: 1px;
-    margin-top: -53px;
+    margin-top: -98px;
     margin-left: 1px;
   }
 
@@ -7599,30 +7541,29 @@ blockquote {
   }
 
   .image-58 {
-    width: 114%;
+    width: 100%;
+    height: 101%;
+
   }
 
   .image-59 {
-    width: 90%;
+    width: 100%;
+    height: 90%;
   }
 
   .image-60 {
-    width: 104%;
-    height: 63%;
+    width: 100%;
+    height: 100%;
   }
 
   .image-61 {
-    width: 131%;
-    height: 63%;
+    width: 100%;
+    height: 100%;
   }
 
-  .container-36 {
-    padding-bottom: 0;
-  }
+  .container-36 {}
 
-  .text-block-45 {
-    margin-top: -36px;
-  }
+  .text-block-45 {}
 
   .text-block-46,
   .text-block-47 {
@@ -11056,13 +10997,12 @@ blockquote {
 
   .image-57 {
     width: 100%;
-    height: 75%;
+    height: 100%;
   }
 
   .image-58 {
     width: 100%;
-    height: 75%;
-    margin-left: 0;
+    height: 100%;
   }
 
   .image-59 {
@@ -11072,8 +11012,7 @@ blockquote {
   .image-60,
   .image-61 {
     width: 100%;
-    height: 75%;
-    margin-left: 0;
+    height: 100%;
   }
 
   .text-block-45 {
@@ -12259,12 +12198,7 @@ blockquote {
   }
 
   .button.grey-outline.small {
-    aspect-ratio: auto;
-    width: 91%;
-    margin-left: 0;
-    padding-left: 0;
-    padding-right: 0;
-    overflow: hidden;
+    width: 90%
   }
 
   .testimonial-wrapper {
@@ -13343,30 +13277,26 @@ blockquote {
 
   .image-57 {
     width: 100%;
-    height: auto;
+    height: 100%;
   }
 
   .image-58 {
     width: 100%;
-    height: auto;
-    margin-left: 0;
+    height: 100%;
   }
 
   .image-59 {
     width: 100%;
-    height: 144%;
-    max-height: 100%;
+    height: 100%;
   }
 
   .image-60 {
     width: 100%;
     height: 100%;
-    margin-left: 0;
   }
 
   .image-61 {
     width: 100%;
-    height: 86%;
     margin-top: 11px;
     margin-left: 0;
   }
@@ -15086,6 +15016,12 @@ blockquote {
   padding-left: 7.5%;
 }
 
+.cont {
+  width: 50%;
+  margin: 30%;
+  height: 16%;
+}
+
 .hr1 {
   width: 55%;
   margin-left: 6.5%;
@@ -15222,13 +15158,15 @@ html {
   padding: 25px;
   margin-top: 50%;
 }
-.Project_description{
+
+.Project_description {
   color: #174b82;
   text-align: center;
   padding: 25px;
   margin-top: 40%;
 
 }
-.successtoast{
+
+.successtoast {
   margin-top: 66px;
 }
