@@ -1012,7 +1012,7 @@ blockquote {
 .section.video-section {
   z-index: 10;
   color: #fff;
-    margin-top: -27px;
+  margin-top: -27px;
   padding-top: 0;
   padding-bottom: 28px;
   display: block;
@@ -1582,7 +1582,7 @@ blockquote {
 }
 
 .button.grey-outline.small {
-  width: 90%;
+  width: 100%;
 }
 
 .button.grey-outline.small:hover {
@@ -6247,7 +6247,8 @@ blockquote {
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 8px;margin-left: 8%;
+  border-radius: 8px;
+  margin-left: 8%;
   height: 238px;
   padding-top: 70px;
   width: 85%;
@@ -6705,7 +6706,7 @@ blockquote {
   flex-flow: row;
   justify-content: center;
   align-items: center;
-  margin-top: 25px;
+  margin-top: 5%;
   margin-bottom: 14px;
   display: flex;
 }
@@ -7122,8 +7123,8 @@ blockquote {
 
 .columns-8 {
   margin-top: 0;
-  padding-top: 75px;
-  padding-bottom: 100px;
+  padding-top: 5px;
+  padding-bottom: 42px;
 }
 
 .heading-93 {
@@ -15024,6 +15025,10 @@ blockquote {
   height: 16%;
 }
 
+.button-text:hover {
+  color: white;
+}
+
 .hr1 {
   width: 55%;
   margin-left: 6.5%;
@@ -15171,4 +15176,20 @@ html {
 
 .successtoast {
   margin-top: 66px;
+}
+
+.View_Pro {
+  color: rgb(23, 75, 130);
+  border: 1px solid gray;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.View_Pro:hover {
+  background-color: rgb(23, 75, 130);
+  color: white;
+  cursor: pointer;
+
 }

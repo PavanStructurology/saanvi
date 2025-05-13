@@ -4,6 +4,7 @@ import useWebflowOnLoad from "../components/useWebflowReinit";
 import Footer from "./Footer";
 import Header from "./Header";
 import React, { useState } from "react";
+import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
   const [name, setName] = useState('');
@@ -103,7 +104,28 @@ const Home = () => {
     }
 
   };
+  const navigate = useNavigate();
 
+  const handleClick = (e) => {
+    e.preventDefault();
+    navigate('/services', { replace: false });
+    setTimeout(() => {
+      const element = document.getElementById('buildings');
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 100); // slight delay for navigation
+  };
+    const handleClick1 = (e) => {
+    e.preventDefault();
+    navigate('/projects', { replace: false });
+    setTimeout(() => {
+      const element = document.getElementById('buildings');
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 100); // slight delay for navigation
+  };
   return (
     <>
       <Header />
@@ -170,7 +192,7 @@ const Home = () => {
                   className="hero-button-wrapper"
                 >
                   <a
-                    href="contact.html"
+                    href="/contact"
                     className="button white-outline w-inline-block"
                   >
                     <div className="button-text">Contact us</div>
@@ -198,16 +220,8 @@ const Home = () => {
                   className="image-6"
                 />
               </a>
-              <a
-                href="/services#buildings"
-                className="anchor-link w-inline-block"
-              >
-                <img
-                  src="images/buildings.png"
-                  loading="lazy"
-                  alt="buildings"
-                  className="image-4"
-                />
+              <a onClick={handleClick} className="anchor-link w-inline-block">
+                <img src="images/buildings.png" loading="lazy" alt="buildings" className="image-4" />
               </a>
               <a
                 href="/services#Telecommunications"
@@ -236,7 +250,7 @@ const Home = () => {
                 className="image-6"
               />
             </a>
-            <a href="/services#buildings" className="w-inline-block">
+            <a onClick={handleClick} className="w-inline-block">
               <img
                 src="images/buildings.png"
                 loading="lazy"
@@ -274,7 +288,7 @@ const Home = () => {
                   <div className="feature-card-info">
                     <div className="card-button-wrapper">
                       <div className="clip">
-                        <a href="/projects#Solarprojects" className="button grey-outline small w-inline-block">
+                        <a onClick={handleClick1} className="button grey-outline small w-inline-block">
                           <div className="button-text">View</div>
                         </a>
                       </div>
@@ -383,7 +397,7 @@ const Home = () => {
                 </h1>
                 <div className="div-block-17">
                   <a
-                    href="contact.html"
+                    href="/contact"
                     className="button white-outline w-inline-block"
                   >
                     <div className="button-text">Contact us</div>
@@ -484,7 +498,7 @@ const Home = () => {
                   <div className="text-block-45">Pile Foundation</div>
                 </div>
                 <div className="w-layout-blockcontainer container-36 w-container">
-                  <a href="contact.html" className="button grey-outline w-inline-block cont">
+                  <a href="/contact" className="button grey-outline w-inline-block cont">
                     <div className="button-text">Contact us</div>
                   </a>
                 </div>
@@ -507,8 +521,11 @@ const Home = () => {
                       <div className="testimonial-content">
                         <img src={t.image} alt={t.title} className="testimonial-image" style={{ height: "inherit", borderRadius: "5px" }} />
                         <h2 className="Project_Title" >{t.title}
-                          <h4 style={{ color: "#174b82" }}>{t.subtitle}</h4></h2>
-                        <p className="Project_description">{t.description}</p>
+                          <h4 style={{ color: "#174b82" }}>{t.subtitle}</h4>
+                        </h2>
+                        <p className="Project_description">{t.description}                  <br /> <br /> <br /> <br /> <br />
+                          <a className="View_Pro" href="/projects">View Projects</a>
+                        </p>
                       </div>
                     </div>
                   ))}

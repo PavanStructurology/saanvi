@@ -1,8 +1,21 @@
 import Header from "./Header"
 import Footer from "./Footer";
 import { motion } from "framer-motion";
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 const Services = () => {
+    const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const id = location.hash.replace('#', '');
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }, [location]);
     return (
         <>
             <Header />
