@@ -420,23 +420,23 @@ const Home = () => {
                   id="w-node-_13f2d22c-ce5c-8c3b-55d7-3dcac59e07d5-1300b8df"
                   className="w-layout-blockcontainer w-container"
                 />
-                <div className="w-layout-blockcontainer container-3 w-container">
+                <div>
                   <h1 className="heading-11">
                     10GW
                     <br />
                   </h1>
-                  <div className="text-block-5">Enegry</div>
+                  <div className="text-block-6">Enegry</div>
                 </div>
-                <div className="w-layout-blockcontainer w-container">
-                  <h1 className="heading-14">1500+</h1>
-                  <div className="text-block-4">Sites</div>
+                <div >
+                  <h1 className="heading-11">1500+</h1>
+                  <div className="text-block-6">Sites</div>
                 </div>
-                <div className="w-layout-blockcontainer container-5 w-container">
-                  <h1 className="heading-13">550+</h1>
+                <div >
+                  <h1 className="heading-11">550+</h1>
                   <div className="text-block-6">Buildings</div>
                 </div>
-                <div className="w-layout-blockcontainer container-5 w-container">
-                  <h1 className="heading-13">3000+</h1>
+                <div >
+                  <h1 className="heading-11">3000+</h1>
                   <div className="text-block-6">Telecomunications</div>
                 </div>
               </div>

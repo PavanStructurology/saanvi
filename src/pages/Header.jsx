@@ -71,13 +71,11 @@ const Header = () => {
                             <div className="navigation-links">
                                 <a
                                     href="/services"
-                                    target="_blank"
                                     className="nav-link w-inline-block"
                                 >
                                     <div className="button-text">Services</div>
                                     <div className="nav-link-hover-button" />
                                 </a>
-                                <link rel="prefetch" href="/services" />
                                 <a href="/projects" className="nav-link w-inline-block">
                                     <div className="button-text">Projects</div>
                                     <div className="nav-link-hover-button" />
