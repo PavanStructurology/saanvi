@@ -7,18 +7,29 @@ import { useLocation } from 'react-router-dom';
 const Services = () => {
     const location = useLocation();
 
-  useEffect(() => {
-    if (location.hash) {
-      const id = location.hash.replace('#', '');
-      const element = document.getElementById(id);
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
-      }
-    }
-  }, [location]);
+    useEffect(() => {
+        if (location.hash) {
+            const id = location.hash.replace('#', '');
+            const element = document.getElementById(id);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    }, [location]);
     return (
         <>
             <Header />
+            <div class="preloader">
+                <div class="preloader-middle">
+                    <div class="left-preloader"></div>
+                    <div class="middle-preloader">
+                        <div class="stripe-preloader left"></div>
+                        <div class="stripe-preloader middle"></div>
+                        <div class="stripe-preloader right"></div>
+                    </div>
+                    <div class="right-preloader"></div>
+                </div>
+            </div>
             <div className="page-wrapper">
                 <div className="sticky-section">
                     <div className="wrapper">
@@ -343,7 +354,7 @@ const Services = () => {
                                     <h1>
                                         <strong className="bold-text-15">Guajiro MX 129MW</strong>
                                     </h1>
-                                    <a href="/projects#Solarprojects" className="button-13 w-button">
+                                    <a href="/projects#Solarprojects" className="button-13 w-button" style={{ width: "11%" }}>
                                         View All
                                     </a>
                                 </div>
@@ -725,7 +736,7 @@ const Services = () => {
                                     </h1>
                                     <a
                                         href="/projects#BuildingsProjects"
-                                        className="button-13 w-button"
+                                        className="button-13 w-button" style={{ width: "12%" }}
                                     >
                                         View All
                                     </a>
@@ -1126,7 +1137,7 @@ const Services = () => {
                                             8113 Lemont Road, Darien, IL 60515Guyed Tower - Tower MOD
                                         </div>
                                     </div>
-                                    <a href="/projects#TeleProjects" className="button-13 w-button">
+                                    <a href="/projects#TeleProjects" className="button-13 w-button" style={{ width: "11%" }}>
                                         View All
                                     </a>
                                 </div>

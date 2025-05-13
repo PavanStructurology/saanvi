@@ -1,15 +1,23 @@
-import React from 'react'
+import teamMembers from "./TeamData";
+import { useNavigate } from 'react-router-dom';
 
 const Header = () => {
+    const navigate = useNavigate();
+
+    const OpenTeamPage = (member) => {
+  navigate('/teampage', { state: { member } });
+
+    }
+
     return (
-        <div>
+        <div className='body'>
             <div className="preloader">
                 <div className="preloader-middle">
                     <div className="left-preloader" />
                     <div className="middle-preloader">
-                        <div className="stripe-preloader left" />mk
-                        <div className="stripe-preloader middle" />k
-                        <div className="stripe-preloader right" />jk
+                        <div className="stripe-preloader left" />
+                        <div className="stripe-preloader middle" />
+                        <div className="stripe-preloader right" />
                     </div>
                     <div className="right-preloader" />
                 </div>
@@ -35,27 +43,41 @@ const Header = () => {
                                 loading="lazy"
                                 width={135}
                                 alt="saanvi"
-                                className="image"
+                                className="image1"
                             />
                         </a>
                         <div
+                            data-w-id="17c43587-c790-b4d8-1466-5f40336b9d4c"
                             className="full-menu-button"
                         >
-                            <div className='menu'></div>
-                            <div className='menu'></div>
-                            <div className='menu'></div>                        </div>
+                            <div
+                                data-is-ix2-target={1}
+                                className="menu-lottie"
+                                data-w-id="17c43587-c790-b4d8-1466-5f40336b9d4d"
+                                data-animation-type="lottie"
+                                data-src="documents/menu-nav.json"
+                                data-loop={0}
+                                data-direction={1}
+                                data-autoplay={0}
+                                data-renderer="svg"
+                                data-default-duration="2.875"
+                                data-duration={0}
+                                data-ix2-initial-state={0}
+                            />
+                        </div>
                     </div>
                     <div className="menu-wrapper">
                         <nav role="navigation" className="nav-menu w-nav-menu">
                             <div className="navigation-links">
                                 <a
                                     href="/services"
+                                    target="_blank"
                                     className="nav-link w-inline-block"
                                 >
                                     <div className="button-text">Services</div>
                                     <div className="nav-link-hover-button" />
                                 </a>
-                                <link rel="prefetch" href="/Projects" />
+                                <link rel="prefetch" href="/services" />
                                 <a href="/projects" className="nav-link w-inline-block">
                                     <div className="button-text">Projects</div>
                                     <div className="nav-link-hover-button" />
@@ -75,8 +97,7 @@ const Header = () => {
                         <div className="large-menu-wrapper">
                             <div
                                 id="w-node-_16738520-6de8-1fcc-6cbc-d48e45d42b91-336b9d43"
-                                className="mega-category-list"
-                            >
+                                className="mega-category-list"                            >
                                 <div className="stacked-description horizontal">
                                     <div
                                         id="w-node-_16738520-6de8-1fcc-6cbc-d48e45d42b93-336b9d43"
@@ -88,7 +109,25 @@ const Header = () => {
                                         View all
                                     </a>
                                 </div>
-                                <div className="div-block-30">
+                                {teamMembers.slice(0, 2).map((member) => (
+                                    <div className="div-block-30" key={member.id}>
+                                        <img
+                                            src={member.image}
+                                            loading="lazy"
+                                            width={45}
+                                            alt={member.name}
+                                            className="image"
+                                        />
+                                        <a
+                                            onClick={() => OpenTeamPage(member)}
+                                            className="post-list-item category-list-item w-inline-block"
+                                            style={{ cursor: 'pointer' }}
+                                        >
+                                            {member.name}
+                                        </a>
+                                    </div>
+                                ))}
+                                {/* <div className="div-block-30">
                                     <div>
                                         <img src="images/maf.avif"
                                             loading="lazy"
@@ -97,7 +136,7 @@ const Header = () => {
                                             className="image"></img>
                                     </div>
                                     <div>
-                                        <a href="#" className="post-list-item category-list-item w-inline-block">
+                                        <a onClick={(e)=>{OpenTeamPage("1")}} className="post-list-item category-list-item w-inline-block">
                                             Madhan Kumar K, MS, P.E.
                                         </a>
                                     </div>
@@ -111,12 +150,12 @@ const Header = () => {
                                             className="image"></img>
                                     </div>
                                     <div>
-                                        <a href="#" className="post-list-item category-list-item w-inline-block">
+                                        <a onClick={(e)=>{OpenTeamPage("2")}} className="post-list-item category-list-item w-inline-block">
                                             Sridhar Kethu P.E.
                                         </a>
                                     </div>
-                                </div>
-                                <div className="div-block-30">
+                                </div> */}
+                                {/* <div className="div-block-30">
                                     <div>
                                         <img src="images/sri.avif"
                                             loading="lazy"
@@ -129,7 +168,7 @@ const Header = () => {
                                             Sridhar Kethu P.E.
                                         </a>
                                     </div>
-                                </div>
+                                </div> */}
                             </div>
                             <div
                                 id="w-node-_17c43587-c790-b4d8-1466-5f40336b9d61-336b9d43"
@@ -147,7 +186,7 @@ const Header = () => {
                                     </a>
                                 </div>
                                 <div className="div-block-30">
-                                    
+
                                     <div>
                                         <a href="#" className="post-list-item category-list-item w-inline-block">
                                             SOLAR
@@ -155,14 +194,14 @@ const Header = () => {
                                     </div>
                                 </div>
                                 <div className="div-block-30">
-                                   
+
                                     <div>
                                         <a href="#" className="post-list-item category-list-item w-inline-block">
                                             BUILDINGS                                        </a>
                                     </div>
                                 </div>
                                 <div className="div-block-30">
-                                    
+
                                     <div>
                                         <a href="#" className="post-list-item category-list-item w-inline-block">
                                             TELLECOMMUNICATIONS                                        </a>
@@ -171,8 +210,7 @@ const Header = () => {
                             </div>
                             <div
                                 id="w-node-e16c4357-004d-8209-e100-36bb04545bd4-336b9d43"
-                                className="mega-category-list"
-                            >
+                                className="mega-category-list"                            >
                                 <div className="stacked-description horizontal">
                                     <div
                                         id="w-node-e16c4357-004d-8209-e100-36bb04545bd6-336b9d43"
@@ -181,7 +219,7 @@ const Header = () => {
                                         Blogs
                                     </div>
                                     <a
-                                        href="index.html"
+                                        href="/"
                                         aria-current="page"
                                         className="button-14 w-button w--current"
                                     >
@@ -246,35 +284,36 @@ const Header = () => {
                                         />
                                     </div>
                                     <nav className="dropdown-list w-dropdown-list">
-                                        <div className="collection-list-wrapper-4 w-dyn-list">
-                                            <div
-                                                role="list"
-                                                className="mega-menu-list-wrapper w-dyn-items"
-                                            >
-                                                <div
-                                                    role="listitem"
-                                                    className="menu-collection-list-item w-dyn-item"
-                                                >
-                                                    <a
-                                                        href="#"
-                                                        className="post-list-item category-list-item w-inline-block"
-                                                    >
-                                                        <div className="stacked-description horizontal">
-                                                            <div className="list-item-text w-dyn-bind-empty" />
-                                                            <div
-                                                                id="w-node-_7a338548-6995-26a0-d4df-2c2b4c59a395-4c59a38f"
-                                                                className="subtitle w-dyn-bind-empty"
-                                                            />
-                                                        </div>
-                                                    </a>
-                                                </div>
+                                        <div className="div-block-30">
+                                            <div>
+                                                <img src="images/maf.avif"
+                                                    loading="lazy"
+                                                    width={45}
+                                                    alt="saanvi"
+                                                    className="image"></img>
                                             </div>
-                                            <div className="w-dyn-empty">
-                                                <div>No items found.</div>
+                                            <div>
+                                                <a href="#" className="post-list-item category-list-item w-inline-block">
+                                                    Madhan Kumar K, MS, P.E.
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div className="div-block-30">
+                                            <div>
+                                                <img src="images/sri.avif"
+                                                    loading="lazy"
+                                                    width={45}
+                                                    alt="saanvi"
+                                                    className="image"></img>
+                                            </div>
+                                            <div>
+                                                <a href="#" className="post-list-item category-list-item w-inline-block">
+                                                    Sridhar Kethu P.E.
+                                                </a>
                                             </div>
                                         </div>
                                         <a
-                                            href="team.html"
+                                            href="/team"
                                             className="post-list-item category-list-item w-inline-block"
                                         >
                                             <div>About us</div>
@@ -311,20 +350,26 @@ const Header = () => {
                                         />
                                     </div>
                                     <nav className="dropdown-list w-dropdown-list">
-                                        <div className="collection-list-wrapper-3 w-dyn-list">
-                                            <div
-                                                role="list"
-                                                className="mega-menu-list-wrapper w-dyn-items"
-                                            >
-                                                <div
-                                                    role="listitem"
-                                                    className="menu-collection-list-item w-dyn-item"
-                                                >
-                                                    <div className="text-block-38 w-dyn-bind-empty" />
-                                                </div>
+                                        <div className="div-block-30">
+
+                                            <div>
+                                                <a href="#" className="post-list-item category-list-item w-inline-block">
+                                                    SOLAR
+                                                </a>
                                             </div>
-                                            <div className="w-dyn-empty">
-                                                <div>No items found.</div>
+                                        </div>
+                                        <div className="div-block-30">
+
+                                            <div>
+                                                <a href="#" className="post-list-item category-list-item w-inline-block">
+                                                    BUILDINGS                                        </a>
+                                            </div>
+                                        </div>
+                                        <div className="div-block-30">
+
+                                            <div>
+                                                <a href="#" className="post-list-item category-list-item w-inline-block">
+                                                    TELLECOMMUNICATIONS                                        </a>
                                             </div>
                                         </div>
                                         <a
@@ -367,36 +412,12 @@ const Header = () => {
                                     </div>
                                     <nav className="dropdown-list w-dropdown-list">
                                         <div className="w-dyn-list">
-                                            <div
-                                                role="list"
-                                                className="mega-menu-list-wrapper w-dyn-items"
-                                            >
-                                                <div
-                                                    role="listitem"
-                                                    className="menu-collection-list-item w-dyn-item"
-                                                >
-                                                    <a
-                                                        href="#"
-                                                        className="post-list-item category-list-item w-inline-block"
-                                                    >
-                                                        <div className="stacked-description">
-                                                            <div className="list-item-text w-dyn-bind-empty" />
-                                                        </div>
-                                                        <img
-                                                            src="images/arrow-right48x482x.svg"
-                                                            loading="lazy"
-                                                            id="w-node-_4541705a-de97-7f82-8818-9c9145464680-4546467a"
-                                                            alt="arrow"
-                                                            className="list-item-arrow"
-                                                        />
-                                                    </a>
-                                                </div>
-                                            </div>
+
                                             <div className="w-dyn-empty">
                                                 <div>No items found.</div>
                                             </div>
                                         </div>
-                                        <a
+                                        {/* <a
                                             href="#"
                                             className="post-list-item category-list-item w-inline-block"
                                         >
@@ -408,7 +429,7 @@ const Header = () => {
                                                 alt="arrow"
                                                 className="list-item-arrow"
                                             />
-                                        </a>
+                                        </a> */}
                                     </nav>
                                 </div>
                             </div>
@@ -437,7 +458,7 @@ const Header = () => {
                     <div className="mega-menu-overlay" />
                 </div>
             </div>
-        </div>
+        </div >
     )
 }
 

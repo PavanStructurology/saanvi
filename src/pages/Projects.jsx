@@ -134,8 +134,19 @@ const Projects = () => {
     return (
         <>
             <Header />
-
+ <div class="preloader">
+    <div class="preloader-middle">
+      <div class="left-preloader"></div>
+      <div class="middle-preloader">
+        <div class="stripe-preloader left"></div>
+        <div class="stripe-preloader middle"></div>
+        <div class="stripe-preloader right"></div>
+      </div>
+      <div class="right-preloader"></div>
+    </div>
+  </div>
             <div className="page-wrapper">
+               
                 <h className="Contact">PROJECTS</h>
                 <hr className="hr1" />
                 <section id="Solarprojects" >

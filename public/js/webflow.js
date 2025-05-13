@@ -53667,9 +53667,9 @@ spurious results.`);
               .data("turnstile-sitekey");
             var E = /list-manage[1-9]?.com/i,
               T = t.debounce(function () {
-                M(
-                  "Oops! This page has improperly configured forms. Please contact your website administrator to fix this issue."
-                );
+                // M(
+                //   "Oops! This page has improperly configured forms. Please contact your website administrator to fix this issue."
+                // );
               }, 100);
             function v() {
               if (

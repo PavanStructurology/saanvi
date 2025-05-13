@@ -116,7 +116,7 @@ const Home = () => {
       }
     }, 100); // slight delay for navigation
   };
-    const handleClick1 = (e) => {
+  const handleClick1 = (e) => {
     e.preventDefault();
     navigate('/projects', { replace: false });
     setTimeout(() => {
@@ -130,6 +130,17 @@ const Home = () => {
     <>
       <Header />
       <div className="page-wrapper">
+        <div class="preloader">
+          <div class="preloader-middle">
+            <div class="left-preloader"></div>
+            <div class="middle-preloader">
+              <div class="stripe-preloader left"></div>
+              <div class="stripe-preloader middle"></div>
+              <div class="stripe-preloader right"></div>
+            </div>
+            <div class="right-preloader"></div>
+          </div>
+        </div>
         <section
           className="hero-content-wrapper"
         >
@@ -510,8 +521,18 @@ const Home = () => {
           <div className="wrapper">
             <div className="testimonial-wrapper">
               <h1 className="heading-21">PROJECTS</h1>
+                
               <div className="testimonial-slider-container">
+                 <div className="Project_slide1">
+                  <button className="testimonial-arrow3" onClick={prevSlide}>
+                    <div >PREVIOUS</div>
+                  </button>
+                  <button className="testimonial-arrow4" onClick={nextSlide}>
+                      <div >Next</div>
+                  </button>
+                </div>
                 <div className="testimonial-slider">
+                 
                   {testimonials.map((t, index) => (
                     <div
                       className={`testimonial-slide ${index === currentSlide ? "active" : "inactive"
@@ -521,10 +542,17 @@ const Home = () => {
                       <div className="testimonial-content">
                         <img src={t.image} alt={t.title} className="testimonial-image" style={{ height: "inherit", borderRadius: "5px" }} />
                         <h2 className="Project_Title" >{t.title}
-                          <h4 style={{ color: "#174b82" }}>{t.subtitle}</h4>
+                          <span style={{ color: "#174b82" }}>{t.subtitle}</span>
                         </h2>
                         <p className="Project_description">{t.description}                  <br /> <br /> <br /> <br /> <br />
-                          <a className="View_Pro" href="/projects">View Projects</a>
+                          <div className="div-block-100">
+                            <a
+                              href="/projects"
+                              className="button white-outline w-inline-block"
+                            >
+                              <div className="button-text">View Projects</div>
+                            </a>
+                          </div>
                         </p>
                       </div>
                     </div>
@@ -541,10 +569,12 @@ const Home = () => {
                     ))}
                   </button>
                 </div>
+              
               </div>
             </div>
           </div>
         </section>
+
         <section className="section-4">
           <div className="wrapper">
             <div className="testimonial-wrapper">
