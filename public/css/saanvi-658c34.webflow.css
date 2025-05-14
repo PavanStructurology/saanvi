@@ -8550,7 +8550,7 @@ blockquote {
   .image-74 {
     border-radius: 120px;
     width: 350px;
-    height: 195px;
+    height: 148px;
   }
 
   .columns-9 {
@@ -12086,7 +12086,7 @@ blockquote {
     flex-flow: column;
     justify-content: center;
     align-items: center;
-    /* width: 39vh; */
+    width: 27vh;
     height: auto;
     margin-top: 0;
     margin-left: 0;
@@ -13226,7 +13226,6 @@ blockquote {
   }
 
   .div-block-36 {
-    width: auto;
   }
 
   .image-57 {
