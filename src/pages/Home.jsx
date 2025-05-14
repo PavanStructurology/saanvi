@@ -1,17 +1,17 @@
-import useWebflowOnLoad from "../components/useWebflowReinit";
+// import useWebflowOnLoad from "../components/useWebflowReinit";
 // import useWebflowReinit from "../components/useWebflowReinit";
 // import useWebflowWaitForElement from "../components/useWebflowWaitForElement";
 import Footer from "./Footer";
 import Header from "./Header";
 import React, { useState } from "react";
-import { useNavigate } from 'react-router-dom';
-
+import { useNavigate } from "react-router-dom";
+import "./Home.css";
 const Home = () => {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [phone, setPhone] = useState('');
-  const [service, setService] = useState('SPile +');
-  const [description, setDescription] = useState('');
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [service, setService] = useState("SPile +");
+  const [description, setDescription] = useState("");
   const [currentSlide, setCurrentSlide] = useState(0);
   const [loading, setLoading] = useState(false);
 
@@ -42,33 +42,33 @@ const Home = () => {
     {
       image: "images/2t.jpg",
       title: " Skyward NSB",
-      subtitle: "Miami, Florida 1897 N MAIN ST., SEARCY, AR 72143Proposed Overall Site",
+      subtitle:
+        "Miami, Florida 1897 N MAIN ST., SEARCY, AR 72143Proposed Overall Site",
       description:
         "Saanvi Structural Soln designs and engineers commercial and residential structures for various building types, including timber, steel, concrete, and masonry...",
-    }, {
+    },
+    {
       image: "images/2.jpg",
       title: " NX Horizon XTR_40",
       subtitle: "Austin, Texas",
       description:
         "Saanvi Structural Soln designs and engineers commercial and residential structures for various building types, including timber, steel, concrete, and masonry...",
     },
-
   ];
-  const [fail, setFail] = useState(false)
-  const [success, setSuccuss] = useState(false)
-  const [emailerr, setEmailerr] = useState(false)
-  const [nameerr, setNameerr] = useState(false)
+  const [fail, setFail] = useState(false);
+  const [success, setSuccuss] = useState(false);
+  const [emailerr, setEmailerr] = useState(false);
+  const [nameerr, setNameerr] = useState(false);
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     if (email == "") {
-      setEmailerr(true)
-      return
+      setEmailerr(true);
+      return;
     } else if (name == "") {
-      setNameerr(true)
-      return
-    }
-    else {
+      setNameerr(true);
+      return;
+    } else {
       setLoading(true);
       const data = {
         Name: name,
@@ -76,60 +76,60 @@ const Home = () => {
         Phone: phone,
         Service: service,
         Description: description,
-        site: true
+        site: true,
       };
       try {
-        const res = await fetch('http://localhost:6062/auth/send-email', {
-          method: 'POST',
+        const res = await fetch("http://localhost:6062/auth/send-email", {
+          method: "POST",
           headers: {
-            'Content-Type': 'application/json',
+            "Content-Type": "application/json",
           },
           body: JSON.stringify(data),
         });
         if (res.ok) {
-          setName('');
-          setEmail('');
-          setPhone('');
-          setService('SPile +');
-          setDescription('');
+          setName("");
+          setEmail("");
+          setPhone("");
+          setService("Solar");
+          setDescription("");
           setSuccuss(true);
         } else {
           setFail(true);
         }
       } catch (err) {
+        console.log(err);
         setFail(true);
       } finally {
         setLoading(false);
       }
     }
-
   };
   const navigate = useNavigate();
 
   const handleClick = (e) => {
     e.preventDefault();
-    navigate('/services', { replace: false });
+    navigate("/services", { replace: false });
     setTimeout(() => {
-      const element = document.getElementById('buildings');
+      const element = document.getElementById("buildings");
       if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
+        element.scrollIntoView({ behavior: "smooth" });
       }
     }, 100); // slight delay for navigation
   };
   const handleClick1 = (e) => {
     e.preventDefault();
-    navigate('/projects', { replace: false });
+    navigate("/projects", { replace: false });
     setTimeout(() => {
-      const element = document.getElementById('buildings');
+      const element = document.getElementById("buildings");
       if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
+        element.scrollIntoView({ behavior: "smooth" });
       }
     }, 100); // slight delay for navigation
   };
   return (
     <>
       <Header />
-      <div className="page-wrapper">
+      <div className="page-wrapper" style={{marginTop:"96px"}}>
         <div class="preloader">
           <div class="preloader-middle">
             <div class="left-preloader"></div>
@@ -141,13 +141,12 @@ const Home = () => {
             <div class="right-preloader"></div>
           </div>
         </div>
-        <section
-          className="hero-content-wrapper"
-        >
-          <div className="w-layout-blockcontainer container-34 w-container">
+        <section className="hero-content-wrapper" style={{margin:"auto"}}>
+          {/* <div className="w-layout-blockcontainer container-34 w-container"> */}
+          <div className="flex flex-col gap-4 w-full">
             <div className="div-block-39">
-              <div className="clip">
-                <div className="text-block-3">
+              <div className="clip max-[520px]:mx-auto">
+                <div className="text-block-3 text-block-real">
                   Consulting Structural Engineers
                 </div>
               </div>
@@ -164,7 +163,7 @@ const Home = () => {
                   //     "translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 10deg)",
                   //   opacity: 0,
                   // }}
-                  className="xxl-heading one"
+                  className="xxl-heading one "
                 >
                   SAANVI
                 </h1>
@@ -200,7 +199,11 @@ const Home = () => {
                   //     "translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 10deg)",
                   //   opacity: 0,
                   // }}
-                  className="hero-button-wrapper"
+                  className="hero-button-wrapper max-[520px]:flex-col max-[520px]:mx-auto"
+                  style={{
+                    maxWidth: "446px",
+                    width: "100%",
+                  }}
                 >
                   <a
                     href="/contact"
@@ -218,10 +221,7 @@ const Home = () => {
               </div>
             </div>
             <div className="div-block-42">
-              <a
-                href="/services#Solar"
-                className="anchor-link w-inline-block"
-              >
+              <a href="/services#Solar" className="anchor-link w-inline-block">
                 <img
                   src="images/solar-panel-vector-icon.jpg"
                   loading="lazy"
@@ -232,7 +232,12 @@ const Home = () => {
                 />
               </a>
               <a onClick={handleClick} className="anchor-link w-inline-block">
-                <img src="images/buildings.png" loading="lazy" alt="buildings" className="image-4" />
+                <img
+                  src="images/buildings.png"
+                  loading="lazy"
+                  alt="buildings"
+                  className="image-4"
+                />
               </a>
               <a
                 href="/services#Telecommunications"
@@ -247,18 +252,17 @@ const Home = () => {
               </a>
             </div>
           </div>
-          <div className="w-layout-blockcontainer container-8 w-container">
-            <a
-              href="/services#Solar"
-              className="anchor-link w-inline-block"
-            >
+          <div className="flex h-full gap-4 flex-col max-[767px]:hidden">
+            <a href="/services#Solar" className="anchor-link w-inline-block">
               <img
                 src="images/solar-panel-vector-icon.jpg"
                 loading="lazy"
                 sizes="(max-width: 767px) 100vw, (max-width: 991px) 95vw, 940px"
                 srcSet="images/solar-panel-vector-icon-p-500.jpg 500w, images/solar-panel-vector-icon-p-800.jpg 800w, images/solar-panel-vector-icon.jpg 980w"
                 alt="solar-panel-vector-icon"
-                className="image-6"
+                className="w-[60px] transition-all hover:scale-105 cursor-pointer"
+
+                // className="image-6"
               />
             </a>
             <a onClick={handleClick} className="w-inline-block">
@@ -266,110 +270,124 @@ const Home = () => {
                 src="images/buildings.png"
                 loading="lazy"
                 alt="buildings"
-                className="image-4"
+                className="w-[60px] p-[5px] transition-all hover:scale-105 cursor-pointer"
+
+                // className="image-4"
               />
             </a>
-            <a
-              href="/services#Telecommunications"
-              className="w-inline-block"
-            >
+            <a href="/services#Telecommunications" className="w-inline-block">
               <img
                 src="images/tele.png"
                 loading="lazy"
                 alt="Telecommunication"
-                className="image-5"
+                className="w-[60px] p-[5px] transition-all hover:scale-105 cursor-pointer"
+                // className="image-5"
               />
             </a>
           </div>
         </section>
-        <section className="section clip">
+        <section className="section clip" style={{ marginTop: "50px" }}>
           <h1 className="heading-19">SERVICES</h1>
-          <div id="services" className="Service_wrapper" >
-            <div className="services-grid">
-              <div className="card-hover-item">
-                <div className="services-card">
-                  <a href="/projects#Solarprojects" className="link-block-8 w-inline-block">
-                    <img
-                      src="images/1.jpg"
-                      alt="Solar"
-                      className="image-68"
-                    />
-                  </a>
-                  <h1 className="heading-30">Solar</h1>
-                  <div className="feature-card-info">
-                    <div className="card-button-wrapper">
-                      <div className="clip">
-                        <a onClick={handleClick1} className="button grey-outline small w-inline-block">
-                          <div className="button-text">View</div>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-              <div className="card-hover-item">
-                <div className="services-card">
-                  <a
-                    href="/projects#Solarprojects"
-                    className="link-block-8 w-inline-block"
-                  >
-                    <img
-                      src="images/4b.jpg"
-                      loading="lazy"
-                      sizes="(max-width: 1279px) 100vw, 1280px"
-                      srcSet="images/4b-p-500.jpg 500w, images/4b-p-800.jpg 800w, images/4b-p-1080.jpg 1080w, images/4b.jpg 1280w"
-                      alt="BUildings"
-                      className="image-69"
-                    />
-                  </a>
-                  <h1 className="heading-30">Buildings</h1>
-                  <div className="feature-card-info">
-                    <div className="card-button-wrapper">
-                      <div className="clip">
-                        <a
-                          href="/projects#BuildingsProjects"
-                          className="button grey-outline small w-inline-block"
-                        >
-                          <div className="button-text">View</div>
-                        </a>
-                      </div>
+          {/* <div id="services" className="Service_wrapper" > */}
+          <div
+            className="grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 lg:justify-center gap-4 my-6"
+            style={{ display: "grid" }}
+          >
+            {/* <div className="grid-cols-2 gap-4 my-6" style={{display:"grid"}}> */}
+            <div className="card-hover-item" style={{ width: "100%" }}>
+              <div
+                className="services-card"
+                style={{ padding: "0px", width: "100%" }}
+              >
+                <a
+                  href="/projects#Solarprojects"
+                  className="link-block-8 w-inline-block"
+                >
+                  <img src="images/1.jpg" alt="Solar" className="image-68" />
+                </a>
+                <h1 className="heading-30">Solar</h1>
+                <div className="feature-card-info">
+                  <div className="card-button-wrapper">
+                    <div className="clip">
+                      <a
+                        onClick={handleClick1}
+                        className="button grey-outline small w-inline-block"
+                      >
+                        <div className="button-text">View</div>
+                      </a>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className="card-hover-item">
-                <div className="services-card">
-                  <a
-                    href="/projects#Solarprojects"
-                    className="link-block-8 w-inline-block"
-                  >
-                    <img
-                      src="images/4t.jpg"
-                      loading="lazy"
-                      sizes="(max-width: 903px) 100vw, 903px"
-                      srcSet="images/4t-p-500.jpg 500w, images/4t.jpg 903w"
-                      alt="Telecommunication"
-                      className="image-70"
-                    />
-                  </a>
-                  <h1 className="heading-30">Telecommunication</h1>
-                  <div className="feature-card-info">
-                    <div className="card-button-wrapper">
-                      <div className="clip">
-                        <a
-                          href="/projects#TeleProjects"
-                          className="button grey-outline small w-inline-block"
-                        >
-                          <div className="button-text">View</div>
-                        </a>
-                      </div>
+            </div>
+            <div className="card-hover-item" style={{ width: "100%" }}>
+              <div
+                className="services-card"
+                style={{ padding: "0px", width: "100%" }}
+              >
+                <a
+                  href="/projects#Solarprojects"
+                  className="link-block-8 w-inline-block"
+                >
+                  <img
+                    src="images/4b.jpg"
+                    loading="lazy"
+                    sizes="(max-width: 1279px) 100vw, 1280px"
+                    srcSet="images/4b-p-500.jpg 500w, images/4b-p-800.jpg 800w, images/4b-p-1080.jpg 1080w, images/4b.jpg 1280w"
+                    alt="BUildings"
+                    className="image-69"
+                  />
+                </a>
+                <h1 className="heading-30">Buildings</h1>
+                <div className="feature-card-info">
+                  <div className="card-button-wrapper">
+                    <div className="clip">
+                      <a
+                        href="/projects#BuildingsProjects"
+                        className="button grey-outline small w-inline-block"
+                      >
+                        <div className="button-text">View</div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="card-hover-item" style={{ width: "100%" }}>
+              <div
+                className="services-card"
+                style={{ padding: "0px", width: "100%" }}
+              >
+                <a
+                  href="/projects#Solarprojects"
+                  className="link-block-8 w-inline-block"
+                >
+                  <img
+                    src="images/4t.jpg"
+                    loading="lazy"
+                    sizes="(max-width: 903px) 100vw, 903px"
+                    srcSet="images/4t-p-500.jpg 500w, images/4t.jpg 903w"
+                    alt="Telecommunication"
+                    className="image-70"
+                  />
+                </a>
+                <h1 className="heading-30">Telecommunication</h1>
+                <div className="feature-card-info">
+                  <div className="card-button-wrapper">
+                    <div className="clip">
+                      <a
+                        href="/projects#TeleProjects"
+                        className="button grey-outline small w-inline-block"
+                      >
+                        <div className="button-text">View</div>
+                      </a>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+          {/* </div> */}
         </section>
         <section className="section video-section">
           <h1 className="heading-19">ABOUT US</h1>
@@ -396,7 +414,7 @@ const Home = () => {
           <div className="wrapper">
             <div className="w-layout-blockcontainer container w-container">
               <div className="w-layout-blockcontainer container-7 w-container">
-                <h1 className="heading-8">
+                <h1 className="heading-8" style={{ marginTop: "-100px" }}>
                   Cutting-edge structural engineering solutions in solar farms,
                   telecom structures, and building designs, ensuring precision
                   and efficiency.
@@ -415,7 +433,10 @@ const Home = () => {
                   </a>
                 </div>
               </div>
-              <div className="w-layout-blockcontainer container-6 w-container">
+              <div
+                className="w-layout-blockcontainer container-6 w-container"
+                style={{ marginTop: -"142px" }}
+              >
                 <div
                   id="w-node-_13f2d22c-ce5c-8c3b-55d7-3dcac59e07d5-1300b8df"
                   className="w-layout-blockcontainer w-container"
@@ -427,15 +448,15 @@ const Home = () => {
                   </h1>
                   <div className="text-block-6">Enegry</div>
                 </div>
-                <div >
+                <div>
                   <h1 className="heading-11">1500+</h1>
                   <div className="text-block-6">Sites</div>
                 </div>
-                <div >
+                <div>
                   <h1 className="heading-11">550+</h1>
                   <div className="text-block-6">Buildings</div>
                 </div>
-                <div >
+                <div>
                   <h1 className="heading-11">3000+</h1>
                   <div className="text-block-6">Telecomunications</div>
                 </div>
@@ -443,15 +464,21 @@ const Home = () => {
             </div>
           </div>
         </section>
-        <section className="section no-verticle-padding dark">
+        <section
+          className="section no-verticle-padding dark"
+          style={{ marginTop: "40px" }}
+        >
           <div className="wrapper">
             <div className="testimonial-wrapper">
               <h1 className="heading-109">Competencies</h1>
               {/* <div className="w-layout-grid grid-3"> */}
-              <div className="grid grid-cols-3 max-[800px]:gird-cols-2 gap-4 pt-6 pb-16">
+              <div
+                className=" grid-cols-3 max-[1000px]:grid-cols-2 max-[600px]:grid-cols-1 gap-4 pt-6 pb-16"
+                style={{ display: "grid" }}
+              >
                 {/*                 <div >
- */}
-                <div className="relative" >
+                 */}
+                <div className="relative">
                   <img
                     src="images/Untitled-design-4.png"
                     loading="lazy"
@@ -459,19 +486,17 @@ const Home = () => {
                     srcSet="images/Untitled-design-4-p-500.png 500w, images/Untitled-design-4-p-800.png 800w, images/Untitled-design-4-p-1080.png 1080w, images/Untitled-design-4.png 1504w"
                     alt="Structural Eng"
                     className="w-full h-full rounded-lg transition-all hover:scale-95 transition-all hover:scale-95"
-                  // className="image-57"
-                  // style={{
-                  //   width: "447px",
-                  //   height: "254.67px"
-                  // }}
+                    // className="image-57"
+                    // style={{
+                    //   width: "447px",
+                    //   height: "254.67px"
+                    // }}
                   />
-                  <div className="absolute bottom-0 z-10 text-2xl text-center block w-full mb-2" >Structural Engineering</div>
+                  <div className="absolute bottom-0 z-10 text-2xl text-center block w-full mb-2">
+                    Structural Engineering
+                  </div>
                 </div>
-                <div
-                  className="relative"
-
-                >
-
+                <div className="relative">
                   <img
                     src="images/Untitled-design-5.png"
                     loading="lazy"
@@ -480,19 +505,17 @@ const Home = () => {
                     alt="Civil 3d"
                     className="w-full h-full rounded-lg transition-all hover:scale-95"
 
-                  // className="image-58"
-                  // style={{
-                  //   width: "447px",
-                  //   height: "254.67px"
-                  // }}
+                    // className="image-58"
+                    // style={{
+                    //   width: "447px",
+                    //   height: "254.67px"
+                    // }}
                   />
-                  <div className="absolute bottom-0 z-10 text-2xl text-center block w-full mb-2">Civil 3D</div>
+                  <div className="absolute bottom-0 z-10 text-2xl text-center block w-full mb-2">
+                    Civil 3D
+                  </div>
                 </div>
-                <div
-                  className="relative"
-
-                >
-
+                <div className="relative">
                   <img
                     src="images/land.png"
                     loading="lazy"
@@ -501,21 +524,18 @@ const Home = () => {
                     alt="Land Deve"
                     className="w-full h-full rounded-lg transition-all hover:scale-95"
 
-                  // className="image-58"
-                  // style={{
-                  //   width: "447px",
-                  //   height: "254.67px"
-                  // }}
+                    // className="image-58"
+                    // style={{
+                    //   width: "447px",
+                    //   height: "254.67px"
+                    // }}
                   />
-                  <div className="absolute bottom-0 z-10 text-2xl text-center block w-full mb-2">Land Development</div>
+                  <div className="absolute bottom-0 z-10 text-2xl text-center block w-full mb-2">
+                    Land Development
+                  </div>
                 </div>
 
-
-                <div
-
-                  className="relative"
-                >
-
+                <div className="relative">
                   <img
                     src="images/steel-draw.png"
                     loading="lazy"
@@ -524,13 +544,15 @@ const Home = () => {
                     alt="Steel Draw"
                     className="w-full h-full rounded-lg transition-all hover:scale-95"
 
-                  // className="image-57"
-                  // style={{
-                  //   width: "447px",
-                  //   height: "254.67px"
-                  // }}
+                    // className="image-57"
+                    // style={{
+                    //   width: "447px",
+                    //   height: "254.67px"
+                    // }}
                   />
-                  <div className="absolute bottom-0 z-10 text-2xl text-center block w-full mb-2" >Steel Soft Drawing</div>
+                  <div className="absolute bottom-0 z-10 text-2xl text-center block w-full mb-2">
+                    Steel Soft Drawing
+                  </div>
                 </div>
                 <div
                   // id="w-node-_0feadf17-19ba-fed9-03ed-8ac6d137a790-1300b8df"
@@ -545,17 +567,21 @@ const Home = () => {
                     alt="Pile Des"
                     className="w-full h-full rounded-lg transition-all hover:scale-95"
 
-                  // className="image-59 "
-                  // style={{
-                  //   width: "447px",
-                  //   height: "254.67px"
-                  // }}
+                    // className="image-59 "
+                    // style={{
+                    //   width: "447px",
+                    //   height: "254.67px"
+                    // }}
                   />
-                  <div className="absolute bottom-0 z-10 text-2xl text-center block w-full mb-2" >Pile Foundation</div>
+                  <div className="absolute bottom-0 z-10 text-2xl text-center block w-full mb-2">
+                    Pile Foundation
+                  </div>
                 </div>
-                <div >
-
-                  <a href="/contact" className="button grey-outline w-inline-block cont">
+                <div>
+                  <a
+                    href="/contact"
+                    className="button grey-outline w-inline-block cont"
+                  >
                     <div className="button-text">Contact us</div>
                   </a>
                 </div>
@@ -569,28 +595,64 @@ const Home = () => {
               <h1 className="heading-21">PROJECTS</h1>
 
               <div className="testimonial-slider-container">
-                <div className="Project_slide1">
-                  <button className="testimonial-arrow3" onClick={prevSlide}>
-                    <div >PREVIOUS</div>
-                  </button>
-                  <button className="testimonial-arrow4" onClick={nextSlide}>
-                    <div >Next</div>
-                  </button>
-                </div>
                 <div className="testimonial-slider">
-
                   {testimonials.map((t, index) => (
                     <div
-                      className={`testimonial-slide ${index === currentSlide ? "active" : "inactive"
-                        }`}
+                      className={`testimonial-slide ${
+                        index === currentSlide ? "active" : "inactive"
+                      }`}
                       key={index}
                     >
                       <div className="testimonial-content">
-                        <img src={t.image} alt={t.title} className="testimonial-image" style={{ height: "inherit", borderRadius: "5px" }} />
-                        <h2 className="Project_Title" >{t.title}
+                        <div className="relative">
+                          <img
+                            src={t.image}
+                            alt={t.title}
+                            className="testimonial-image "
+                            style={{ borderRadius: "5px", height: "100%" }}
+                          />
+                          {/* <div className="Project_slide1"> */}
+                          <div className="absolute top-0 left-0 flex flex-col justify-center items-center h-full gap-1 max-[1000px]:flex-row max-[1000px]:h-fit max-[1000px]:w-full">
+                            {/* <button
+                              className="testimonial-arrow3"
+                              onClick={prevSlide}
+                            >
+                              <div>PREVIOUS</div>
+                            </button>
+                            <button
+                              className="testimonial-arrow4"
+                              onClick={nextSlide}
+                            >
+                              <div>Next</div>
+                            </button> */}
+                            <button
+                              // className="testimonial-arrow"
+                              className="Arrow_btn1"
+                              onClick={prevSlide}
+                            >
+                              {`P\nR\nE\nV\nI\nO\nU\nS`
+                                .split("\n")
+                                .map((char, i) => (
+                                  <div key={i}>{char}</div>
+                                ))}{" "}
+                            </button>
+                            <button
+                              // className="testimonial-arrow1"
+                              className="Arrow_btn2"
+                              onClick={nextSlide}
+                            >
+                              {`N\ne\nx\nt`.split("\n").map((char, i) => (
+                                <div key={i}>{char}</div>
+                              ))}
+                            </button>
+                          </div>
+                        </div>
+                        <h2 className="Project_Title">
+                          {t.title}
                           <span style={{ color: "#174b82" }}>{t.subtitle}</span>
                         </h2>
-                        <p className="Project_description">{t.description}                  <br /> <br /> <br /> <br /> <br />
+                        <p className="Project_description">
+                          {t.description} <br /> <br /> <br /> <br /> <br />
                           <div className="div-block-100">
                             <a
                               href="/projects"
@@ -604,18 +666,18 @@ const Home = () => {
                     </div>
                   ))}
                 </div>
-                <div className="Project_slide">
+                {/* <div className="Project_slide">
                   <button className="testimonial-arrow" onClick={prevSlide}>
                     {`P\nR\nE\nV\nI\nO\nU\nS`.split("\n").map((char, i) => (
                       <div key={i}>{char}</div>
-                    ))}                  </button>
+                    ))}{" "}
+                  </button>
                   <button className="testimonial-arrow1" onClick={nextSlide}>
                     {`N\ne\nx\nt`.split("\n").map((char, i) => (
                       <div key={i}>{char}</div>
                     ))}
                   </button>
-                </div>
-
+                </div> */}
               </div>
             </div>
           </div>
@@ -631,18 +693,32 @@ const Home = () => {
                     help?
                   </strong>
                 </div>
-                <div className="form-block-3 w-form">
+                <div
+                  className="form-block-3 w-form"
+                  style={{
+                    height: "100%",
+                    marginTop: "0px",
+                  }}
+                >
                   <form
                     onSubmit={handleSubmit}
                     id="email-form"
                     name="email-form"
                     data-name="Email Form"
-
                     className="form-3"
                     data-wf-page-id="67c002b32cafa0ea1300b8df"
                     data-wf-element-id="13a2dd79-730f-d4c6-136a-13d6ffe0890a"
+                    style={{
+                      margin: "0px",
+                    }}
                   >
-                    <label htmlFor="name" className="field-label-6">
+                    <label
+                      htmlFor="name"
+                      className="field-label-6"
+                      style={{
+                        fontSize: "1.1rem",
+                      }}
+                    >
                       Name
                     </label>
                     <input
@@ -653,16 +729,26 @@ const Home = () => {
                       placeholder="Name"
                       type="text"
                       value={name}
-                      onChange={(e) => { setName(e.target.value); setNameerr(false) }}
-
+                      onChange={(e) => {
+                        setName(e.target.value);
+                        setNameerr(false);
+                      }}
+                      style={{
+                        fontSize: "1.1rem",
+                      }}
                       id="name"
                       required=""
                     />
-                    {nameerr &&
-                      <div style={{ color: "red" }}>
-                        Oops! Enter Name.
-                      </div>}
-                    <label htmlFor="email" className="field-label-7">
+                    {nameerr && (
+                      <div style={{ color: "red" }}>Oops! Enter Name.</div>
+                    )}
+                    <label
+                      htmlFor="email"
+                      className="field-label-7"
+                      style={{
+                        fontSize: "1.1rem",
+                      }}
+                    >
                       Email Address
                     </label>
                     <input
@@ -674,15 +760,27 @@ const Home = () => {
                       type="email"
                       id="email"
                       value={email}
-                      onChange={(e) => { setEmail(e.target.value); setEmailerr(false) }}
-
+                      style={{
+                        fontSize: "1.1rem",
+                      }}
+                      onChange={(e) => {
+                        setEmail(e.target.value);
+                        setEmailerr(false);
+                      }}
                       required=""
                     />
-                    {emailerr &&
+                    {emailerr && (
                       <div style={{ color: "red" }}>
                         Oops! Enter Correct Email id.
-                      </div>}
-                    <label htmlFor="Phone" className="field-label-8">
+                      </div>
+                    )}
+                    <label
+                      htmlFor="Phone"
+                      className="field-label-8"
+                      style={{
+                        fontSize: "1.1rem",
+                      }}
+                    >
                       Phone Number
                     </label>
                     <input
@@ -696,8 +794,17 @@ const Home = () => {
                       value={phone}
                       id="Phone"
                       required=""
+                      style={{
+                        fontSize: "1.1rem",
+                      }}
                     />
-                    <label htmlFor="field" className="field-label-9">
+                    <label
+                      htmlFor="field"
+                      className="field-label-9"
+                      style={{
+                        fontSize: "1.1rem",
+                      }}
+                    >
                       Description
                     </label>
                     <textarea
@@ -708,40 +815,60 @@ const Home = () => {
                       placeholder="Example Text"
                       className="textarea w-input"
                       onChange={(e) => setDescription(e.target.value)}
-                      value={description} />
-                    <label className="field-label-3 global">Choose Service</label>
+                      value={description}
+                      style={{
+                        fontSize: "1.1rem",
+                      }}
+                    />
+                    <label
+                      className="field-label-3 global"
+                      style={{
+                        fontSize: "1.1rem",
+                      }}
+                    >
+                      Choose Service
+                    </label>
                     <select
                       name="Service"
                       className="text-field"
+                      style={{
+                        fontSize: "1.1rem",
+                        padding: "10px",
+                      }}
                       value={service}
                       onChange={(e) => setService(e.target.value)}
                       required
                     >
                       <option value="Solar">Solar</option>
                       <option value="Buildings">Buildings</option>
-                      <option value="Telecommunication">Telecommunication</option>
+                      <option value="Telecommunication">
+                        Telecommunication
+                      </option>
                     </select>
-                    <input
-                      type="submit"
-                      className="w-button"
-                      value={loading ? "Submitting..." : "Submit"}
-                      disabled={loading} />
+                    <div className="w-full flex justify-end">
+                      <input
+                        type="submit"
+                        className="w-button"
+                        value={loading ? "Submitting..." : "Submit"}
+                        disabled={loading}
+                        style={{
+                          marginTop: "30px",
+                        }}
+                      />
+                    </div>
                   </form>
                   <div className="successtoast">
-                    {
-                      success && <div style={{ color: "green" }}>
+                    {success && (
+                      <div style={{ color: "green" }}>
                         <div>Thank you! Your submission has been received!</div>
                       </div>
-                    }
-                    {fail &&
+                    )}
+                    {fail && (
                       <div style={{ color: "red" }}>
                         Oops! Something went wrong while submitting the form.
                       </div>
-
-                    }
+                    )}
                   </div>
-
-
                 </div>
               </div>
             </div>

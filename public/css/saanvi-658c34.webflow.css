@@ -1316,16 +1316,6 @@ blockquote {
   border-right-color: #9e9e9e2e;
 }
 
-.hero-content-wrapper {
-
-  flex-flow: row;
-  width: 84%;
-  justify-content: space-between;
-  align-items: center;
-  margin-left: 8%;
-  font-family: "Ubuntu", Helvetica, sans-serif;
-  display: flex;
-}
 
 .xxl-heading {
   letter-spacing: -.05em;
@@ -1349,7 +1339,7 @@ blockquote {
 
 .xxl-heading.two {
   color: #174b82;
-  text-align: center;
+  text-align: left;
   letter-spacing: 0;
   font-family: Ubuntu, Helvetica, sans-serif;
   font-size: 71px;
@@ -8648,10 +8638,7 @@ blockquote {
     overflow: visible;
   }
 
-  .hero-content-wrapper {
-    width: 100%;
-    margin-bottom: 0;
-  }
+
 
   .xxl-heading.one,
   .xxl-heading.two {
@@ -12093,12 +12080,7 @@ blockquote {
     margin-top: 0;
   }
 
-  .hero-content-wrapper {
-    margin-top: 20%;
-    flex-flow: column;
-    width: 100%;
-    margin-left: 0%;
-  }
+
 
   .xxl-heading {
     font-size: 48px;
@@ -12110,7 +12092,7 @@ blockquote {
     justify-content: flex-start;
     align-self: auto;
     align-items: center;
-    margin-left: -66px;
+    /* margin-left: -66px; */
     padding-left: 0;
     font-size: 50px;
     display: block;
@@ -12130,7 +12112,7 @@ blockquote {
     flex-flow: column;
     justify-content: center;
     align-items: center;
-    width: 39vh;
+    /* width: 39vh; */
     height: auto;
     margin-top: 0;
     margin-left: 0;

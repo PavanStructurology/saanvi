@@ -1,0 +1,116 @@
+.Arrow_btn1 {
+  /* position: absolute;
+  top: 0%; */
+  /* margin-top: 14.2%; */
+  height: 50%;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 10;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.2;
+  font-weight: bold;
+  font-size: 14px;
+  background: #00000079;
+  color: #fff;
+  left: 9px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background-color: #090b1980;
+  border-right: 1px solid #ffffff1a;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+
+  margin-bottom: 0;
+  padding-bottom: 0;
+  padding-left: 24px;
+  padding-right: 24px;
+  font-size: 14px;
+  display: flex;
+  inset: auto auto 0% 0;
+}
+.Arrow_btn2 {
+  /* position: absolute;
+  top: 50%; */
+  /* margin-top: 14.2%; */
+  height: 50%;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 10;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.2;
+  font-weight: bold;
+  font-size: 14px;
+  background: #00000079;
+  color: #fff;
+  left: 9px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background-color: #090b1980;
+  border-right: 1px solid #ffffff1a;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  padding-left: 24px;
+  padding-right: 24px;
+  font-size: 14px;
+  display: flex;
+  inset: auto auto 0% 0;
+}
+
+.hero-content-wrapper {
+  flex-flow: row;
+  width: 84%;
+  justify-content: space-between;
+  align-items: center;
+  /* margin-left: 8%; */
+  font-family: "Ubuntu", Helvetica, sans-serif;
+  display: flex;
+}
+
+@media screen and (max-width: 1000px) {
+  .Arrow_btn2,
+  .Arrow_btn1 {
+    flex-direction: row;
+    height: 50px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .hero-content-wrapper {
+    width: 95%;
+    /* margin: auto; */
+  }
+
+  .xxl-heading{
+    text-align: center !important;
+  }
+
+  .text-block-real{
+    text-align: center !important;
+
+  }
+}
+
+/* .hero-content-wrapper {
+    margin-top: 20%;
+    flex-flow: column;
+    width: 100%;
+    margin-left: 0%;
+  }
+
+    .hero-content-wrapper {
+    width: 100%;
+    margin-bottom: 0;
+  } */
