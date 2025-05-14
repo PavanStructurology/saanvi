@@ -7423,7 +7423,7 @@ blockquote {
   .container-build {
     width: 97%;
     padding-top: 70px;
-    margin-left: 6%;
+    margin-left: auto
   }
 
   .heading-52 {
@@ -8193,7 +8193,7 @@ blockquote {
   .container-33 {
     width: 97%;
     padding-top: 70px;
-    margin-left: 6%;
+    margin-left: auto;
   }
 
   .heading-52 {
@@ -14971,11 +14971,14 @@ blockquote {
 }
 
 .Contact {
-  font-size: 64px;
-  font-family: Ubuntu, Helvetica, sans-serif;
-  font-weight: 500;
-  color: #174b82;
-  padding-left: 10.5%;
+    font-size: 64px;
+    font-family: Ubuntu, Helvetica, sans-serif;
+    font-weight: 500;
+    color: #174b82;
+    margin: auto;
+    max-width: 1358px;
+    display: block;
+    height: 55px;
 }
 
 .cont {
@@ -14989,8 +14992,9 @@ blockquote {
 }
 
 .hr1 {
-  width: 87%;
-  margin-left: 10.5%;
+ width: 100%;
+    max-width: 1358px;
+    margin: auto;
 }
 
 .Servicesection {
