@@ -7668,7 +7668,7 @@ blockquote {
 
   .wrapper {
     margin-top: 0;
-    margin-left: auto;
+    margin: auto;
   }
 
   .wrapper.navbar-wrapper {
@@ -15074,8 +15074,9 @@ html {
 
 
 .testimonial-slider-container {
-  margin-top: 4%;
-  margin-left: 1%
+  /* margin-top: 4%;
+  margin-left: 1% */
+  margin-top: 51px;
 }
 
 .testimonial-slider {

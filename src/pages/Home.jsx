@@ -447,56 +447,95 @@ const Home = () => {
           <div className="wrapper">
             <div className="testimonial-wrapper">
               <h1 className="heading-109">Competencies</h1>
-              <div className="w-layout-grid grid-3">
-                <div className="w-layout-blockcontainer container-36 w-container">
+              {/* <div className="w-layout-grid grid-3"> */}
+              <div className="grid grid-cols-3 max-[800px]:gird-cols-2 gap-4 pt-6 pb-16">
+                {/*                 <div >
+ */}
+                <div className="relative" >
                   <img
                     src="images/Untitled-design-4.png"
                     loading="lazy"
                     sizes="100vw"
                     srcSet="images/Untitled-design-4-p-500.png 500w, images/Untitled-design-4-p-800.png 800w, images/Untitled-design-4-p-1080.png 1080w, images/Untitled-design-4.png 1504w"
                     alt="Structural Eng"
-                    className="image-57"
+                    className="w-full h-full rounded-lg transition-all hover:scale-95 transition-all hover:scale-95"
+                  // className="image-57"
+                  // style={{
+                  //   width: "447px",
+                  //   height: "254.67px"
+                  // }}
                   />
-                  <div className="text-block-45">Structural Engineering</div>
+                  <div className="absolute bottom-0 z-10 text-2xl text-center block w-full mb-2" >Structural Engineering</div>
                 </div>
-                <div className="w-layout-blockcontainer container-36 w-container">
+                <div
+                  className="relative"
+
+                >
+
                   <img
                     src="images/Untitled-design-5.png"
                     loading="lazy"
                     sizes="100vw"
                     srcSet="images/Untitled-design-5-p-500.png 500w, images/Untitled-design-5-p-800.png 800w, images/Untitled-design-5-p-1080.png 1080w, images/Untitled-design-5-p-1600.png 1600w, images/Untitled-design-5-p-2000.png 2000w, images/Untitled-design-5.png 2048w"
                     alt="Civil 3d"
-                    className="image-58"
+                    className="w-full h-full rounded-lg transition-all hover:scale-95"
+
+                  // className="image-58"
+                  // style={{
+                  //   width: "447px",
+                  //   height: "254.67px"
+                  // }}
                   />
-                  <div className="text-block-45">Civil 3D</div>
+                  <div className="absolute bottom-0 z-10 text-2xl text-center block w-full mb-2">Civil 3D</div>
                 </div>
-                <div className="w-layout-blockcontainer container-36 w-container">
+                <div
+                  className="relative"
+
+                >
+
                   <img
                     src="images/land.png"
                     loading="lazy"
                     sizes="100vw"
                     srcSet="images/eb322c323c4798125b847fd465486e2c_land-p-500.png 500w, images/eb322c323c4798125b847fd465486e2c_land-p-800.png 800w, images/eb322c323c4798125b847fd465486e2c_land-p-1080.png 1080w, images/eb322c323c4798125b847fd465486e2c_land-p-1600.png 1600w, images/eb322c323c4798125b847fd465486e2c_land-p-2000.png 2000w, images/land.png 2048w"
                     alt="Land Deve"
-                    className="image-58"
+                    className="w-full h-full rounded-lg transition-all hover:scale-95"
+
+                  // className="image-58"
+                  // style={{
+                  //   width: "447px",
+                  //   height: "254.67px"
+                  // }}
                   />
-                  <div className="text-block-45">Land Development</div>
+                  <div className="absolute bottom-0 z-10 text-2xl text-center block w-full mb-2">Land Development</div>
                 </div>
 
 
-                <div className="w-layout-blockcontainer container-36 w-container">
+                <div
+
+                  className="relative"
+                >
+
                   <img
                     src="images/steel-draw.png"
                     loading="lazy"
                     sizes="100vw"
                     srcSet="images/449a06e93b80783a6b945b8ee5d3b114_steel-draw-p-500.png 500w, images/449a06e93b80783a6b945b8ee5d3b114_steel-draw-p-800.png 800w, images/449a06e93b80783a6b945b8ee5d3b114_steel-draw-p-1080.png 1080w, images/449a06e93b80783a6b945b8ee5d3b114_steel-draw-p-1600.png 1600w, images/449a06e93b80783a6b945b8ee5d3b114_steel-draw-p-2000.png 2000w, images/steel-draw.png 2048w"
                     alt="Steel Draw"
-                    className="image-57"
+                    className="w-full h-full rounded-lg transition-all hover:scale-95"
+
+                  // className="image-57"
+                  // style={{
+                  //   width: "447px",
+                  //   height: "254.67px"
+                  // }}
                   />
-                  <div className="text-block-45">Steel Soft Drawing</div>
+                  <div className="absolute bottom-0 z-10 text-2xl text-center block w-full mb-2" >Steel Soft Drawing</div>
                 </div>
                 <div
-                  id="w-node-_0feadf17-19ba-fed9-03ed-8ac6d137a790-1300b8df"
-                  className="w-layout-blockcontainer container-36 w-container"
+                  // id="w-node-_0feadf17-19ba-fed9-03ed-8ac6d137a790-1300b8df"
+                  // className="w-layout-blockcontainer container-36 w-container"
+                  className="relative"
                 >
                   <img
                     src="images/Untitled-design-2.png"
@@ -504,11 +543,18 @@ const Home = () => {
                     sizes="100vw"
                     srcSet="images/Untitled-design-2-p-500.png 500w, images/Untitled-design-2-p-800.png 800w, images/Untitled-design-2.png 1000w"
                     alt="Pile Des"
-                    className="image-59"
+                    className="w-full h-full rounded-lg transition-all hover:scale-95"
+
+                  // className="image-59 "
+                  // style={{
+                  //   width: "447px",
+                  //   height: "254.67px"
+                  // }}
                   />
-                  <div className="text-block-45">Pile Foundation</div>
+                  <div className="absolute bottom-0 z-10 text-2xl text-center block w-full mb-2" >Pile Foundation</div>
                 </div>
-                <div className="w-layout-blockcontainer container-36 w-container">
+                <div >
+
                   <a href="/contact" className="button grey-outline w-inline-block cont">
                     <div className="button-text">Contact us</div>
                   </a>
@@ -521,18 +567,18 @@ const Home = () => {
           <div className="wrapper">
             <div className="testimonial-wrapper">
               <h1 className="heading-21">PROJECTS</h1>
-                
+
               <div className="testimonial-slider-container">
-                 <div className="Project_slide1">
+                <div className="Project_slide1">
                   <button className="testimonial-arrow3" onClick={prevSlide}>
                     <div >PREVIOUS</div>
                   </button>
                   <button className="testimonial-arrow4" onClick={nextSlide}>
-                      <div >Next</div>
+                    <div >Next</div>
                   </button>
                 </div>
                 <div className="testimonial-slider">
-                 
+
                   {testimonials.map((t, index) => (
                     <div
                       className={`testimonial-slide ${index === currentSlide ? "active" : "inactive"
@@ -569,7 +615,7 @@ const Home = () => {
                     ))}
                   </button>
                 </div>
-              
+
               </div>
             </div>
           </div>
@@ -671,11 +717,9 @@ const Home = () => {
                       onChange={(e) => setService(e.target.value)}
                       required
                     >
-                      <option value="SPile +">SPile +</option>
-                      <option value="Solar Project">Solar Project</option>
+                      <option value="Solar">Solar</option>
                       <option value="Buildings">Buildings</option>
                       <option value="Telecommunication">Telecommunication</option>
-                      <option value="Forensics">Forensics</option>
                     </select>
                     <input
                       type="submit"
