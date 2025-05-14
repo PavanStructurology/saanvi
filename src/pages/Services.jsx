@@ -354,7 +354,7 @@ const Services = () => {
                                     <h1>
                                         <strong className="bold-text-15">Guajiro MX 129MW</strong>
                                     </h1>
-                                    <a href="/projects#Solarprojects" className="button-13 w-button" style={{ width: "11%" }}>
+                                    <a href="/projects#Solarprojects" className="button-13 w-button" >
                                         View All
                                     </a>
                                 </div>
@@ -367,56 +367,63 @@ const Services = () => {
                                     Here’s Why You Should Choose Saanvi
                                     <br />
                                 </h1>
-                                <div className="columns-9 w-row">
-                                    <div className="column-10 w-col w-col-4">
-                                        <img
-                                            src="images/img.avif"
-                                            loading="lazy"
-                                            alt="comprehensive"
-                                            className="image-19"
-                                        />
-                                        <h1 className="heading-34">
-                                            <strong className="bold-text-11">
-                                                Comprehensive Engineering services
-                                            </strong>
-                                        </h1>
-                                        <div className="text-block-26">
+                                <div className="servicecomponents">
+                                    <div className="flex-1/2">
+                                        <div >
+                                            <img
+                                                src="images/img.avif"
+                                                loading="lazy"
+                                                alt="comprehensive"
+                                                className="w-26"
+
+                                            />
+                                        </div>
+                                        <div>
+                                            <h1 >
+                                                <strong className="text-3xl">
+                                                    Comprehensive Engineering services
+                                                </strong>
+                                            </h1>
+                                        </div>
+                                        <div>
                                             From peer reviews to wind tunnel analysis, we provide thorough
                                             engineering assessments for reliable project validation.
                                         </div>
                                     </div>
-                                    <div className="column-11 w-col w-col-4">
+                                    <div className="flex-1/2">
                                         <img
                                             src="images/t7.avif"
                                             loading="lazy"
                                             alt="independent"
-                                            className="image-19"
+                                            className="w-26"
                                         />
-                                        <h1 className="heading-34">
-                                            <strong className="bold-text-11">
-                                                Specialized Structural Solutions
-                                            </strong>
-                                        </h1>
-                                        <div className="text-block-26">
+                                        <div>
+                                            <h1 >
+                                                <strong className="text-3xl">
+                                                    Specialized Structural  <br />Solutions
+                                                </strong>
+                                            </h1>
+                                        </div>
+                                        <div >
                                             Tailored designs for fixed-tilt and tracking systems, solar
                                             carports, and equipment support pads ensure optimal
                                             performance and stability.
                                         </div>
                                     </div>
-                                    <div className="column-17 w-col w-col-4">
+                                    <div className="">
                                         <img
                                             src="images/img3.avif"
                                             loading="lazy"
                                             alt="expertise"
-                                            className="image-19"
+                                            className="w-26"
                                         />
-                                        <h1 className="heading-34">
-                                            <strong className="bold-text-11">
+                                        <h1>
+                                            <strong className="text-3xl">
                                                 Expertise Across <br />
                                                 Sectors
                                             </strong>
                                         </h1>
-                                        <div className="text-block-26">
+                                        <div >
                                             Whether in solar, building, telecom, or forensic engineering,
                                             we offer specialized expertise to meet diverse project needs
                                             precisely.
@@ -530,7 +537,6 @@ const Services = () => {
                                 </div>
                             </div>
                             <div
-                                id="w-node-ab6722b6-e9d5-fd3c-17ec-c448b93aa8e9-1300b8e8"
                                 className="div-block-10"
                             >
                                 <div className="columns w-row">
@@ -669,7 +675,7 @@ const Services = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="columns-7 w-row">
+                                <div className="columns w-row">
                                     <div className="solarcoloma w-col w-col-3">
                                         <img
                                             src="images/cons.avif"
@@ -736,7 +742,7 @@ const Services = () => {
                                     </h1>
                                     <a
                                         href="/projects#BuildingsProjects"
-                                        className="button-13 w-button" style={{ width: "12%" }}
+                                        className="button-13 w-button" style={{    width: '142px'}}
                                     >
                                         View All
                                     </a>
@@ -750,54 +756,55 @@ const Services = () => {
                                     Here’s Why You Should Choose Saanvi
                                     <br />
                                 </h1>
-                                <div className="columns-10 w-row">
-                                    <div className="column-12 w-col w-col-4">
+                                <div className="servicecomponents" >
+                                    <div className="flex-1/2">
                                         <img
                                             src="images/img3.avif"
                                             loading="lazy"
                                             alt="expertise"
-                                            className="image-19"
+                                            className="w-26"
                                         />
-                                        <h1 className="heading-98">
-                                            <strong className="bold-text-7">
-                                                Expertise Across Disciplines
+                                        <h1 >
+                                            <strong className="text-3xl">
+                                                Expertise Across<br /> Disciplines
                                             </strong>
                                         </h1>
-                                        <div className="text-block-26">
+                                        <div >
                                             Saanvi Structural Soln offers expertise in solar, telecom, and
                                             forensic engineering and stamping, ensuring specialised
                                             solutions for diverse project needs.
                                         </div>
                                     </div>
-                                    <div className="column-13 w-col w-col-4">
+                                    <div className="flex-1/2">
                                         <img
                                             src="images/innov.avif"
                                             loading="lazy"
                                             alt="innovation"
-                                            className="image-19"
+                                            className="w-26"
                                         />
-                                        <h1 className="heading-99">
-                                            <strong className="bold-text-7">
-                                                Innovative Design Solutions
+                                        <h1>
+                                            <strong className="text-3xl">
+                                                Innovative Design <br />Solutions
                                             </strong>
                                         </h1>
-                                        <div className="text-block-26">
+                                        <div>
                                             We provide innovative design and engineering solutions
                                             tailored to optimize performance <br />
                                             and efficiency while meeting regulatory standards.
                                         </div>
                                     </div>
-                                    <div className="column-18 w-col w-col-4">
+                                    <div className="flex-1/2">
                                         <img
                                             src="images/t2.avif"
                                             loading="lazy"
                                             alt="dis manag"
-                                            className="image-19"
+                                            className="w-26"
+
                                         />
-                                        <h1 className="heading-101">
-                                            <strong className="bold-text-7">Project Management</strong>
+                                        <h1 >
+                                            <strong className="text-3xl">Project Management<br /><span className="dot">.</span></strong>
                                         </h1>
-                                        <div className="text-block-26">
+                                        <div >
                                             We offer comprehensive project management services from
                                             concept to completion, ensuring quality, timeliness, and
                                             cost-effectiveness in every project phase.
@@ -805,7 +812,7 @@ const Services = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="div-block-26">
+                                <div className="div-block-27">
                                     <div className="clip">
                                         <a
                                             href="contact.html"
@@ -821,7 +828,6 @@ const Services = () => {
                 </div>
                 <div
                     id="Telecommunications"
-                    data-w-id="5e265911-3e42-184e-49b8-29b67b8611c5"
                     className="section" >
                     <div className="Servicesection">
                         <div className="wrapper">
@@ -1137,7 +1143,7 @@ const Services = () => {
                                             8113 Lemont Road, Darien, IL 60515Guyed Tower - Tower MOD
                                         </div>
                                     </div>
-                                    <a href="/projects#TeleProjects" className="button-13 w-button" style={{ width: "11%" }}>
+                                    <a href="/projects#TeleProjects" className="button-13 w-button" >
                                         View All
                                     </a>
                                 </div>
@@ -1151,39 +1157,41 @@ const Services = () => {
                                 Reasons Why We Are The Best For You
                                 <br />
                             </h1>
-                            <div className="columns-11 w-row">
-                                <div className="column-9 w-col w-col-4">
+                            <div className="servicecomponents">
+                                <div className="flex-1/2">
                                     <img
                                         src="images/start.png"
                                         loading="lazy"
                                         alt="starategic"
-                                        className="image-19"
+                                        className="w-26"
+
                                     />
-                                    <h1 className="heading-64">
-                                        <strong className="bold-text-7">
-                                            Strategic Telecom Design.
+                                    <h1 >
+                                        <strong className="text-3xl">
+                                            Strategic Telecom <br/>Design.
                                         </strong>
                                     </h1>
-                                    <div className="text-block-26">
+                                    <div >
                                         We deliver precision-engineered telecom designs, adhering to the
                                         most stringent US standards and regulations. Our remote team
                                         leverages cutting-edge technology to ensure optimized
                                         performance and seamless integration for your projects.
                                     </div>
                                 </div>
-                                <div className="column-14 w-col w-col-4">
+                                <div className="flex-1/2">
                                     <img
                                         src="images/values.avif"
                                         loading="lazy"
                                         alt="values"
-                                        className="image-19"
+                                        className="w-26"
+
                                     />
-                                    <h1 className="heading-63">
-                                        <strong className="bold-text-7">
-                                            Value-Driven Telecom Consulting.
+                                    <h1 >
+                                        <strong className="text-3xl">
+                                            Value-Driven Telecom <br/>Consulting.
                                         </strong>
                                     </h1>
-                                    <div className="text-block-26">
+                                    <div >
                                         We provide strategic consulting and value engineering to
                                         optimize your telecom infrastructure, delivering cost-effective
                                         solutions without compromising on quality. Our remote experts
@@ -1191,19 +1199,20 @@ const Services = () => {
                                         timelines for your initiatives.
                                     </div>
                                 </div>
-                                <div className="column-19 w-col w-col-4">
+                                <div className="flex-1/2">
                                     <img
                                         src="images/multi.avif"
                                         loading="lazy"
                                         alt="multi house"
-                                        className="image-19"
+                                        className="w-26"
+
                                     />
-                                    <h1 className="heading-65">
-                                        <strong className="bold-text-7">
-                                            Collaborative Telecom Innovation.
+                                    <h1 >
+                                        <strong className="text-3xl">
+                                            Collaborative Telecom <br/>Innovation.
                                         </strong>
                                     </h1>
-                                    <div className="text-block-26">
+                                    <div >
                                         We forge strong partnerships with US clients, offering
                                         innovative telecom solutions tailored to their specific needs.
                                         Our remote team brings deep domain expertise and proactive

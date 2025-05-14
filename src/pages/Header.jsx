@@ -282,34 +282,24 @@ const Header = () => {
                                         />
                                     </div>
                                     <nav className="dropdown-list w-dropdown-list">
-                                        <div className="div-block-30">
-                                            <div>
-                                                <img src="images/maf.avif"
-                                                    loading="lazy"
-                                                    width={45}
-                                                    alt="saanvi"
-                                                    className="image"></img>
-                                            </div>
-                                            <div>
-                                                <a href="#" className="post-list-item category-list-item w-inline-block">
-                                                    Madhan Kumar K, MS, P.E.
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div className="div-block-30">
-                                            <div>
-                                                <img src="images/sri.avif"
-                                                    loading="lazy"
-                                                    width={45}
-                                                    alt="saanvi"
-                                                    className="image"></img>
-                                            </div>
-                                            <div>
-                                                <a href="#" className="post-list-item category-list-item w-inline-block">
-                                                    Sridhar Kethu P.E.
-                                                </a>
-                                            </div>
-                                        </div>
+                                        {teamMembers.slice(0, 2).map((member) => (
+                                    <div className="div-block-30" key={member.id}>
+                                        <img
+                                            src={member.image}
+                                            loading="lazy"
+                                            width={45}
+                                            alt={member.name}
+                                            className="image"
+                                        />
+                                        <a
+                                            onClick={() => OpenTeamPage(member)}
+                                            className="post-list-item category-list-item w-inline-block"
+                                            style={{ cursor: 'pointer' }}
+                                        >
+                                            {member.name}
+                                        </a>
+                                    </div>
+                                ))}
                                         <a
                                             href="/team"
                                             className="post-list-item category-list-item w-inline-block"

@@ -23,24 +23,20 @@ const Team = () => {
           data-w-id="dc95005d-93c8-7939-5b8a-1f677a0543cd"
           className="section" >
           <div className="wrapper">
-            <div className="columns-8 w-row">
-              <div className="w-col w-col-6">
-                <h1 className="heading-94">
-                  <strong>About us</strong> <br />
-                  Shaping the Future of Structural Engineering, Delivering
-                  Excellence in Design
-                </h1>
-              </div>
-              <div className="w-col w-col-6">
-                <div className="text-block-51">
-                  Collaboration is in our DNA, and we strive to succeed together.
-                  Our team of experts delivers reliable and detail-oriented
-                  solutions for your project. From the first handshake to the final
-                  beam, superior service guides our every step. Explain who’s behind
-                  it, what it does, and what makes it unique. Share its core values
-                  and what this site has to offer
-                </div>
-              </div>
+            <div className='Team_page'>
+              <p className='w-auto' style={{width: "3080px"}}>
+                <strong style={{fontSize:"45px",color:"#174b82"}}>About us</strong> <br />
+                <span style={{color:"#174b82"}}> Shaping the Future of Structural Engineering, Delivering
+                Excellence in Design</span>
+              </p>
+              <p style={{fontSize:"20px",color:"#174b82"}}>
+                Collaboration is in our DNA, and we strive to succeed together.
+                Our team of experts delivers reliable and detail-oriented
+                solutions for your project. From the first handshake to the final
+                beam, superior service guides our every step. Explain who’s behind
+                it, what it does, and what makes it unique. Share its core values
+                and what this site has to offer
+              </p>
             </div>
             <div className="tripple-grid">
               <div className="div-block-13">
