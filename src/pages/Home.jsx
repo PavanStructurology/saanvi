@@ -129,7 +129,7 @@ const Home = () => {
   return (
     <>
       <Header />
-      <div className="page-wrapper" style={{marginTop:"96px"}}>
+      <div className="page-wrapper" style={{ marginTop: "96px" }}>
         <div class="preloader">
           <div class="preloader-middle">
             <div class="left-preloader"></div>
@@ -141,7 +141,10 @@ const Home = () => {
             <div class="right-preloader"></div>
           </div>
         </div>
-        <section className="hero-content-wrapper" style={{margin:"auto"}}>
+        <section
+          className="hero-content-wrapper"
+          style={{ margin: "auto", minHeight: "calc(100vh - 156px)" }}
+        >
           {/* <div className="w-layout-blockcontainer container-34 w-container"> */}
           <div className="flex flex-col gap-4 w-full">
             <div className="div-block-39">
