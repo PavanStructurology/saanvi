@@ -28,7 +28,17 @@ const Team_page = () => {
     return (
         <>
             <Header />
-
+            <div class="preloader">
+                <div class="preloader-middle">
+                    <div class="left-preloader"></div>
+                    <div class="middle-preloader">
+                        <div class="stripe-preloader left"></div>
+                        <div class="stripe-preloader middle"></div>
+                        <div class="stripe-preloader right"></div>
+                    </div>
+                    <div class="right-preloader"></div>
+                </div>
+            </div>
             <div className="page-wrapper">
                 <div ref={topRef} className="wrapper">
                     <section >
@@ -37,21 +47,21 @@ const Team_page = () => {
                                 <img
                                     src={selectedMember.image}
                                     alt={selectedMember.name}
-                               style={{borderRadius:"100%",paddingBottom:"8px"}}
+                                    style={{ borderRadius: "100%", paddingBottom: "8px" }}
                                     className="w-lvh max-w-md h-auto"
                                 />
                                 <center><h1 className="name">{selectedMember.name}</h1>
                                     <p className="role">{selectedMember.role}</p>
                                     <div >
-                                    <a href={selectedMember.linkedin} className="team-social-icon">
-                                        <img src="images/linkedin.svg" alt="Linkedin" />
-                                    </a>
-                                </div>
+                                        <a href={selectedMember.linkedin} className="team-social-icon">
+                                            <img src="images/linkedin.svg" alt="Linkedin" />
+                                        </a>
+                                    </div>
                                 </center>
-                                
+
                             </div>
                             <div className="rich-text">
-                                <div><strong style={{fontSize:"35px",color:"#174b82"}}className="pb-16">About</strong></div>
+                                <div><strong style={{ fontSize: "35px", color: "#174b82" }} className="pb-16">About</strong></div>
                                 <p className="bio">{selectedMember.bio1}</p>
                                 <p className="bio">{selectedMember.bio2}</p>
                             </div>

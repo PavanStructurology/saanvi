@@ -8,7 +8,7 @@ import Team from './pages/Team';
 // import { eight, eleventh, fifteenth, fifth, first, fourteenth, fourth, ninth, second, seventh, sixteenth, sixth, tenth, third, thirteen, twelfth } from '../public/js/util';
 import useWebflowReinit from './components/useWebflowReinit';
 import useWebflowOnLoad from './components/useWebflowReinit';
-import Teampage from './pages/Teampage';
+import Team_page from './pages/Team_page';
 // import { useEffect } from 'react';
 // import { webflow } from '../public/js/webflow';
 
@@ -47,7 +47,7 @@ function App() {
       <Route path="/projects" element={<Projects />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/team" element={<Team />} />
-      <Route path="/teampage" element={<Teampage/>}/>
+      <Route path="/team_page" element={<Team_page/>}/>
 
     </Routes>
   );

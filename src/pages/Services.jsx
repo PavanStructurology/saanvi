@@ -92,7 +92,7 @@ const Services = () => {
                                             className="div-block-36"
                                         >
                                             <div className="clip">
-                                                <a href="contact.html" className="button white-outline w-inline-block">
+                                                <a href="/contact" className="button white-outline w-inline-block">
                                                     <div className="button-text">Contact us</div>
                                                 </a>
                                             </div>
@@ -322,7 +322,7 @@ const Services = () => {
                                         <div className="div-block-23">
                                             <div className="clip">
                                                 <a
-                                                    href="contact.html"
+                                                    href="/contact"
                                                     className="button white-outline w-inline-block"
                                                 >
                                                     <div className="button-text">Contact us</div>
@@ -434,7 +434,7 @@ const Services = () => {
                                 <div className="div-block-27">
                                     <div className="clip">
                                         <a
-                                            href="contact.html"
+                                            href="/contact"
                                             className="button white-outline w-inline-block"
                                         >
                                             <div className="button-text">Contact us</div>
@@ -481,7 +481,7 @@ const Services = () => {
                                                 className="div-block-36"
                                             >
                                                 <div className="clip">
-                                                    <a href="contact.html" className="button white-outline w-inline-block">
+                                                    <a href="/contact" className="button white-outline w-inline-block">
                                                         <div className="button-text">Contact us</div>
                                                     </a>
                                                 </div>
@@ -548,7 +548,7 @@ const Services = () => {
                                             className="image-19"
                                         />
                                         <h1 className="heading-41">
-                                            <strong className="bold-text-7">Custom Residential</strong>
+                                            <strong className="bold-text-7">Custom_Residential</strong>
                                         </h1>
                                         <div className="text-block-26">
                                             Where design meets precision. We create and build custom
@@ -663,12 +663,12 @@ const Services = () => {
                                             src="images/steel.avif"
                                             loading="lazy"
                                             alt="steel"
-                                            className="image-75"
+                                            className="image-19"
                                         />
-                                        <h1 className="heading-92">
-                                            <strong className="bold-text-18">Steel Detailing</strong>
+                                        <h1 className="heading-66">
+                                            <strong className="bold-text-8">Steel Detailing</strong>
                                         </h1>
-                                        <div className="text-block-35">
+                                        <div className="text-block-26">
                                             Precision at the Core. We specialize in meticulous steel
                                             detailing, ensuring your project's structural integrity and
                                             efficient fabrication. We build with strength and accuracy.
@@ -706,7 +706,7 @@ const Services = () => {
                                         <div className="div-block-24">
                                             <div className="clip">
                                                 <a
-                                                    href="contact.html"
+                                                    href="/contact"
                                                     className="button white-outline w-inline-block"
                                                 >
                                                     <div className="button-text">Contact us</div>
@@ -815,7 +815,7 @@ const Services = () => {
                                 <div className="div-block-27">
                                     <div className="clip">
                                         <a
-                                            href="contact.html"
+                                            href="/contact"
                                             className="button white-outline w-inline-block"
                                         >
                                             <div className="button-text">Contact us</div>
@@ -861,7 +861,7 @@ const Services = () => {
                                                 className="div-block-36"
                                             >
                                                 <div className="clip">
-                                                    <a href="contact.html" className="button white-outline w-inline-block">
+                                                    <a href="/contact" className="button white-outline w-inline-block">
                                                         <div className="button-text">Contact us</div>
                                                     </a>
                                                 </div>
@@ -1106,7 +1106,7 @@ const Services = () => {
                                         <div className="div-block-29">
                                             <div className="clip">
                                                 <a
-                                                    href="contact.html"
+                                                    href="/contact"
                                                     className="button white-outline w-inline-block"
                                                 >
                                                     <div className="button-text">Contact us</div>
@@ -1225,7 +1225,7 @@ const Services = () => {
                             <div className="div-block-28">
                                 <div className="clip">
                                     <a
-                                        href="contact.html"
+                                        href="/contact"
                                         className="button white-outline w-inline-block"
                                     >
                                         <div className="button-text">Contact us</div>

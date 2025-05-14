@@ -5,7 +5,7 @@ const Header = () => {
     const navigate = useNavigate();
 
     const OpenTeamPage = (member) => {
-  navigate('/teampage', { state: { member } });
+  navigate('/team_page', { state: { member } });
 
     }
 
