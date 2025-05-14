@@ -485,12 +485,11 @@ const Home = () => {
                     sizes="100vw"
                     srcSet="images/Untitled-design-4-p-500.png 500w, images/Untitled-design-4-p-800.png 800w, images/Untitled-design-4-p-1080.png 1080w, images/Untitled-design-4.png 1504w"
                     alt="Structural Eng"
-                    className="w-full h-full rounded-lg transition-all hover:scale-95 transition-all hover:scale-95"
+                    className="w-full h-full rounded-lg transition-all hover:scale-95"
                     // className="image-57"
-                    // style={{
-                    //   width: "447px",
-                    //   height: "254.67px"
-                    // }}
+                    style={{
+                      height: "310px"
+                    }}
                   />
                   <div className="absolute bottom-0 z-10 text-2xl text-center block w-full mb-2">
                     Structural Engineering
@@ -506,10 +505,9 @@ const Home = () => {
                     className="w-full h-full rounded-lg transition-all hover:scale-95"
 
                     // className="image-58"
-                    // style={{
-                    //   width: "447px",
-                    //   height: "254.67px"
-                    // }}
+                    style={{
+                      height: "310px"
+                    }}
                   />
                   <div className="absolute bottom-0 z-10 text-2xl text-center block w-full mb-2">
                     Civil 3D
@@ -525,10 +523,9 @@ const Home = () => {
                     className="w-full h-full rounded-lg transition-all hover:scale-95"
 
                     // className="image-58"
-                    // style={{
-                    //   width: "447px",
-                    //   height: "254.67px"
-                    // }}
+                    style={{
+                      height: "310px"
+                    }}
                   />
                   <div className="absolute bottom-0 z-10 text-2xl text-center block w-full mb-2">
                     Land Development
@@ -545,10 +542,9 @@ const Home = () => {
                     className="w-full h-full rounded-lg transition-all hover:scale-95"
 
                     // className="image-57"
-                    // style={{
-                    //   width: "447px",
-                    //   height: "254.67px"
-                    // }}
+                    style={{
+                      height: "310px"
+                    }}
                   />
                   <div className="absolute bottom-0 z-10 text-2xl text-center block w-full mb-2">
                     Steel Soft Drawing
@@ -568,10 +564,9 @@ const Home = () => {
                     className="w-full h-full rounded-lg transition-all hover:scale-95"
 
                     // className="image-59 "
-                    // style={{
-                    //   width: "447px",
-                    //   height: "254.67px"
-                    // }}
+                    style={{
+                      height: "310px"
+                    }}
                   />
                   <div className="absolute bottom-0 z-10 text-2xl text-center block w-full mb-2">
                     Pile Foundation
