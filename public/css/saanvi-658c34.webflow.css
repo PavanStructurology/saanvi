@@ -1847,14 +1847,7 @@ blockquote {
 }
 
 .tripple-grid {
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-  grid-template-rows: 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-auto-rows: auto;
-  grid-auto-columns: 1fr;
-  margin-bottom: 0;
-  display: block;
+  width: 110%;
 }
 
 .tripple-grid.no-margin {
@@ -2618,12 +2611,6 @@ blockquote {
   overflow: hidden;
 }
 
-.rich-text {
-  color: var(--body-display);
-  width: 100%;
-  font-family: Ubuntu, Helvetica, sans-serif;
-  font-size: 16px;
-}
 
 .rich-text h2 {
   color: var(--dark);
@@ -5416,7 +5403,6 @@ blockquote {
 .div-block-4 {
   text-align: center;
   background-color: #fff;
-  margin-left: 19px;
 }
 
 .div-block-5 {
@@ -5445,10 +5431,11 @@ blockquote {
   background-color: #fff;
   justify-content: flex-start;
   align-items: center;
-  margin-left: 23px;
-  line-height: 51px;
   display: flex;
   border-bottom-right-radius: 8px;
+  padding: 10px;
+  width: 610px;
+
 }
 
 .bold-text-6 {
@@ -6004,10 +5991,9 @@ blockquote {
 }
 
 .container-30 {
-  width: 100%;
-  max-width: 940px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 97%;
+  max-width: none;
+  margin-left: 5%;
 }
 
 .centered-heading {
@@ -7250,7 +7236,6 @@ blockquote {
   color: var(--dark);
   background-color: #fff0;
   border-radius: 20px;
-  width: 119px;
   font-family: Ubuntu, Helvetica, sans-serif;
   font-size: 16px;
   font-weight: 300;
@@ -7435,9 +7420,9 @@ blockquote {
   }
 
   .container-build {
-    width: 92%;
+    width: 97%;
     padding-top: 70px;
-    margin-left: 8%;
+    margin-left: 6%;
   }
 
   .heading-52 {
@@ -7468,6 +7453,7 @@ blockquote {
 
   .div-block-18 {
     flex-flow: row;
+    width: 91%;
   }
 
   .div-block-20 {
@@ -7613,12 +7599,12 @@ blockquote {
   .image-71,
   .image-72,
   .image-73 {
-    border-radius: 120px;
+    border-radius: 140px;
     width: 350px;
   }
 
   .image-74 {
-    border-radius: 120px;
+    border-radius: 140px;
     margin-bottom: 40px;
   }
 
@@ -7768,11 +7754,7 @@ blockquote {
   }
 
 
-  .rich-text {
-    width: 68%;
-    padding: 5%;
-    font-size: 16px;
-  }
+
 
 
 
@@ -7781,7 +7763,9 @@ blockquote {
     padding-bottom: 48px;
   }
 
-  .project-description-wrapper {}
+  .project-description-wrapper {
+    margin-left: 56px;
+  }
 
   .project-description {
     grid-column-gap: 24px;
@@ -8034,10 +8018,7 @@ blockquote {
     display: flex;
   }
 
-  .image-19 {
-    max-width: 26%;
-    margin-top: 0;
-  }
+
 
   .columns {
     min-width: auto;
@@ -8190,9 +8171,9 @@ blockquote {
 
 
   .container-30 {
-    width: 89%;
+    width: 97%;
     max-width: none;
-    margin-left: 2%;
+    margin-left: 5%;
   }
 
   .team-slide-wrapper {
@@ -8204,12 +8185,14 @@ blockquote {
   }
 
   .container-build {
-    margin-left: 1%;
+    margin-top: 40px;
   }
 
   .container-32,
   .container-33 {
-    margin-left: 1%;
+    width: 97%;
+    padding-top: 70px;
+    margin-left: 6%;
   }
 
   .heading-52 {
@@ -8522,9 +8505,9 @@ blockquote {
 
   .image-62 {
     border-radius: 260px;
-    width: 100%;
     height: auto;
     margin-bottom: 15px;
+    width: 100%
   }
 
   .heading-98,
@@ -8556,7 +8539,7 @@ blockquote {
 
   .image-72,
   .image-73 {
-    border-radius: 120px;
+    border-radius: 140px;
     width: 350px;
   }
 
@@ -8748,12 +8731,7 @@ blockquote {
     padding-top: 0;
   }
 
-  .rich-text {
-    width: 100%;
-    height: 100%;
-    font-size: 20px;
-    line-height: 20px;
-  }
+
 
 
   .grid-wrapper {
@@ -9198,9 +9176,9 @@ blockquote {
   .team-slider {}
 
   .container-30 {
-    width: auto;
+    width: 100%;
     max-width: none;
-    margin-left: 30px;
+    margin-left: 5%;
   }
 
   .team-slider-wrapper {
@@ -9650,8 +9628,7 @@ blockquote {
 
   .image-62 {
     border-radius: 208px;
-    width: 405px;
-    height: 436px;
+    width: 100%;
   }
 
   .image-63 {
@@ -9970,7 +9947,6 @@ blockquote {
 
   .tripple-grid.no-margin {
     text-align: left;
-    width: 669px;
   }
 
   .services-grid {
@@ -10078,9 +10054,7 @@ blockquote {
     top: 0;
   }
 
-  .rich-text {
-    width: auto;
-  }
+
 
   .rich-text h2 {
     font-size: 28px;
@@ -11021,7 +10995,6 @@ blockquote {
 
   .image-62 {
     text-align: center;
-    width: 250px;
     margin-left: 212px;
     padding-left: 0;
   }
@@ -11398,10 +11371,7 @@ blockquote {
     padding-right: 18px;
   }
 
-  .rich-text {
-    width: 100%;
-    margin-left: 73px;
-  }
+
 
 
 
@@ -12266,8 +12236,9 @@ blockquote {
 
   .tripple-grid {
     grid-template-columns: 1fr;
-    width: 100%;
+    width: 114%;
     margin-bottom: 36px;
+    margin-left: 20%;
   }
 
   .tripple-grid.no-margin {
@@ -12395,9 +12366,6 @@ blockquote {
     min-height: 400px;
   }
 
-  .rich-text {
-    width: 100%;
-  }
 
   .rich-text h2 {
     font-size: 26px;
@@ -12786,7 +12754,6 @@ blockquote {
 
   .div-block-4 {
     text-align: center;
-    margin-left: 0;
   }
 
   .div-block-5 {
@@ -15007,7 +14974,7 @@ blockquote {
   font-family: Ubuntu, Helvetica, sans-serif;
   font-weight: 500;
   color: #174b82;
-  padding-left: 7.5%;
+  padding-left: 10.5%;
 }
 
 .cont {
@@ -15017,12 +14984,12 @@ blockquote {
 }
 
 .button-text:hover {
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
 }
 
 .hr1 {
   width: 87%;
-  margin-left: 6.5%;
+  margin-left: 10.5%;
 }
 
 .Servicesection {
@@ -15284,6 +15251,28 @@ html {
   .div-block-100 {
     width: 95%;
   }
+
+  .servicecomponents {
+    display: flex;
+    align-items: baseline;
+    flex-direction: column;
+    gap: 35px;
+  }
+
+  .heading-38 {
+    width: 101%
+  }
+
+  .dot {
+    display: none;
+  }
+
+  .Teampage {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8px;
+
+  }
 }
 
 /* TeamMember.css */
@@ -15303,4 +15292,38 @@ html {
   font-size: 16px;
   color: #174b82;
   line-height: 1.5;
+  width: 85%;
+}
+
+.rich-text {
+  width: fit-content;
+}
+
+.rich-text p {
+  font-size: 19px;
+}
+
+.servicecomponents {
+  display: flex;
+  align-items: baseline;
+  padding-top: 26px;
+}
+
+.dot {
+  color: white;
+}
+
+.Teampage {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  margin-left: 32px;
+  width: 100%;
+  gap: 75px;
+  margin-top: 55px;
+}
+
+.Team_page {
+  display: flex;
+
 }

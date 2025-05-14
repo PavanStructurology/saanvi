@@ -1,29 +1,29 @@
-import { useState, useRef ,useEffect} from "react";
+import { useState, useRef, useEffect } from "react";
 import Header from './Header'
 import Footer from './Footer'
 import teamMembers from "./TeamData";
 import { useLocation } from 'react-router-dom';
 
 const Team_page = () => {
- const location = useLocation();
-  const topRef = useRef(null); // For scrolling to top section
+    const location = useLocation();
+    const topRef = useRef(null); // For scrolling to top section
 
-  // Get passed member from navigation, or fall back to the first member
-  const passedMember = location.state?.member;
-  const [selectedMember, setSelectedMember] = useState(passedMember || teamMembers[0]);
+    // Get passed member from navigation, or fall back to the first member
+    const passedMember = location.state?.member;
+    const [selectedMember, setSelectedMember] = useState(passedMember || teamMembers[0]);
 
-  // Scroll to top if a new member is passed from location state
-  useEffect(() => {
-    if (passedMember && topRef.current) {
-      topRef.current.scrollIntoView({ behavior: 'smooth' });
-    }
-  }, [passedMember]);
+    // Scroll to top if a new member is passed from location state
+    useEffect(() => {
+        if (passedMember && topRef.current) {
+            topRef.current.scrollIntoView({ behavior: 'smooth' });
+        }
+    }, [passedMember]);
 
-  // Handler for manual clicking between members (if used)
-  const handleMemberClick = (member) => {
-    setSelectedMember(member);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
+    // Handler for manual clicking between members (if used)
+    const handleMemberClick = (member) => {
+        setSelectedMember(member);
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
 
     return (
         <>
@@ -31,31 +31,32 @@ const Team_page = () => {
 
             <div className="page-wrapper">
                 <div ref={topRef} className="wrapper">
-                    <div className="tripple-grid no-margin">
-                        <div className="mission-column">
-                            <div className="div-block-43">
+                    <section >
+                        <div className="Teampage">
+                            <div >
                                 <img
                                     src={selectedMember.image}
                                     alt={selectedMember.name}
-                                    className="image-62"
+                               style={{borderRadius:"100%",paddingBottom:"8px"}}
+                                    className="w-lvh max-w-md h-auto"
                                 />
-                                <center>
-                                    <h1 className="name">{selectedMember.name}</h1>
+                                <center><h1 className="name">{selectedMember.name}</h1>
                                     <p className="role">{selectedMember.role}</p>
-                                </center>
-                                <div className="wrapper">
+                                    <div >
                                     <a href={selectedMember.linkedin} className="team-social-icon">
                                         <img src="images/linkedin.svg" alt="Linkedin" />
                                     </a>
                                 </div>
+                                </center>
+                                
                             </div>
                             <div className="rich-text">
-                                <div>About</div>
+                                <div><strong style={{fontSize:"35px",color:"#174b82"}}className="pb-16">About</strong></div>
                                 <p className="bio">{selectedMember.bio1}</p>
                                 <p className="bio">{selectedMember.bio2}</p>
                             </div>
                         </div>
-                    </div>
+                    </section>
                 </div>
 
                 {/* Team Member List */}
