@@ -1372,7 +1372,8 @@ blockquote {
   align-items: stretch;
   min-height: 100vh;
   position: relative;
-  margin-top: 8%;
+  margin: auto;
+  width: 95%;
 }
 
 .banner-wrapper {
@@ -3736,8 +3737,7 @@ blockquote {
   font-family: Ubuntu, Helvetica, sans-serif;
 }
 
-.background-banner.projects-banner {
-}
+.background-banner.projects-banner {}
 
 .background-banner.team-banner {
   background-image: none;
@@ -5436,7 +5436,7 @@ blockquote {
   display: flex;
   border-bottom-right-radius: 8px;
   padding: 10px;
-  width: 610px;
+  border-bottom-left-radius: 8px;
 
 }
 
@@ -12255,7 +12255,7 @@ blockquote {
     justify-content: center;
     align-items: center;
     width: 100%;
-    
+
     font-size: 42px;
     display: flex;
   }
