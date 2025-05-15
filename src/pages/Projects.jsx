@@ -134,144 +134,144 @@ const Projects = () => {
     return (
         <>
             <Header />
- <div class="preloader">
-    <div class="preloader-middle">
-      <div class="left-preloader"></div>
-      <div class="middle-preloader">
-        <div class="stripe-preloader left"></div>
-        <div class="stripe-preloader middle"></div>
-        <div class="stripe-preloader right"></div>
-      </div>
-      <div class="right-preloader"></div>
-    </div>
-  </div>
+            <div class="preloader">
+                <div class="preloader-middle">
+                    <div class="left-preloader"></div>
+                    <div class="middle-preloader">
+                        <div class="stripe-preloader left"></div>
+                        <div class="stripe-preloader middle"></div>
+                        <div class="stripe-preloader right"></div>
+                    </div>
+                    <div class="right-preloader"></div>
+                </div>
+            </div>
             <div className="page-wrapper">
-               
-                <h className="Contact">PROJECTS</h>
-                <hr className="hr1" />
-                <section id="Solarprojects" >
-                    <div className="wrapper">
 
-                        <div className="w-layout-blockcontainer container-build w-container">
-                            <h1 className="heading-49">Solar</h1>
-                        </div>
-                        <section className="team-slider">
-                            <div className="container-30">
-                                <Swiper
-                                    modules={[Autoplay]}
-                                    loop={true}
-                                    slidesPerView={3}
-                                    spaceBetween={30}
-                                    autoplay={{
-                                        delay: 1000, // Change slide every 3 seconds
-                                        disableOnInteraction: false,
-                                        pauseOnMouseEnter: false
-                                    }}
-                                    speed={1000} // Duration of the transition animation
-                                >
-                                    {slides.map((slide, index) => (
-                                        <SwiperSlide key={index}>
-                                            <div className="team-block">
-                                                <img
-                                                    src={slide.img}
-                                                    alt={slide.alt}
-                                                    className="image-30"
-                                                    loading="lazy"
-                                                />
-                                                <div className="team-block-info">
-                                                    <h3 className="team-member-name-two">{slide.title}</h3>
-                                                </div>
-                                            </div>
-                                        </SwiperSlide>
-                                    ))}
-                                </Swiper>
+                    <h className="Contact">PROJECTS</h>
+                    <hr className="hr1" />
+                    <section  className="section"id="Solarprojects" >
+                        <div className="wrapper">
+                            <div className="w-layout-blockcontainer container-build w-container">
+                                <h1 className="heading-49">Solar</h1>
                             </div>
-                        </section>
 
-                    </div>
-                </section>
-                <section id="BuildingsProjects">
-                    <div className="wrapper">
-                        <div className="w-layout-blockcontainer container-32 w-container">
-                            <h1 className="heading-49">Buildings
-                            </h1>
-                        </div>
-                        <section className="team-slider">
-                            <div className="container-30">
-                                <Swiper
-                                    modules={[Autoplay]}
-                                    loop={true}
-                                    slidesPerView={3}
-                                    spaceBetween={30}
-                                    autoplay={{
-                                        delay: 1000, // Change slide every 3 seconds
-                                        disableOnInteraction: false,
-                                        pauseOnMouseEnter: false
-                                    }}
-                                    speed={1000} // Duration of the transition animation
-                                >
-                                    {buildingSlides.map((slide, index) => (
-                                        <SwiperSlide key={index}>
-                                            <div className="team-block">
-                                                <img
-                                                    src={slide.img}
-                                                    alt={slide.alt}
-                                                    className="image-30"
-                                                    loading="lazy"
-                                                />
-                                                <div className="team-block-info">
-                                                    <h3 className="team-member-name-two">{slide.title}</h3>
+                            <section className="team-slider">
+                                <div className="container-30">
+                                    <Swiper
+                                        modules={[Autoplay]}
+                                        loop={true}
+                                        slidesPerView={3}
+                                        spaceBetween={30}
+                                        autoplay={{
+                                            delay: 1000, // Change slide every 3 seconds
+                                            disableOnInteraction: false,
+                                            pauseOnMouseEnter: false
+                                        }}
+                                        speed={1000} // Duration of the transition animation
+                                    >
+                                        {slides.map((slide, index) => (
+                                            <SwiperSlide key={index}>
+                                                <div className="team-block">
+                                                    <img
+                                                        src={slide.img}
+                                                        alt={slide.alt}
+                                                        className="image-30"
+                                                        loading="lazy"
+                                                    />
+                                                    <div className="team-block-info">
+                                                        <h3 className="team-member-name-two">{slide.title}</h3>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </SwiperSlide>
-                                    ))}
-                                </Swiper>
-                            </div>
-                        </section>
-                    </div>
-                </section>
-                <section id="TeleProjects">
-                    <div className="wrapper">
-                        <div className="w-layout-blockcontainer container-33 w-container">
-                            <h1 className="heading-49">Telecommunication
-                            </h1>
+                                            </SwiperSlide>
+                                        ))}
+                                    </Swiper>
+                                </div>
+                            </section>
                         </div>
-                        <section className="team-slider">
-                            <div className="container-30">
-                                <Swiper
-                                    modules={[Autoplay]}
-                                    loop={true}
-                                    slidesPerView={3}
-                                    spaceBetween={30}
-                                    autoplay={{
-                                        delay: 1000, // Change slide every 3 seconds
-                                        disableOnInteraction: false,
-                                        pauseOnMouseEnter: false
-                                    }}
-                                    speed={1000} // Duration of the transition animation
-                                >
-                                    {telecomSlides.map((slide, index) => (
-                                        <SwiperSlide key={index}>
-                                            <div className="team-block">
-                                                <img
-                                                    src={slide.img}
-                                                    alt={slide.alt}
-                                                    className="image-30"
-                                                    loading="lazy"
-                                                />
-                                                <div className="team-block-info">
-                                                    <h3 className="team-member-name-two">{slide.title}</h3>
-                                                    <p className="team-member-text">{slide.description}</p>
+                    </section>
+                    <section  className="section"id="BuildingsProjects">
+                        <div className="wrapper">
+                            <div className="w-layout-blockcontainer container-32 w-container">
+                                <h1 className="heading-49">Buildings
+                                </h1>
+                            </div>
+                            <section className="team-slider">
+                                <div className="container-30">
+                                    <Swiper
+                                        modules={[Autoplay]}
+                                        loop={true}
+                                        slidesPerView={3}
+                                        spaceBetween={30}
+                                        autoplay={{
+                                            delay: 1000, // Change slide every 3 seconds
+                                            disableOnInteraction: false,
+                                            pauseOnMouseEnter: false
+                                        }}
+                                        speed={1000} // Duration of the transition animation
+                                    >
+                                        {buildingSlides.map((slide, index) => (
+                                            <SwiperSlide key={index}>
+                                                <div className="team-block">
+                                                    <img
+                                                        src={slide.img}
+                                                        alt={slide.alt}
+                                                        className="image-30"
+                                                        loading="lazy"
+                                                    />
+                                                    <div className="team-block-info">
+                                                        <h3 className="team-member-name-two">{slide.title}</h3>
+                                                    </div>
+                                                </div>
+                                            </SwiperSlide>
+                                        ))}
+                                    </Swiper>
+                                </div>
+                            </section>
+                        </div>
+                    </section>
+                    <section className="section" id="TeleProjects">
+                        <div className="wrapper">
+                            <div className="w-layout-blockcontainer container-33 w-container">
+                                <h1 className="heading-49">Telecommunication
+                                </h1>
+                            </div>
+                            <section className="team-slider">
+                                <div className="container-30">
+                                    <Swiper
+                                        modules={[Autoplay]}
+                                        loop={true}
+                                        slidesPerView={3}
+                                        spaceBetween={30}
+                                        autoplay={{
+                                            delay: 1000, // Change slide every 3 seconds
+                                            disableOnInteraction: false,
+                                            pauseOnMouseEnter: false
+                                        }}
+                                        speed={1000} // Duration of the transition animation
+                                    >
+                                        {telecomSlides.map((slide, index) => (
+                                            <SwiperSlide key={index}>
+                                                <div className="team-block">
+                                                    <img
+                                                        src={slide.img}
+                                                        alt={slide.alt}
+                                                        className="image-30"
+                                                        loading="lazy"
+                                                    />
+                                                    <div className="team-block-info">
+                                                        <h3 className="team-member-name-two">{slide.title}</h3>
+                                                        <p className="team-member-text">{slide.description}</p>
 
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </SwiperSlide>
-                                    ))}
-                                </Swiper>
-                            </div>
-                        </section>
-                    </div>
-                </section>
+                                            </SwiperSlide>
+                                        ))}
+                                    </Swiper>
+                                </div>
+                            </section>
+                        </div>
+                    </section>
+
                 <Footer />
             </div>
         </>

@@ -138,8 +138,7 @@ const Home = () => {
   return (
     <>
       <Header />
-      <div className="page-wrapper" style={{ marginTop: "96px" }}>
-        <div class="preloader">
+       <div class="preloader">
           <div class="preloader-middle">
             <div class="left-preloader"></div>
             <div class="middle-preloader">
@@ -150,6 +149,7 @@ const Home = () => {
             <div class="right-preloader"></div>
           </div>
         </div>
+      <div className="page-wrapper">       
         <section
           className="hero-content-wrapper"
           style={{ margin: "auto", minHeight: "calc(100vh - 156px)" }}
@@ -688,7 +688,6 @@ const Home = () => {
             </div>
           </div>
         </section>
-
         <section className="section-4">
           <div className="wrapper">
             <div className="testimonial-wrapper">
