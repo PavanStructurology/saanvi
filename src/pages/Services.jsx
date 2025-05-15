@@ -60,7 +60,7 @@ const Services = () => {
                 <div
                     id="Solar"
                     data-w-id="0dba1441-ebbc-9621-1936-de8c26fe5a62"
-                    className="section">
+                    >
                     <div className="wrapper">
                         <div className="banner-wrapper">
                             <div className="banner-content">
@@ -72,7 +72,7 @@ const Services = () => {
                                         viewport={{ once: true }}
                                         className="div-block-40"
                                     >
-                                        <div className="clip">
+                                        <div className="">
                                             <h2 className="heading">
                                                 Solar Structures: Tailored Designs and Engineering Expertise
                                             </h2>
@@ -91,7 +91,7 @@ const Services = () => {
                                             viewport={{ once: true }}
                                             className="div-block-36"
                                         >
-                                            <div className="clip">
+                                            <div className="w-full">
                                                 <a href="/contact" className="button white-outline w-inline-block">
                                                     <div className="button-text">Contact us</div>
                                                 </a>
@@ -103,11 +103,14 @@ const Services = () => {
                                             whileInView={{ opacity: 1, y: 0 }}
                                             transition={{ duration: 1.4 }}
                                             viewport={{ once: true }}
-                                            className="clip"
+                                            className="div-block-36"
                                         >
-                                            <a href="https://calendly.com/" className="button white-outline w-inline-block">
-                                                <div className="button-text">Schedule a call</div>
-                                            </a>
+                                            <div className="w-full">
+
+                                                <a href="https://calendly.com/" className="button white-outline w-inline-block">
+                                                    <div className="button-text">Schedule a call</div>
+                                                </a>
+                                            </div>
                                         </motion.div>
                                     </div>
                                 </div>
@@ -319,15 +322,13 @@ const Services = () => {
                                         <div className="w-layout-blockcontainer w-container">
                                             <h1 className="heading-96">.</h1>
                                         </div>
-                                        <div className="div-block-23">
-                                            <div className="clip">
-                                                <a
-                                                    href="/contact"
-                                                    className="button white-outline w-inline-block"
-                                                >
-                                                    <div className="button-text">Contact us</div>
-                                                </a>
-                                            </div>
+                                        <div className="div-block-36">
+                                            <a
+                                                href="/contact"
+                                                className="button white-outline w-inline-block"
+                                            >
+                                                <div className="button-text">Contact us</div>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -431,15 +432,13 @@ const Services = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="div-block-27">
-                                    <div className="clip">
-                                        <a
-                                            href="/contact"
-                                            className="button white-outline w-inline-block"
-                                        >
-                                            <div className="button-text">Contact us</div>
-                                        </a>
-                                    </div>
+                                <div className="div-block-36" style={{ marginTop: "22px" }}>
+                                    <a
+                                        href="/contact"
+                                        className="button white-outline w-inline-block"
+                                    >
+                                        <div className="button-text">Contact us</div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -448,7 +447,7 @@ const Services = () => {
                 <div
                     id="buildings"
                     data-w-id="7cd5cb55-b5cf-7f44-a1d7-8d3e464a1c2e"
-                    className="section">
+                    >
                     <div className="Servicesection">
                         <div className="wrapper">
                             <div className="banner-wrapper">
@@ -460,7 +459,7 @@ const Services = () => {
                                             transition={{ duration: 1 }}
                                             viewport={{ once: true }}
                                         >
-                                            <div className="subtitle-wrapper clip">
+                                            <div className="subtitle-wrapper">
                                                 <h2 className="heading">
                                                     Building Tomorrow’s Landmarks Today with Structural Integrity and Precision
                                                 </h2>
@@ -480,7 +479,7 @@ const Services = () => {
                                                 viewport={{ once: true }}
                                                 className="div-block-36"
                                             >
-                                                <div className="clip">
+                                                <div className="w-full">
                                                     <a href="/contact" className="button white-outline w-inline-block">
                                                         <div className="button-text">Contact us</div>
                                                     </a>
@@ -492,11 +491,13 @@ const Services = () => {
                                                 whileInView={{ opacity: 1, y: 0 }}
                                                 transition={{ duration: 1.4 }}
                                                 viewport={{ once: true }}
-                                                className="clip"
+                                                className="div-block-36"
                                             >
-                                                <a href="https://calendly.com/" className="button white-outline w-inline-block">
-                                                    <div className="button-text">Schedule a call</div>
-                                                </a>
+                                                <div className="w-full">
+                                                    <a href="https://calendly.com/" className="button white-outline w-inline-block">
+                                                        <div className="button-text">Schedule a call</div>
+                                                    </a>
+                                                </div>
                                             </motion.div>
                                         </div>
                                     </div>
@@ -703,15 +704,13 @@ const Services = () => {
                                         <div className="w-layout-blockcontainer w-container">
                                             <h1 className="heading-96">.</h1>
                                         </div>
-                                        <div className="div-block-24">
-                                            <div className="clip">
-                                                <a
-                                                    href="/contact"
-                                                    className="button white-outline w-inline-block"
-                                                >
-                                                    <div className="button-text">Contact us</div>
-                                                </a>
-                                            </div>
+                                        <div className="div-block-36">
+                                            <a
+                                                href="/contact"
+                                                className="button white-outline w-inline-block"
+                                            >
+                                                <div className="button-text">Contact us</div>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -742,7 +741,7 @@ const Services = () => {
                                     </h1>
                                     <a
                                         href="/projects#BuildingsProjects"
-                                        className="button-13 w-button" style={{    width: '142px'}}
+                                        className="button-13 w-button" style={{ width: '142px' }}
                                     >
                                         View All
                                     </a>
@@ -813,7 +812,7 @@ const Services = () => {
                                     </div>
                                 </div>
                                 <div className="div-block-27">
-                                    <div className="clip">
+                                    <div className="">
                                         <a
                                             href="/contact"
                                             className="button white-outline w-inline-block"
@@ -828,7 +827,7 @@ const Services = () => {
                 </div>
                 <div
                     id="Telecommunications"
-                    className="section" >
+                    >
                     <div className="Servicesection">
                         <div className="wrapper">
                             <div className="banner-wrapper">
@@ -841,7 +840,7 @@ const Services = () => {
                                             viewport={{ once: true }}
                                             className="div-block-41"
                                         >
-                                            <div className="clip">
+                                            <div className="">
                                                 <h2 className="heading">
                                                     Empower Connectivity with Saanvi Structural Soln Advanced Telecom Solutions
                                                 </h2>
@@ -860,7 +859,7 @@ const Services = () => {
                                                 viewport={{ once: true }}
                                                 className="div-block-36"
                                             >
-                                                <div className="clip">
+                                                <div className="w-full">
                                                     <a href="/contact" className="button white-outline w-inline-block">
                                                         <div className="button-text">Contact us</div>
                                                     </a>
@@ -872,11 +871,13 @@ const Services = () => {
                                                 whileInView={{ opacity: 1, y: 0 }}
                                                 transition={{ duration: 1.4 }}
                                                 viewport={{ once: true }}
-                                                className="clip"
+                                                className="div-block-36"
                                             >
-                                                <a href="https://calendly.com/" className="button white-outline w-inline-block">
-                                                    <div className="button-text">Schedule a call</div>
-                                                </a>
+                                                <div className="w-full">
+                                                    <a href="https://calendly.com/" className="button white-outline w-inline-block">
+                                                        <div className="button-text">Schedule a call</div>
+                                                    </a>
+                                                </div>
                                             </motion.div>
                                         </div>
                                     </div>
@@ -1104,7 +1105,7 @@ const Services = () => {
                                         <h1 className="heading-96">.</h1>
                                         <h1 className="heading-97">.</h1>
                                         <div className="div-block-29">
-                                            <div className="clip">
+                                            <div className="">
                                                 <a
                                                     href="/contact"
                                                     className="button white-outline w-inline-block"
@@ -1168,7 +1169,7 @@ const Services = () => {
                                     />
                                     <h1 >
                                         <strong className="text-3xl">
-                                            Strategic Telecom <br/>Design.
+                                            Strategic Telecom <br />Design.
                                         </strong>
                                     </h1>
                                     <div >
@@ -1188,7 +1189,7 @@ const Services = () => {
                                     />
                                     <h1 >
                                         <strong className="text-3xl">
-                                            Value-Driven Telecom <br/>Consulting.
+                                            Value-Driven Telecom <br />Consulting.
                                         </strong>
                                     </h1>
                                     <div >
@@ -1209,7 +1210,7 @@ const Services = () => {
                                     />
                                     <h1 >
                                         <strong className="text-3xl">
-                                            Collaborative Telecom <br/>Innovation.
+                                            Collaborative Telecom <br />Innovation.
                                         </strong>
                                     </h1>
                                     <div >
@@ -1223,7 +1224,7 @@ const Services = () => {
                                 </div>
                             </div>
                             <div className="div-block-28">
-                                <div className="clip">
+                                <div className="">
                                     <a
                                         href="/contact"
                                         className="button white-outline w-inline-block"

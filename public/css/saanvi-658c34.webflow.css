@@ -3722,7 +3722,6 @@ blockquote {
 }
 
 .background-banner {
-  background-image: url('../images/Space002.webp');
   background-position: 50%;
   background-size: cover;
   height: 116%;
@@ -3738,7 +3737,6 @@ blockquote {
 }
 
 .background-banner.projects-banner {
-  background-image: url('../images/Space013.jpg');
 }
 
 .background-banner.team-banner {
@@ -8412,7 +8410,7 @@ blockquote {
   .div-block-34,
   .div-block-35,
   .div-block-36 {
-    width: 185px;
+    width: 204px;
   }
 
   .text-block-39 {
@@ -11134,7 +11132,7 @@ blockquote {
   }
 
   .navbar {
-    margin-top: 0;
+    margin-top: 34px;
   }
 
   .wrapper {
@@ -12086,10 +12084,9 @@ blockquote {
     flex-flow: column;
     justify-content: center;
     align-items: center;
-    width: 27vh;
+    width: 45vh;
     height: auto;
     margin-top: 0;
-    margin-left: 0;
     padding-bottom: 0;
     display: flex;
     overflow: visible;
@@ -12258,8 +12255,7 @@ blockquote {
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-left: 17px;
-    padding-left: 0;
+    
     font-size: 42px;
     display: flex;
   }
@@ -13225,8 +13221,7 @@ blockquote {
     display: flex;
   }
 
-  .div-block-36 {
-  }
+  .div-block-36 {}
 
   .image-57 {
     width: 100%;
@@ -13293,6 +13288,9 @@ blockquote {
 
   .div-block-39 {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .div-block-40 {
@@ -15135,7 +15133,7 @@ html {
 }
 
 .successtoast {
-  margin-top: 4rem;
+  margin-top: -4rem;
 }
 
 .div-block-100 {
@@ -15336,7 +15334,7 @@ html {
   display: flex;
   align-items: baseline;
   padding-top: 26px;
-  gap:10px
+  gap: 10px
 }
 
 .dot {

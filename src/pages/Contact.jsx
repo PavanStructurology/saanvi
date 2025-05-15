@@ -48,11 +48,22 @@ const Contact = () => {
           setService('SPile +');
           setDescription('');
           setSuccuss(true);
+          setTimeout(() => {
+            setSuccuss(false);
+          }, 10000);
         } else {
           setFail(true);
+          setTimeout(() => {
+            setFail(true);
+            (false);
+          }, 10000);
         }
       } catch (err) {
         setFail(true);
+        setTimeout(() => {
+          setFail(true);
+          (false);
+        }, 10000);
       } finally {
         setLoading(false);
       }
@@ -63,16 +74,16 @@ const Contact = () => {
     <>
       <Header />
       <div class="preloader">
-          <div class="preloader-middle">
-            <div class="left-preloader"></div>
-            <div class="middle-preloader">
-              <div class="stripe-preloader left"></div>
-              <div class="stripe-preloader middle"></div>
-              <div class="stripe-preloader right"></div>
-            </div>
-            <div class="right-preloader"></div>
+        <div class="preloader-middle">
+          <div class="left-preloader"></div>
+          <div class="middle-preloader">
+            <div class="stripe-preloader left"></div>
+            <div class="stripe-preloader middle"></div>
+            <div class="stripe-preloader right"></div>
           </div>
+          <div class="right-preloader"></div>
         </div>
+      </div>
       <div className="page-wrapper">
         <h className="Contact">Contact us</h>
         <section>

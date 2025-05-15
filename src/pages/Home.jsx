@@ -93,12 +93,21 @@ const Home = () => {
           setService("Solar");
           setDescription("");
           setSuccuss(true);
+          setTimeout(() => {
+            setSuccuss(false);
+          }, 10000);
         } else {
           setFail(true);
+          setTimeout(() => {
+            setFail(false);
+          }, 10000);
         }
       } catch (err) {
         console.log(err);
         setFail(true);
+        setTimeout(() => {
+          setFail(false);
+        }, 10000);
       } finally {
         setLoading(false);
       }
@@ -265,7 +274,7 @@ const Home = () => {
                 alt="solar-panel-vector-icon"
                 className="w-[60px] transition-all hover:scale-105 cursor-pointer"
 
-                // className="image-6"
+              // className="image-6"
               />
             </a>
             <a onClick={handleClick} className="w-inline-block">
@@ -275,7 +284,7 @@ const Home = () => {
                 alt="buildings"
                 className="w-[60px] p-[5px] transition-all hover:scale-105 cursor-pointer"
 
-                // className="image-4"
+              // className="image-4"
               />
             </a>
             <a href="/services#Telecommunications" className="w-inline-block">
@@ -284,7 +293,7 @@ const Home = () => {
                 loading="lazy"
                 alt="Telecommunication"
                 className="w-[60px] p-[5px] transition-all hover:scale-105 cursor-pointer"
-                // className="image-5"
+              // className="image-5"
               />
             </a>
           </div>
@@ -596,9 +605,8 @@ const Home = () => {
                 <div className="testimonial-slider">
                   {testimonials.map((t, index) => (
                     <div
-                      className={`testimonial-slide ${
-                        index === currentSlide ? "active" : "inactive"
-                      }`}
+                      className={`testimonial-slide ${index === currentSlide ? "active" : "inactive"
+                        }`}
                       key={index}
                     >
                       <div className="testimonial-content">
@@ -856,11 +864,11 @@ const Home = () => {
                     </div>
                   </form>
                   <div className="successtoast">
-                    {success && (
+                    {/* {success && ( */}
                       <div style={{ color: "green" }}>
                         <div>Thank you! Your submission has been received!</div>
                       </div>
-                    )}
+                    {/* )} */}
                     {fail && (
                       <div style={{ color: "red" }}>
                         Oops! Something went wrong while submitting the form.
