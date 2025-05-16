@@ -212,10 +212,7 @@ const Home = () => {
                   //   opacity: 0,
                   // }}
                   className="hero-button-wrapper max-[520px]:flex-col max-[520px]:mx-auto"
-                  style={{
-                    maxWidth: "446px",
-                    width: "100%",
-                  }}
+                 
                 >
                   <a
                     href="/contact"
@@ -485,7 +482,7 @@ const Home = () => {
               <h1 className="heading-109">Competencies</h1>
               {/* <div className="w-layout-grid grid-3"> */}
               <div
-                className=" grid-cols-3 max-[1000px]:grid-cols-2 max-[600px]:grid-cols-1 gap-4 pt-6 pb-16"
+                className="grid-cols-3 max-[1000px]:grid-cols-2 max-[600px]:grid-cols-1 gap-4 pt-6 pb-16 comp"
                 style={{ display: "grid" }}
               >
                 {/*                 <div >

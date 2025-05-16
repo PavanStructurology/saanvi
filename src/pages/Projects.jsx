@@ -149,14 +149,14 @@ const Projects = () => {
 
                     <h className="Contact">PROJECTS</h>
                     <hr className="hr1" />
-                    <section  className="section"id="Solarprojects" >
+                    <div  className="sectionSolar"id="Solarprojects" >
                         <div className="wrapper">
                             <div className="w-layout-blockcontainer container-build w-container">
                                 <h1 className="heading-49">Solar</h1>
                             </div>
 
                             <section className="team-slider">
-                                <div className="container-30">
+                                <div className="">
                                     <Swiper
                                         modules={[Autoplay]}
                                         loop={true}
@@ -188,15 +188,15 @@ const Projects = () => {
                                 </div>
                             </section>
                         </div>
-                    </section>
-                    <section  className="section"id="BuildingsProjects">
+                    </div>
+                    <div  className="sectionSolar"id="BuildingsProjects">
                         <div className="wrapper">
                             <div className="w-layout-blockcontainer container-32 w-container">
                                 <h1 className="heading-49">Buildings
                                 </h1>
                             </div>
                             <section className="team-slider">
-                                <div className="container-30">
+                                <div className="">
                                     <Swiper
                                         modules={[Autoplay]}
                                         loop={true}
@@ -228,15 +228,15 @@ const Projects = () => {
                                 </div>
                             </section>
                         </div>
-                    </section>
-                    <section className="section" id="TeleProjects">
+                    </div>
+                    <div className="sectionSolar" id="TeleProjects">
                         <div className="wrapper">
                             <div className="w-layout-blockcontainer container-33 w-container">
                                 <h1 className="heading-49">Telecommunication
                                 </h1>
                             </div>
-                            <section className="team-slider">
-                                <div className="container-30">
+                            <div className="team-slider">
+                                <div className="project_slider">
                                     <Swiper
                                         modules={[Autoplay]}
                                         loop={true}
@@ -268,9 +268,9 @@ const Projects = () => {
                                         ))}
                                     </Swiper>
                                 </div>
-                            </section>
+                            </div>
                         </div>
-                    </section>
+                    </div>
 
                 <Footer />
             </div>
