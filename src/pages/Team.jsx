@@ -27,21 +27,22 @@ const teamMembers = [
   {
     name: 'Selvamuthumani T',
     role: 'Structural Engineer',
-    img: 'images/SAANVI-STRUCTURAL-SOLN-3-1.png',
+    img: 'images/selva.jpeg',
     alt: 'selvamuthumani',
     linkedin: 'https://www.linkedin.com/in/selvamuthumani-t-345355179/',
   },
   // {
-  //   name: 'Kelli LeVasseur, P.E.',
-  //   role: 'Partner',
-  //   img: 'images/kell.avif',
-  //   alt: 'kelli',
+  //   name: 'Tarine Manikanth',
+  //   role: 'Software Developer',
+  //   img: 'images/manikanth.jpg',
+  //   alt: 'Manikanth',
+  //    linkedin: 'https://www.linkedin.com/in/manikanth-tarine-704417192/',
   // },
   // {
-  //   name: 'Jennifer Sheppard, P.E.',
-  //   role: 'Associate Partner, Forensics',
+  //   name: 'Pavan',
+  //   role: 'Software Developer',
   //   img: 'images/jenni.jpg',
-  //   alt: 'jenni',
+  //   alt: 'Pavan',
   // },
 ];
 
@@ -52,7 +53,7 @@ const Team = () => {
       <div className="page-wrapper">
 
         {/* About Section */}
-        <section className="bg-white text-[#174b82] py-12 px-4 md:px-8 lg:px-20"style={{marginTop:"-4%"}}>
+        <section className="bg-white text-[#174b82] py-12 px-4 md:px-8 lg:px-20" style={{ marginTop: "-4%" }}>
           <div className="max-w-7xl mx-auto">
             <h2 className="text-4xl font-bold mb-4">About Us</h2>
             <p className="text-xl font-medium mb-6">
