@@ -861,11 +861,11 @@ const Home = () => {
                     </div>
                   </form>
                   <div className="successtoast">
-                    {/* {success && ( */}
+                    {success && (
                       <div style={{ color: "green" }}>
                         <div>Thank you! Your submission has been received!</div>
                       </div>
-                    {/* )} */}
+                    )}
                     {fail && (
                       <div style={{ color: "red" }}>
                         Oops! Something went wrong while submitting the form.
