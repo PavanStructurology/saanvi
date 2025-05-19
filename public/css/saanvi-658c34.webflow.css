@@ -6742,7 +6742,7 @@ blockquote {
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  margin-top: -11px;
+  margin-top: 10px;
   display: flex;
 }
 
@@ -15239,6 +15239,11 @@ html {
   .page-wrapper {
     padding: 6%
   }
+   .team-columns {
+    display: flex;
+    flex-direction: column;
+  }
+
 }
 
 /* Extra small screens */
@@ -15338,9 +15343,12 @@ html {
     margin: auto;
   }
 
- 
+  .team-columns {
+    display: flex;
+    flex-direction: column;
+  }
 
-     
+
 }
 
 /* TeamMember.css */
@@ -15360,7 +15368,7 @@ html {
   font-size: 16px;
   color: #174b82;
   line-height: 1.5;
-  width: 85%;
+  width: 100%;
 }
 
 .rich-text {
