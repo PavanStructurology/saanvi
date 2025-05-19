@@ -70,7 +70,7 @@
 
 .hero-content-wrapper {
   flex-flow: row;
-  width: 84%;
+  width: 90%;
   justify-content: space-between;
   align-items: center;
   /* margin-left: 8%; */
@@ -87,6 +87,11 @@
   }
 }
 
+@media screen and (max-width: 600px) {
+  .clip .xxl-heading{
+    font-size: 50px;
+  }
+}
 @media screen and (max-width: 520px) {
   .hero-content-wrapper {
     width: 95%;
@@ -100,6 +105,17 @@
   .text-block-real{
     text-align: center !important;
 
+  }
+  .Home_sections{
+    padding: 0px;
+  }
+
+  .hero-button-wrapper{
+    width: 90% !important;
+  }
+
+  .section-4.Home_sections{
+    margin-top: 80px;
   }
 }
 

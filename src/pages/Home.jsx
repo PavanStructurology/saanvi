@@ -151,7 +151,7 @@ const Home = () => {
         </div>
       <div className="page-wrapper">       
         <section
-          className="hero-content-wrapper"
+          className="hero-content-wrapper Home_sections"
           style={{ margin: "auto", minHeight: "calc(100vh - 156px)" }}
         >
           {/* <div className="w-layout-blockcontainer container-34 w-container"> */}
@@ -211,6 +211,7 @@ const Home = () => {
                   //     "translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 10deg)",
                   //   opacity: 0,
                   // }}
+            
                   className="hero-button-wrapper max-[520px]:flex-col max-[520px]:mx-auto"
                  
                 >
@@ -295,7 +296,7 @@ const Home = () => {
             </a>
           </div>
         </section>
-        <section className="section clip" style={{ marginTop: "50px" }}>
+        <section className="section clip Home_sections"  style={{ marginTop: "50px" }}>
           <h1 className="heading-19">SERVICES</h1>
           {/* <div id="services" className="Service_wrapper" > */}
           <div
@@ -398,7 +399,7 @@ const Home = () => {
           </div>
           {/* </div> */}
         </section>
-        <section className="section video-section">
+        <section className="section video-section Home_sections">
           <h1 className="heading-19">ABOUT US</h1>
 
           <div className="w-layout-blockcontainer container-23 w-container">
@@ -474,7 +475,7 @@ const Home = () => {
           </div>
         </section>
         <section
-          className="section no-verticle-padding dark"
+          className="section no-verticle-padding dark Home_sections"
           style={{ marginTop: "40px" }}
         >
           <div className="wrapper">
@@ -593,7 +594,7 @@ const Home = () => {
             </div>
           </div>
         </section>
-        <section className="section no-verticle-padding dark">
+        <section className="section no-verticle-padding dark Home_sections">
           <div className="wrapper">
             <div className="testimonial-wrapper">
               <h1 className="heading-21">PROJECTS</h1>
@@ -685,10 +686,10 @@ const Home = () => {
             </div>
           </div>
         </section>
-        <section className="section-4">
+        <section className="section-4 Home_sections">
           <div className="wrapper">
-            <div className="testimonial-wrapper">
-              <div className="w-layout-grid grid-4">
+            <div className="testimonial-wrapper" style={{    width: "100%"}}>
+              <div className="w-layout-grid grid-4" style={{margin: "auto"}}>
                 <div className="text-block-8">
                   <strong className="bold-text-2">
                     We are happy to assist you with your project – how can we
