@@ -161,7 +161,7 @@ const Services = () => {
                       alt="Fixed tilt"
                       className="image-19"
                     />
-                    <h1 className="heading-56" style={{ marginBottom: "0px" }}>
+                    <h1 className="heading-56">
                       <strong className="bold-text-7">Fixed Tilt</strong>
                     </h1>
                     <div className="text-block-26">
@@ -176,7 +176,7 @@ const Services = () => {
                       alt="Tracker"
                       className="image-19"
                     />
-                    <h1 className="heading-57" style={{ marginBottom: "0px" }}>
+                    <h1 className="heading-57" >
                       <strong className="bold-text-8">Trackers</strong>
                     </h1>
                     <div className="text-block-26">
@@ -1122,7 +1122,7 @@ const Services = () => {
                       alt="photosimul"
                       className="image-19"
                     />
-                    <h1 className="heading-45" style={{ marginBottom: "0px" }}>
+                    <h1 className="heading-45" >
                       <strong className="bold-text-9">
                         Photosimul
                         <br />
