@@ -805,7 +805,34 @@ const Home = () => {
                       htmlFor="field"
                       className="field-label-9"
                       style={{
+                        fontSize: "1.1rem"
+                      }}
+                    >
+                      Choose Service
+                    </label>
+                    <select
+                      name="Service"
+                      className="text-field"
+                      style={{
                         fontSize: "1.1rem",
+                        padding: "10px",
+                       
+                      }}
+                      value={service}
+                      onChange={(e) => setService(e.target.value)}
+                      required
+                    >
+                      <option value="Solar">Solar</option>
+                      <option value="Buildings">Buildings</option>
+                      <option value="Telecommunication">
+                        Telecommunication
+                      </option>
+                    </select>
+                    <label
+                      htmlFor="field"
+                      className="field-label-9"
+                      style={{
+                        fontSize: "1.1rem",paddingTop:"5px"
                       }}
                     >
                       Description
@@ -823,31 +850,8 @@ const Home = () => {
                         fontSize: "1.1rem",
                       }}
                     />
-                    <label
-                      className="field-label-3 global"
-                      style={{
-                        fontSize: "1.1rem",
-                      }}
-                    >
-                      Choose Service
-                    </label>
-                    <select
-                      name="Service"
-                      className="text-field"
-                      style={{
-                        fontSize: "1.1rem",
-                        padding: "10px",
-                      }}
-                      value={service}
-                      onChange={(e) => setService(e.target.value)}
-                      required
-                    >
-                      <option value="Solar">Solar</option>
-                      <option value="Buildings">Buildings</option>
-                      <option value="Telecommunication">
-                        Telecommunication
-                      </option>
-                    </select>
+                   
+                    
                     <div className="w-full flex justify-end">
                       <input
                         type="submit"

@@ -7806,6 +7806,8 @@ blockquote {
     font-family: Ubuntu, Helvetica, sans-serif;
     font-size: 18px;
     font-weight: 400;
+    width: -webkit-fill-available;
+
   }
 
   .services-info {
@@ -15239,7 +15241,8 @@ html {
   .page-wrapper {
     padding: 6%
   }
-   .team-columns {
+
+  .team-columns {
     display: flex;
     flex-direction: column;
   }

@@ -30,7 +30,7 @@ const Services = () => {
           <div class="right-preloader"></div>
         </div>
       </div>
-      <div className="page-wrapper" style={{padding: "25px"}}>
+      <div className="page-wrapper" style={{ padding: "25px" }}>
         <div className="sticky-section">
           <div className="wrapper">
             <div className="div-block-5">
@@ -75,8 +75,8 @@ const Services = () => {
                         Expertise
                       </h2>
                       <div className="body-display">
-                        Saanvi offers comprehensive solar solutions with
-                        tailored designs and expert engineering...
+                        Saanvi offers comprehensive solar solutions with tailored designs and expert engineering,
+                        ensuring efficient energy capture and reliable installations for diverse projects.
                       </div>
                     </div>
                   </motion.div>
@@ -88,7 +88,7 @@ const Services = () => {
                       transition={{ duration: 1.2 }}
                       viewport={{ once: true }}
                       className="div-block-36"
-                     
+
                     >
                       <div className="w-full">
                         <a
@@ -161,7 +161,7 @@ const Services = () => {
                       alt="Fixed tilt"
                       className="image-19"
                     />
-                    <h1 className="heading-56">
+                    <h1 className="heading-56" style={{ marginBottom: "0px" }}>
                       <strong className="bold-text-7">Fixed Tilt</strong>
                     </h1>
                     <div className="text-block-26">
@@ -176,7 +176,7 @@ const Services = () => {
                       alt="Tracker"
                       className="image-19"
                     />
-                    <h1 className="heading-57">
+                    <h1 className="heading-57" style={{ marginBottom: "0px" }}>
                       <strong className="bold-text-8">Trackers</strong>
                     </h1>
                     <div className="text-block-26">
@@ -314,7 +314,7 @@ const Services = () => {
                       alt="wind tunnal"
                       className="image-19"
                     />
-                    <h1 className="heading-81">Wind Tunnel Guidance</h1>
+                    <h1 className="heading-81">Wind Tunnel <br />Guidance</h1>
                     <div className="text-block-52">
                       Wind tunnel guidance optimizes our solar projects for your
                       location. We engineer for strength, you enjoy clean energy
@@ -371,7 +371,7 @@ const Services = () => {
                   </a>
                 </div>
               </div>
-              <div className="w-layout-blockcontainer container-29 w-container" style={{marginTop:"60px"}}>
+              <div className="w-layout-blockcontainer container-29 w-container" style={{ marginTop: "60px" }}>
                 <h1 className="heading-37">
                   <strong className="bold-text-17">Benefits</strong>
                 </h1>
@@ -379,7 +379,7 @@ const Services = () => {
                   Here’s Why You Should Choose Saanvi
                   <br />
                 </h1>
-                <div className="servicecomponents">
+                <div className="servicecomponents" style={{ padding: "20px" }}>
                   <div className="flex-1/2">
                     <div>
                       <img
@@ -390,13 +390,13 @@ const Services = () => {
                       />
                     </div>
                     <div>
-                      <h1>
+                      <h1 style={{ lineHeight: "1px", marginTop: "15px" }}>
                         <strong className="text-3xl">
                           Comprehensive Engineering services
                         </strong>
                       </h1>
                     </div>
-                    <div>
+                    <div style={{ marginTop: "15px" }}>
                       From peer reviews to wind tunnel analysis, we provide
                       thorough engineering assessments for reliable project
                       validation.
@@ -410,14 +410,14 @@ const Services = () => {
                       className="w-26"
                     />
                     <div>
-                      <h1>
+                      <h1 style={{ lineHeight: "1px", marginTop: "15px" }}>
                         <strong className="text-3xl">
                           Specialized Structural <br />
                           Solutions
                         </strong>
                       </h1>
                     </div>
-                    <div>
+                    <div style={{ marginTop: "15px" }}>
                       Tailored designs for fixed-tilt and tracking systems,
                       solar carports, and equipment support pads ensure optimal
                       performance and stability.
@@ -430,13 +430,13 @@ const Services = () => {
                       alt="expertise"
                       className="w-26"
                     />
-                    <h1>
+                    <h1 style={{ lineHeight: "1px", marginTop: "15px" }}>
                       <strong className="text-3xl">
                         Expertise Across <br />
                         Sectors
                       </strong>
                     </h1>
-                    <div>
+                    <div style={{ marginTop: "15px" }}>
                       Whether in solar, building, telecom, or forensic
                       engineering, we offer specialized expertise to meet
                       diverse project needs precisely.
@@ -444,7 +444,7 @@ const Services = () => {
                     </div>
                   </div>
                 </div>
-                <div className="div-block-36" style={{ marginTop: "22px", padding:"0 20px" }}>
+                <div className="div-block-36" style={{ margin: "auto", marginTop: "10px" }}>
                   <a
                     href="/contact"
                     className="button white-outline w-inline-block"
@@ -770,7 +770,7 @@ const Services = () => {
                   </a>
                 </div>
               </div>
-              <div className="w-layout-blockcontainer container-28 w-container" style={{marginTop:"60px"}}>
+              <div className="w-layout-blockcontainer container-28 w-container" style={{ marginTop: "60px" }}>
                 <h1 className="heading-37">
                   <strong className="bold-text-17">Benefits</strong>
                 </h1>
@@ -778,7 +778,7 @@ const Services = () => {
                   Here’s Why You Should Choose Saanvi
                   <br />
                 </h1>
-                <div className="servicecomponents">
+                <div className="servicecomponents" style={{ padding: "20px" }}>
                   <div className="flex-1/2">
                     <img
                       src="images/img3.avif"
@@ -786,13 +786,13 @@ const Services = () => {
                       alt="expertise"
                       className="w-26"
                     />
-                    <h1>
+                    <h1 style={{ lineHeight: "1px", marginTop: "15px" }}>
                       <strong className="text-3xl">
                         Expertise Across
                         <br /> Disciplines
                       </strong>
                     </h1>
-                    <div>
+                    <div style={{ marginTop: "15px" }}>
                       Saanvi Structural Soln offers expertise in solar, telecom,
                       and forensic engineering and stamping, ensuring
                       specialised solutions for diverse project needs.
@@ -805,13 +805,13 @@ const Services = () => {
                       alt="innovation"
                       className="w-26"
                     />
-                    <h1>
+                    <h1 style={{ lineHeight: "1px", marginTop: "15px" }}>
                       <strong className="text-3xl">
                         Innovative Design <br />
                         Solutions
                       </strong>
                     </h1>
-                    <div>
+                    <div style={{ marginTop: "15px" }}>
                       We provide innovative design and engineering solutions
                       tailored to optimize performance <br />
                       and efficiency while meeting regulatory standards.
@@ -824,14 +824,14 @@ const Services = () => {
                       alt="dis manag"
                       className="w-26"
                     />
-                    <h1>
+                    <h1 style={{ lineHeight: "1px", marginTop: "15px" }}>
                       <strong className="text-3xl">
                         Project Management
                         <br />
                         <span className="dot">.</span>
                       </strong>
                     </h1>
-                    <div>
+                    <div style={{ marginTop: "15px" }}                     >
                       We offer comprehensive project management services from
                       concept to completion, ensuring quality, timeliness, and
                       cost-effectiveness in every project phase.
@@ -839,15 +839,13 @@ const Services = () => {
                     </div>
                   </div>
                 </div>
-                <div className="div-block-27">
-                  <div className="">
-                    <a
-                      href="/contact"
-                      className="button white-outline w-inline-block"
-                    >
-                      <div className="button-text">Contact us</div>
-                    </a>
-                  </div>
+                <div className="div-block-27" style={{ margin: "auto", marginTop: "10px" }}>
+                  <a
+                    href="/contact"
+                    className="button white-outline w-inline-block"
+                  >
+                    <div className="button-text">Contact us</div>
+                  </a>
                 </div>
               </div>
             </div>
@@ -1124,7 +1122,7 @@ const Services = () => {
                       alt="photosimul"
                       className="image-19"
                     />
-                    <h1 className="heading-45">
+                    <h1 className="heading-45" style={{ marginBottom: "0px" }}>
                       <strong className="bold-text-9">
                         Photosimul
                         <br />
@@ -1190,7 +1188,7 @@ const Services = () => {
                 </div>
               </div>
             </div>
-            <div className="w-layout-blockcontainer container-28 w-container" style={{marginTop:"120px"}}>
+            <div className="w-layout-blockcontainer container-28 w-container" style={{ marginTop: "120px" }}>
               <h1 className="heading-37">
                 <strong className="bold-text-17">Benefits</strong>
               </h1>
@@ -1198,7 +1196,7 @@ const Services = () => {
                 Reasons Why We Are The Best For You
                 <br />
               </h1>
-              <div className="servicecomponents" style={{padding: "20px"}}>
+              <div className="servicecomponents" style={{ padding: "20px" }}>
                 <div className="flex-1/2">
                   <img
                     src="images/start.png"
@@ -1206,13 +1204,13 @@ const Services = () => {
                     alt="starategic"
                     className="w-26"
                   />
-                  <h1>
+                  <h1 style={{ lineHeight: "1px", marginTop: "15px" }}>
                     <strong className="text-3xl">
                       Strategic Telecom <br />
                       Design.
                     </strong>
                   </h1>
-                  <div>
+                  <div style={{ marginTop: "15px" }} >
                     We deliver precision-engineered telecom designs, adhering to
                     the most stringent US standards and regulations. Our remote
                     team leverages cutting-edge technology to ensure optimized
@@ -1226,13 +1224,13 @@ const Services = () => {
                     alt="values"
                     className="w-26"
                   />
-                  <h1>
+                  <h1 style={{ lineHeight: "1px", marginTop: "15px" }}>
                     <strong className="text-3xl">
                       Value-Driven Telecom <br />
                       Consulting.
                     </strong>
                   </h1>
-                  <div>
+                  <div style={{ marginTop: "15px" }}>
                     We provide strategic consulting and value engineering to
                     optimize your telecom infrastructure, delivering
                     cost-effective solutions without compromising on quality.
@@ -1247,13 +1245,13 @@ const Services = () => {
                     alt="multi house"
                     className="w-26"
                   />
-                  <h1>
+                  <h1 style={{ lineHeight: "1px", marginTop: "15px" }}>
                     <strong className="text-3xl">
                       Collaborative Telecom <br />
                       Innovation.
                     </strong>
                   </h1>
-                  <div>
+                  <div style={{ marginTop: "15px" }}>
                     We forge strong partnerships with US clients, offering
                     innovative telecom solutions tailored to their specific
                     needs. Our remote team brings deep domain expertise and
@@ -1263,15 +1261,13 @@ const Services = () => {
                   </div>
                 </div>
               </div>
-              <div className="div-block-28">
-                <div className="">
-                  <a
-                    href="/contact"
-                    className="button white-outline w-inline-block"
-                  >
-                    <div className="button-text">Contact us</div>
-                  </a>
-                </div>
+              <div className="div-block-28" style={{ margin: "auto", marginTop: "10px" }}>
+                <a
+                  href="/contact"
+                  className="button white-outline w-inline-block"
+                >
+                  <div className="button-text">Contact us</div>
+                </a>
               </div>
             </div>
           </div>
