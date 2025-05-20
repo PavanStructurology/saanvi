@@ -6,7 +6,7 @@ const teamMembers = [
             role: "Partner",
             image: "images/maf.avif",
             bio1:
-                "Madhan poses ten years of structural experience in design of concrete, precast/ prestressed concrete, concrete masonry, steel, and wood structures including: office, church, library, hotel, motel, pre-engineered frame, parking structures, retaining walls, highway bridges, and underground utilities for clients in the Public and Private sectors. Structural design work in USA has been undertaken in almost 20 states including Arizona, California, Colorado, Nevada, Ohio, Texas and Hawaii",
+                "Madhan poses twenty years of structural experience in design of concrete, precast/ prestressed concrete, concrete masonry, steel, and wood structures including: office, church, library, hotel, motel, pre-engineered frame, parking structures, retaining walls, highway bridges, and underground utilities for clients in the Public and Private sectors. Structural design work in USA has been undertaken in almost 20 states including Arizona, California, Colorado, Nevada, Ohio, Texas and Hawaii",
             bio2:
                 "Madhan also has extensive experience in designing efficient and economical solar panel support structures (not limited to concrete piles, steel frames, aluminum frames) for solar farm installations with varying requirements and residential roof-top installations. In concurrent with structural design work, Madhan also has over 6 years of construction experience in projects in India.",
             linkedin: "https://www.linkedin.com/in/madhankumark-ms-pe/",
