@@ -1,0 +1,16 @@
+@media screen and (max-width: 600px) {
+  .collection-list{
+        /* grid-template-columns: 1fr !important;
+        width: 100%; */
+        flex-direction: column;
+        max-width: 400px;
+        width: 100%;
+        margin: 80px auto !important;
+  }
+}
+
+@media screen and (max-width: 800px) {
+    .Teampage{
+        flex-direction: column;
+    }
+}

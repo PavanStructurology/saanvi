@@ -35,8 +35,11 @@
 
 // hooks/useWebflowOnLoad.ts
 import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 export default function useWebflowOnLoad() {
+
+    const location = useLocation();
   useEffect(() => {
     const Webflow = (window as any).Webflow;
     if (!Webflow) return;
@@ -66,6 +69,8 @@ export default function useWebflowOnLoad() {
       window.addEventListener("load", onLoad);
     }
 
+    console.log("page")
+
     return () => window.removeEventListener("load", onLoad);
-  }, []);
+  }, [location.pathname]);
 }
