@@ -3,7 +3,7 @@
 // import useWebflowWaitForElement from "../components/useWebflowWaitForElement";
 import Footer from "./Footer";
 import Header from "./Header";
-import React, { useState } from "react";
+import  { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Home.css";
 const Home = () => {
@@ -456,7 +456,7 @@ const Home = () => {
                     10GW
                     <br />
                   </h1>
-                  <div className="text-block-6">Enegry</div>
+                  <div className="text-block-6">Energy</div>
                 </div>
                 <div>
                   <h1 className="heading-11">1500+</h1>

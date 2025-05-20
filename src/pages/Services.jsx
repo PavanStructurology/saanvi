@@ -224,7 +224,7 @@ const Services = () => {
                     <img
                       src="images/equiped.avif"
                       loading="lazy"
-                      alt="equiped"
+                      alt="equipped"
                       className="image-19"
                     />
                     <h1 className="heading-70">Equipment Support</h1>
@@ -238,7 +238,7 @@ const Services = () => {
                     <img
                       src="images/prerev.avif"
                       loading="lazy"
-                      alt="prereve"
+                      alt="Peer Review"
                       className="image-19"
                     />
                     <h1 className="heading-58">
@@ -311,7 +311,7 @@ const Services = () => {
                     <img
                       src="images/windTunnal.avif"
                       loading="lazy"
-                      alt="wind tunnal"
+                      alt="wind tunnel"
                       className="image-19"
                     />
                     <h1 className="heading-81">Wind Tunnel <br />Guidance</h1>
@@ -1124,13 +1124,13 @@ const Services = () => {
                     />
                     <h1 className="heading-45" >
                       <strong className="bold-text-9">
-                        Photosimul
+                        Photo
                         <br />
-                        ations
+                        simulations
                       </strong>
                     </h1>
                     <div className="text-block-26">
-                      We create photosimulations for your telecom project,
+                      We create photo simulations for your telecom project,
                       showcasing its visual impact before construction begins.
                       Ensure a seamless integration into the landscape.
                     </div>
@@ -1201,7 +1201,7 @@ const Services = () => {
                   <img
                     src="images/start.png"
                     loading="lazy"
-                    alt="starategic"
+                    alt="strategic"
                     className="w-26"
                   />
                   <h1 style={{ lineHeight: "1px", marginTop: "15px" }}>
