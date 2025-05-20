@@ -208,7 +208,7 @@ const Header = () => {
                       href="#"
                       className="post-list-item category-list-item w-inline-block"
                     >
-                      TELLECOMMUNICATIONS{" "}
+                      TELECOMMUNICATIONS{" "}
                     </a>
                   </div>
                 </div>
@@ -375,7 +375,7 @@ const Header = () => {
                           href="#"
                           className="post-list-item category-list-item w-inline-block"
                         >
-                          TELLECOMMUNICATIONS{" "}
+                          TELECOMMUNICATIONS{" "}
                         </a>
                       </div>
                     </div>

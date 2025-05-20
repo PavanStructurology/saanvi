@@ -48,7 +48,7 @@ const Projects = () => {
     {
       img: "images/6.jpg",
       alt: "solar 6",
-      title: "Wright Terrian following Los Banos",
+      title: "Wright Terrain following Los Banos",
     },
     {
       img: "images/7.jpg",
@@ -157,7 +157,7 @@ const Projects = () => {
               <h1 className="heading-49">Solar</h1>
             </div>
 
-            <section className="team-slider">
+            <section className="team-slider" style={{ marginBottom: "80px" }}>
               <div className="">
                 <Swiper
                   modules={[Autoplay]}
@@ -198,7 +198,7 @@ const Projects = () => {
             <div className="w-layout-blockcontainer container-32 w-container">
               <h1 className="heading-49">Buildings</h1>
             </div>
-            <section className="team-slider">
+            <section className="team-slider" style={{ marginBottom: "80px" }}>
               <div className="">
                 <Swiper
                   modules={[Autoplay]}
@@ -239,7 +239,7 @@ const Projects = () => {
             <div className="w-layout-blockcontainer container-33 w-container">
               <h1 className="heading-49">Telecommunication</h1>
             </div>
-            <div className="team-slider">
+            <div className="team-slider" style={{ marginBottom: "80px" }}>
               <div className="project_slider">
                 <Swiper
                   modules={[Autoplay]}
