@@ -221,7 +221,7 @@ const Home = () => {
                   >
                     <div className="button-text">Contact us</div>
                   </a>
-                  <a
+                  <a target="_blank" 
                     href="https://calendly.com/"
                     className="button white-outline w-inline-block"
                   >
@@ -842,7 +842,7 @@ const Home = () => {
                       name="field"
                       maxLength={5000}
                       data-name="Field"
-                      placeholder="Example Text"
+                      placeholder="Text"
                       className="textarea w-input"
                       onChange={(e) => setDescription(e.target.value)}
                       value={description}

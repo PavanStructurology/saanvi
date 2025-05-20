@@ -3389,6 +3389,7 @@ blockquote {
 }
 
 .text-field {
+  width: -webkit-fill-available;
   border: 1px solid var(--dark-outline);
   background-color: #ffffffa6;
   border-radius: 2px;

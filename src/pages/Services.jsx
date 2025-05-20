@@ -108,7 +108,7 @@ const Services = () => {
                       className="div-block-36"
                     >
                       <div className="w-full">
-                        <a
+                        <a target="_blank" 
                           href="https://calendly.com/"
                           className="button white-outline w-inline-block"
                         >
@@ -508,7 +508,7 @@ const Services = () => {
                         className="div-block-36"
                       >
                         <div className="w-full">
-                          <a
+                          <a target="_blank" 
                             href="https://calendly.com/"
                             className="button white-outline w-inline-block"
                           >
@@ -904,7 +904,7 @@ const Services = () => {
                         className="div-block-36"
                       >
                         <div className="w-full">
-                          <a
+                          <a target="_blank" 
                             href="https://calendly.com/"
                             className="button white-outline w-inline-block"
                           >

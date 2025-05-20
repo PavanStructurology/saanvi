@@ -170,7 +170,7 @@ const Contact = () => {
                         Message
                       </label>
                       <textarea
-                        placeholder="Example Text"
+                        placeholder="Text"
                         maxLength={5000}
                         id="field"
                         value={description}
