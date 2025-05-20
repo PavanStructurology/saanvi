@@ -4,6 +4,7 @@ import React, { useState } from "react";
 
 const Contact = () => {
   const [name, setName] = useState('');
+  const [name2, setName2] = useState('')
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
   const [service, setService] = useState('SPile +');
@@ -26,7 +27,7 @@ const Contact = () => {
     else {
       setLoading(true);
       const data = {
-        Name: name,
+        Name: name + name2,
         Email: email,
         Phone: phone,
         Service: service,
@@ -105,19 +106,19 @@ const Contact = () => {
                     data-wf-element-id="c1386cff-6b52-7e7b-943b-f01eec937980"                  >
                     <div className="field-wrapper">
                       <label
-                        htmlFor="name"
-                        id="w-node-c1386cff-6b52-7e7b-943b-f01eec937981-1300b8e7"
-                        className="field-label"                      >
+                        htmlFor="name-3"
+                        id="w-node-_5e3db900-a825-6509-a424-cf926f0e51a6-1300b8e7"
+                        className="field-label"                    >
                         Name
                       </label>
                       <input
-                        className="text-field w-input"
+                        className="text-field w-node-_5e3db900-a825-6509-a424-cf926f0e51a8-1300b8e7 w-input"
                         maxLength={256}
                         onChange={(e) => setName(e.target.value)}
                         value={name}
                         name="name"
                         data-name="Name"
-                        placeholder="Your Name"
+                        placeholder="Your First Name"
                         type="text"
                         id="name"
                       />
@@ -125,15 +126,16 @@ const Contact = () => {
                         <div style={{ color: "red" }}>
                           Oops! Enter Name.
                         </div>}
-                      {/* <input
+                      <input
                         className="text-field w-input"
                         maxLength={256}
                         name="name-2"
+                        onChange={(e) => setName2(e.target.value)}
                         data-name="Name 2"
-                        placeholder="Your last name"
+                        placeholder="Your Last Name"
                         type="text"
                         id="name-2"
-                      /> */}
+                      />
                     </div>
                     <div className="field-wrapper">
                       <label
@@ -149,9 +151,8 @@ const Contact = () => {
                         name="name-3"
                         data-name="Name 3"
                         value={email}
-
                         onChange={(e) => setEmail(e.target.value)}
-                        placeholder="Your email"
+                        placeholder="Your Email"
                         type="email"
                         id="name-3"
                       />
@@ -169,7 +170,7 @@ const Contact = () => {
                         Message
                       </label>
                       <textarea
-                        placeholder="Example Text"
+                        placeholder="Text"
                         maxLength={5000}
                         id="field"
                         value={description}
@@ -181,20 +182,28 @@ const Contact = () => {
                         defaultValue={""}
                       />
                     </div>
-                    <label className="field-label-3 global">Choose Service</label>
-                    <select
-                      name="Service"
-                      className="text-field"
-                      value={service}
-                      onChange={(e) => setService(e.target.value)}
-                      required
-                    >
-                      <option value="SPile +">SPile +</option>
-                      <option value="Solar Project">Solar Project</option>
-                      <option value="Buildings">Buildings</option>
-                      <option value="Telecommunication">Telecommunication</option>
-                      <option value="Forensics">Forensics</option>
-                    </select>
+
+                    <div>
+                      <label
+                        htmlFor="name-4"
+                        id="w-node-_9f611142-c9c4-1dbb-5d72-be5bad231d1e-1300b8e7"
+                        className="field-label"
+                        style={{marginBottom:"16px"}}
+                      >
+                        Choose Service
+                      </label>
+                      <select
+                        name="Service"
+                        className="text-field"
+                        value={service}
+                        onChange={(e) => setService(e.target.value)}
+                        required
+                      >
+                        <option value="Solar Project">Solar</option>
+                        <option value="Buildings">Buildings</option>
+                        <option value="Telecommunication">Telecommunication</option>
+                      </select>
+                    </div>
                     <input
                       type="submit"
                       data-wait="Please wait..."

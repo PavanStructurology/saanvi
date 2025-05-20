@@ -221,7 +221,7 @@ const Home = () => {
                   >
                     <div className="button-text">Contact us</div>
                   </a>
-                  <a
+                  <a target="_blank" 
                     href="https://calendly.com/"
                     className="button white-outline w-inline-block"
                   >
@@ -805,28 +805,7 @@ const Home = () => {
                       htmlFor="field"
                       className="field-label-9"
                       style={{
-                        fontSize: "1.1rem",
-                      }}
-                    >
-                      Description
-                    </label>
-                    <textarea
-                      id="field"
-                      name="field"
-                      maxLength={5000}
-                      data-name="Field"
-                      placeholder="Example Text"
-                      className="textarea w-input"
-                      onChange={(e) => setDescription(e.target.value)}
-                      value={description}
-                      style={{
-                        fontSize: "1.1rem",
-                      }}
-                    />
-                    <label
-                      className="field-label-3 global"
-                      style={{
-                        fontSize: "1.1rem",
+                        fontSize: "1.1rem"
                       }}
                     >
                       Choose Service
@@ -837,6 +816,7 @@ const Home = () => {
                       style={{
                         fontSize: "1.1rem",
                         padding: "10px",
+                       
                       }}
                       value={service}
                       onChange={(e) => setService(e.target.value)}
@@ -848,6 +828,30 @@ const Home = () => {
                         Telecommunication
                       </option>
                     </select>
+                    <label
+                      htmlFor="field"
+                      className="field-label-9"
+                      style={{
+                        fontSize: "1.1rem",paddingTop:"5px"
+                      }}
+                    >
+                      Description
+                    </label>
+                    <textarea
+                      id="field"
+                      name="field"
+                      maxLength={5000}
+                      data-name="Field"
+                      placeholder="Text"
+                      className="textarea w-input"
+                      onChange={(e) => setDescription(e.target.value)}
+                      value={description}
+                      style={{
+                        fontSize: "1.1rem",
+                      }}
+                    />
+                   
+                    
                     <div className="w-full flex justify-end">
                       <input
                         type="submit"

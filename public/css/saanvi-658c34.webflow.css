@@ -3105,7 +3105,7 @@ blockquote {
   grid-template-columns: 1fr 1fr 1fr;
   grid-auto-columns: 1fr;
   display: grid;
-  /* margin-left: 8%; */
+  margin-left: 3%;
 
 }
 
@@ -3389,6 +3389,7 @@ blockquote {
 }
 
 .text-field {
+  width: -webkit-fill-available;
   border: 1px solid var(--dark-outline);
   background-color: #ffffffa6;
   border-radius: 2px;
@@ -6544,12 +6545,12 @@ blockquote {
 }
 
 .heading-67 {
-  margin-bottom: 30px;
+  margin-bottom: 5px;
   font-size: 28px;
 }
 
 .heading-68 {
-  margin-bottom: 29px;
+  margin-bottom: 5px;
   font-size: 28px;
 }
 
@@ -7806,6 +7807,8 @@ blockquote {
     font-family: Ubuntu, Helvetica, sans-serif;
     font-size: 18px;
     font-weight: 400;
+    width: -webkit-fill-available;
+
   }
 
   .services-info {
@@ -8178,7 +8181,7 @@ blockquote {
   }
 
   .heading-40 {
-    margin-bottom: -10px;
+    margin-bottom: -2px;
   }
 
   .heading-42,
@@ -8274,11 +8277,15 @@ blockquote {
   }
 
   .heading-56 {
-    margin-bottom: 27px;
+    margin-bottom: 2px;
   }
 
   .heading-57 {
-    margin-bottom: 31px;
+    margin-bottom: 1px;
+  }
+
+  .heading-45 {
+    margin-bottom: 1px;
   }
 
   .heading-60 {
@@ -15239,7 +15246,8 @@ html {
   .page-wrapper {
     padding: 6%
   }
-   .team-columns {
+
+  .team-columns {
     display: flex;
     flex-direction: column;
   }

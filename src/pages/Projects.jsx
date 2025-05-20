@@ -151,7 +151,6 @@ const Projects = () => {
       </div>
       <div className="page-wrapper">
         <h className="Contact">PROJECTS</h>
-        <hr className="hr1" />
         <div className="sectionSolar" id="Solarprojects">
           <div className="wrapper">
             <div className="w-layout-blockcontainer container-build w-container">
